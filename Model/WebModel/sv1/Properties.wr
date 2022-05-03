@@ -1,4 +1,4 @@
-<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv1" name="empleado" homePage="sv1#page1" landmarks="sv1#page2 sv1#page17 sv1#page21">
+<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv1" name="empleado" homePage="sv1#page1" landmarks="sv1#page2 sv1#page17 sv1#page21 sv1#page3 sv1#page10 sv1#page26">
   <OperationUnits>
     <CreateUnit gr:x="1115" gr:y="510" id="sv1#cru1" name="CreateUnit" entity="ent16">
       <KOLink id="sv1#cru1#kln2" to="sv1#page2#alt1#page6#mssu4">
@@ -107,6 +107,114 @@
         <LinkParameter id="sv1#inn5#oln24#par122" name="Input Value_KeyCondition24 [oid]" source="inputValue" target="sv1#mfu5#su25#kcond24.ent17#att20"/>
       </OKLink>
       <KOLink id="sv1#inn5#kln22" to="sv1#cru5" automaticCoupling="true"/>
+    </IsNotNullUnit>
+    <CreateUnit gr:x="3905" gr:y="525" id="sv1#cru2" name="CreateUnit" entity="ent20">
+      <KOLink id="sv1#cru2#kln6" to="sv1#page3#alt2#page4#mssu1">
+        <LinkParameter id="sv1#cru2#kln6#par8" name="Failed creating data_Shown Messages" sourceValue="Failed creating data" target="sv1#page3#alt2#page4#mssu1.shownMessages"/>
+      </KOLink>
+      <OKLink id="sv1#cru2#oln3" to="sv1#page3#alt2#page4#mssu1">
+        <LinkParameter id="sv1#cru2#oln3#par24" name="Data created correctly_Shown Messages" sourceValue="Data created correctly" target="sv1#page3#alt2#page4#mssu1.shownMessages"/>
+      </OKLink>
+    </CreateUnit>
+    <DeleteUnit gr:x="3905" gr:y="325" id="sv1#dlu2" name="DeleteUnit" entity="ent20">
+      <Selector id="sv1#dlu2#su7" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#dlu2#su7#kcond7" name="KeyCondition7" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv1#dlu2#oln1" to="sv1#page3#alt2#page4#mssu1">
+        <LinkParameter id="sv1#dlu2#oln1#par6" name="Data deleted correctly_Shown Messages" sourceValue="Data deleted correctly" target="sv1#page3#alt2#page4#mssu1.shownMessages"/>
+      </OKLink>
+      <KOLink id="sv1#dlu2#kln5" to="sv1#page3#alt2#page4#mssu1">
+        <LinkParameter id="sv1#dlu2#kln5#par7" name="Failed deleting data_Shown Messages" sourceValue="Failed deleting data" target="sv1#page3#alt2#page4#mssu1.shownMessages"/>
+      </KOLink>
+    </DeleteUnit>
+    <ModifyUnit gr:x="3905" gr:y="825" id="sv1#mfu2" name="UpdateUnit" entity="ent20">
+      <Selector id="sv1#mfu2#su8" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#mfu2#su8#kcond8" name="KeyCondition8" predicate="in" implied="false"/>
+      </Selector>
+      <KOLink id="sv1#mfu2#kln7" to="sv1#page3#alt2#page4#mssu1">
+        <LinkParameter id="sv1#mfu2#kln7#par9" name="Failed modifying data_Shown Messages" sourceValue="Failed modifying data" target="sv1#page3#alt2#page4#mssu1.shownMessages"/>
+      </KOLink>
+      <OKLink id="sv1#mfu2#oln8" to="sv1#page3#alt2#page4#mssu1">
+        <LinkParameter id="sv1#mfu2#oln8#par25" name="Data modified correctly_Shown Messages" sourceValue="Data modified correctly" target="sv1#page3#alt2#page4#mssu1.shownMessages"/>
+      </OKLink>
+    </ModifyUnit>
+    <IsNotNullUnit gr:x="3905" gr:y="675" id="sv1#inn2" name="New ..." emptyStringAsNull="true">
+      <OKLink id="sv1#inn2#oln2" to="sv1#mfu2">
+        <LinkParameter id="sv1#inn2#oln2#par31" name="Input Value_KeyCondition8 [oid]" source="inputValue" target="sv1#mfu2#su8#kcond8.ent20#att32"/>
+      </OKLink>
+      <KOLink id="sv1#inn2#kln8" to="sv1#cru2" automaticCoupling="true"/>
+    </IsNotNullUnit>
+    <CreateUnit gr:x="4831" gr:y="525" id="sv1#cru3" name="CreateUnit" entity="ent9">
+      <KOLink id="sv1#cru3#kln10" to="sv1#page10#alt3#page11#mssu2">
+        <LinkParameter id="sv1#cru3#kln10#par36" name="Failed creating data_Shown Messages" sourceValue="Failed creating data" target="sv1#page10#alt3#page11#mssu2.shownMessages"/>
+      </KOLink>
+      <OKLink id="sv1#cru3#oln11" to="sv1#page10#alt3#page11#mssu2">
+        <LinkParameter id="sv1#cru3#oln11#par47" name="Data created correctly_Shown Messages" sourceValue="Data created correctly" target="sv1#page10#alt3#page11#mssu2.shownMessages"/>
+      </OKLink>
+    </CreateUnit>
+    <DeleteUnit gr:x="4831" gr:y="325" id="sv1#dlu3" name="DeleteUnit" entity="ent9">
+      <Selector id="sv1#dlu3#su11" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#dlu3#su11#kcond11" name="KeyCondition11" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv1#dlu3#oln9" to="sv1#page10#alt3#page11#mssu2">
+        <LinkParameter id="sv1#dlu3#oln9#par34" name="Data deleted correctly_Shown Messages" sourceValue="Data deleted correctly" target="sv1#page10#alt3#page11#mssu2.shownMessages"/>
+      </OKLink>
+      <KOLink id="sv1#dlu3#kln9" to="sv1#page10#alt3#page11#mssu2">
+        <LinkParameter id="sv1#dlu3#kln9#par35" name="Failed deleting data_Shown Messages" sourceValue="Failed deleting data" target="sv1#page10#alt3#page11#mssu2.shownMessages"/>
+      </KOLink>
+    </DeleteUnit>
+    <ModifyUnit gr:x="4831" gr:y="825" id="sv1#mfu3" name="UpdateUnit" entity="ent9">
+      <Selector id="sv1#mfu3#su12" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#mfu3#su12#kcond12" name="KeyCondition12" predicate="in" implied="false"/>
+      </Selector>
+      <KOLink id="sv1#mfu3#kln11" to="sv1#page10#alt3#page11#mssu2">
+        <LinkParameter id="sv1#mfu3#kln11#par37" name="Failed modifying data_Shown Messages" sourceValue="Failed modifying data" target="sv1#page10#alt3#page11#mssu2.shownMessages"/>
+      </KOLink>
+      <OKLink id="sv1#mfu3#oln12" to="sv1#page10#alt3#page11#mssu2">
+        <LinkParameter id="sv1#mfu3#oln12#par48" name="Data modified correctly_Shown Messages" sourceValue="Data modified correctly" target="sv1#page10#alt3#page11#mssu2.shownMessages"/>
+      </OKLink>
+    </ModifyUnit>
+    <IsNotNullUnit gr:x="4831" gr:y="675" id="sv1#inn3" name="New ..." emptyStringAsNull="true">
+      <OKLink id="sv1#inn3#oln10" to="sv1#mfu3">
+        <LinkParameter id="sv1#inn3#oln10#par49" name="Input Value_KeyCondition12 [oid]" source="inputValue" target="sv1#mfu3#su12#kcond12.ent9#att6"/>
+      </OKLink>
+      <KOLink id="sv1#inn3#kln12" to="sv1#cru3" automaticCoupling="true"/>
+    </IsNotNullUnit>
+    <CreateUnit gr:x="5761" gr:y="525" id="sv1#cru7" name="CreateUnit" entity="ent12">
+      <KOLink id="sv1#cru7#kln28" to="sv1#page26#alt7#page27#mssu5">
+        <LinkParameter id="sv1#cru7#kln28#par133" name="Failed creating data_Shown Messages" sourceValue="Failed creating data" target="sv1#page26#alt7#page27#mssu5.shownMessages"/>
+      </KOLink>
+      <OKLink id="sv1#cru7#oln29" to="sv1#page26#alt7#page27#mssu5">
+        <LinkParameter id="sv1#cru7#oln29#par138" name="Data created correctly_Shown Messages" sourceValue="Data created correctly" target="sv1#page26#alt7#page27#mssu5.shownMessages"/>
+      </OKLink>
+    </CreateUnit>
+    <DeleteUnit gr:x="5761" gr:y="325" id="sv1#dlu7" name="DeleteUnit" entity="ent12">
+      <Selector id="sv1#dlu7#su32" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#dlu7#su32#kcond31" name="KeyCondition31" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv1#dlu7#oln27" to="sv1#page26#alt7#page27#mssu5">
+        <LinkParameter id="sv1#dlu7#oln27#par131" name="Data deleted correctly_Shown Messages" sourceValue="Data deleted correctly" target="sv1#page26#alt7#page27#mssu5.shownMessages"/>
+      </OKLink>
+      <KOLink id="sv1#dlu7#kln27" to="sv1#page26#alt7#page27#mssu5">
+        <LinkParameter id="sv1#dlu7#kln27#par132" name="Failed deleting data_Shown Messages" sourceValue="Failed deleting data" target="sv1#page26#alt7#page27#mssu5.shownMessages"/>
+      </KOLink>
+    </DeleteUnit>
+    <ModifyUnit gr:x="5761" gr:y="825" id="sv1#mfu7" name="UpdateUnit" entity="ent12">
+      <Selector id="sv1#mfu7#su33" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#mfu7#su33#kcond32" name="KeyCondition32" predicate="in" implied="false"/>
+      </Selector>
+      <KOLink id="sv1#mfu7#kln29" to="sv1#page26#alt7#page27#mssu5">
+        <LinkParameter id="sv1#mfu7#kln29#par134" name="Failed modifying data_Shown Messages" sourceValue="Failed modifying data" target="sv1#page26#alt7#page27#mssu5.shownMessages"/>
+      </KOLink>
+      <OKLink id="sv1#mfu7#oln30" to="sv1#page26#alt7#page27#mssu5">
+        <LinkParameter id="sv1#mfu7#oln30#par139" name="Data modified correctly_Shown Messages" sourceValue="Data modified correctly" target="sv1#page26#alt7#page27#mssu5.shownMessages"/>
+      </OKLink>
+    </ModifyUnit>
+    <IsNotNullUnit gr:x="5761" gr:y="675" id="sv1#inn7" name="New ..." emptyStringAsNull="true">
+      <OKLink id="sv1#inn7#oln28" to="sv1#mfu7">
+        <LinkParameter id="sv1#inn7#oln28#par140" name="Input Value_KeyCondition32 [oid]" source="inputValue" target="sv1#mfu7#su33#kcond32.ent12#att11"/>
+      </OKLink>
+      <KOLink id="sv1#inn7#kln30" to="sv1#cru7" automaticCoupling="true"/>
     </IsNotNullUnit>
   </OperationUnits>
 </SiteView>
