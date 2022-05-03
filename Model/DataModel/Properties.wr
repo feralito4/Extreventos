@@ -1,9 +1,10 @@
 <DataModel xmlns:db="http://www.webratio.com/2006/WebML/Database" xmlns:gr="http://www.webratio.com/2006/WebML/Graph">
-  <Entity id="User" name="User" duration="persistent" gr:x="-5" gr:y="605" gr:hideAttributes="false" attributeOrder="userOID userName password email" db:database="db1" db:table="user">
+  <Entity id="User" name="User" duration="persistent" gr:x="-5" gr:y="605" gr:hideAttributes="false" attributeOrder="userOID userName password email User#att45" db:database="db1" db:table="user">
     <Attribute name="oid" id="userOID" type="integer" key="true" db:column="oid"/>
     <Attribute name="userName" id="userName" type="string" db:column="username"/>
     <Attribute name="password" id="password" type="password" db:column="password"/>
     <Attribute name="email" id="email" type="string" db:column="email"/>
+    <Attribute id="User#att45" name="fecha_alta" type="string" db:column="fecha_alta"/>
   </Entity>
   <Entity id="Group" name="Group" duration="persistent" gr:x="230" gr:y="625" gr:hideAttributes="false" attributeOrder="groupOID groupName" db:database="db1" db:table="group">
     <Attribute name="oid" id="groupOID" type="integer" key="true" db:column="oid"/>
@@ -96,12 +97,13 @@
     <Attribute id="ent19#att30" name="PorcentajeDescuento" type="float" db:column="porcentajedescuento"/>
     <Attribute id="ent19#att31" name="precioConDescuento" type="float" db:column="preciocondescuento"/>
   </Entity>
-  <Entity id="ent20" name="Ubicacion" duration="persistent" attributeOrder="ent20#att32 ent20#att33 ent20#att34 ent20#att35 ent20#att36" gr:x="128" gr:y="40" db:database="db1" db:table="ubicacion">
+  <Entity id="ent20" name="Ubicacion" duration="persistent" attributeOrder="ent20#att32 ent20#att33 ent20#att34 ent20#att35 ent20#att36 ent20#att46" gr:x="128" gr:y="40" db:database="db1" db:table="ubicacion">
     <Attribute id="ent20#att32" name="oid" key="true" type="integer" db:column="oid"/>
     <Attribute id="ent20#att33" name="aforo" type="integer" db:column="aforo"/>
     <Attribute id="ent20#att34" name="direccion" type="string" db:column="direccion"/>
     <Attribute id="ent20#att35" name="nombre" type="string" db:column="nombre"/>
     <Attribute id="ent20#att36" name="precio/alquiler" type="integer" db:column="precio_alquiler"/>
+    <Attribute id="ent20#att46" name="maxStands" type="integer" db:column="maxstands"/>
   </Entity>
   <Entity id="ent21" name="ubicacion-evento-fecha" duration="persistent" attributeOrder="ent21#att37 ent21#att38 ent21#att39" gr:x="238" gr:y="225" db:database="db1" db:table="ubicacion_evento_fecha">
     <Attribute id="ent21#att37" name="oidevent" key="false" type="integer" db:column="oidevent"/>
@@ -189,5 +191,6 @@
       <db:JoinColumn attribute="ent17#att20" name="oid"/>
     </RelationshipRole2>
   </Relationship>
-  <db:Database id="db1" name="Database1" type="PostgreSQL 9" url="jdbc:postgresql://localhost:5432/ExtreventosDB" username="postgres" cryptedPassword="true" password="YWRtaW4=" schema="public"/>
+  <db:Database id="db1" name="Database1" type="PostgreSQL 9" url="jdbc:postgresql://localhost:5432/ExtreventosDB" username="postgres" cryptedPassword="true" password="YWRtaW4=" schema="public">
+  </db:Database>
 </DataModel>

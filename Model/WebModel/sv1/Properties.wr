@@ -1,4 +1,4 @@
-<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv1" name="empleado" homePage="sv1#page1" landmarks="sv1#page2 sv1#page17 sv1#page21 sv1#page3 sv1#page10 sv1#page26">
+<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv1" name="empleado" homePage="sv1#page1" landmarks="sv1#page2 sv1#page17 sv1#page21 sv1#page3 sv1#page10 sv1#page26 sv1#seu14 sv1#lou1 sv1#page31" protected="true">
   <OperationUnits>
     <CreateUnit gr:x="1115" gr:y="510" id="sv1#cru1" name="CreateUnit" entity="ent16">
       <KOLink id="sv1#cru1#kln2" to="sv1#page2#alt1#page6#mssu4">
@@ -216,5 +216,47 @@
       </OKLink>
       <KOLink id="sv1#inn7#kln30" to="sv1#cru7" automaticCoupling="true"/>
     </IsNotNullUnit>
+    <IsNotNullUnit id="sv1#inn8" name="Is Not Null3" gr:x="1115" gr:y="1220" emptyStringAsNull="true">
+      <KOLink id="sv1#inn8#kln32" name="OKFlow28" to="sv1#mfu8" gr:bendpoints="27,97,147,-33">
+        <LinkParameter id="sv1#inn8#kln32#par145" name="1/1/00 0:00:00 AM_fecha_alta" target="sv1#mfu8.User#att10" sourceValue="1/01/00 0:00:00 AM"/>
+      </KOLink>
+    </IsNotNullUnit>
+    <LogoutUnit id="sv1#lou1" name="Cerrar Sesion" landmark="true" gr:x="110" gr:y="1270" siteView="sv2"/>
+    <SelectorUnit id="sv1#seu14" name="Fix TimeStamp" landmark="true" gr:x="800" gr:y="990" entity="User">
+      <OKLink id="sv1#seu14#oln31" name="OKFlow27" to="sv1#lpu1">
+        <LinkParameter id="sv1#seu14#oln31#par152" name="oid_Input Array" source="userOIDArray" target="sv1#lpu1.array"/>
+        <LinkParameter id="sv1#seu14#oln31#par153" name="fecha_alta_SecondaryArray1" source="User#att10Array" target="sv1#lpu1#lsa1"/>
+      </OKLink>
+    </SelectorUnit>
+    <CreateUnit id="sv1#cru8" name="Crear usuario" gr:x="435" gr:y="1360" entity="User">
+      <OKLink id="sv1#cru8#oln32" name="OKFlow17" to="sv1#page31" automaticCoupling="true" gr:bendpoints="-2,-81,128,114"/>
+    </CreateUnit>
+    <LoopUnit id="sv1#lpu1" name="Loop3" gr:x="1045" gr:y="1005">
+      <SecondaryArray id="sv1#lpu1#lsa1" name="SecondaryArray1"/>
+      <OKLink id="sv1#lpu1#oln33" name="OKFlow32" to="sv1#page31#inu4" code="end" automaticCoupling="true" gr:bendpoints="3,-77,873,-222;-874,-76,-4,-221"/>
+      <OKLink id="sv1#lpu1#oln34" name="OKFlow33" to="sv1#inn8" code="next">
+        <LinkParameter id="sv1#lpu1#oln34#par154" name="Next Element (SecondaryArray1)_Input" source="sv1#lpu1#lsa1" target="sv1#inn8.isnotnull"/>
+      </OKLink>
+      <Link id="sv1#lpu1#ln92" name="Flow21" to="sv1#mfu8" type="transport" validate="true">
+        <LinkParameter id="sv1#lpu1#ln92#par155" name="Next Element_KeyCondition5 [oid]" source="next" target="sv1#mfu8#su34#kcond33.userOID"/>
+      </Link>
+    </LoopUnit>
+    <ModifyUnit id="sv1#mfu8" name="Fechanull" gr:x="1000" gr:y="1330" entity="User">
+      <Selector id="sv1#mfu8#su34" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#mfu8#su34#kcond33" name="KeyCondition5" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv1#mfu8#oln35" name="OKFlow30" to="sv1#lpu1" automaticCoupling="true" gr:bendpoints="-58,-172,-93,173"/>
+    </ModifyUnit>
+    <PasswordUnit id="sv1#pwu11" name="Crear Password" gr:x="675" gr:y="1250" passwordSize="4">
+      <Link id="sv1#pwu11#ln93" name="OKFlow15" to="sv1#cru8" type="transport">
+        <LinkParameter id="sv1#pwu11#ln93#par156" name="Generated Password_password" source="password" target="sv1#cru8.password"/>
+      </Link>
+      <OKLink id="sv1#pwu11#oln36" name="OKFlow18" to="sv1#tmu1" automaticCoupling="true"/>
+    </PasswordUnit>
+    <TimeUnit id="sv1#tmu1" name="Time1" gr:x="695" gr:y="1375">
+      <OKLink id="sv1#tmu1#oln37" name="OKFlow19" to="sv1#cru8">
+        <LinkParameter id="sv1#tmu1#oln37#par157" name="Current/Input Timestamp_fecha_alta" source="currentTimestamp" target="sv1#cru8.User#att10"/>
+      </OKLink>
+    </TimeUnit>
   </OperationUnits>
 </SiteView>
