@@ -1,0 +1,215 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="3235" gr:y="60" id="sv1#page3" name="CRUDUbicaci&#243;n" landmark="true">
+  <ContentUnits/>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv1#page3#alt2#page4">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv1#page3#alt2#page4#gctu2">
+                  <layout:Link link="sv1#page3#alt2#page4#gctu2#ln3"/>
+                </layout:Unit>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv1#page3#alt2#page4#pwu2">
+                  <layout:Link link="sv1#page3#alt2#page4#pwu2#ln17"/>
+                  <layout:Link link="sv1#page3#alt2#page4#pwu2#ln18"/>
+                  <layout:Link link="sv1#page3#alt2#page4#pwu2#ln19"/>
+                  <layout:Attribute attribute="ent20#att33"/>
+                  <layout:Attribute attribute="ent20#att35"/>
+                </layout:Unit>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv1#page3#alt2#page5">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv1#page3#alt2#page5#dau2">
+                  <layout:Link link="sv1#page3#alt2#page5#dau2#ln1"/>
+                  <layout:Attribute attribute="ent20#att32"/>
+                  <layout:Attribute attribute="ent20#att33"/>
+                  <layout:Attribute attribute="ent20#att34"/>
+                  <layout:Attribute attribute="ent20#att35"/>
+                  <layout:Attribute attribute="ent20#att36"/>
+                </layout:Unit>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv1#page3#alt2#page9">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv1#page3#alt2#page9#enu1">
+                  <layout:Field field="sv1#page3#alt2#page9#enu1#fld4"/>
+                  <layout:Field field="sv1#page3#alt2#page9#enu1#fld5"/>
+                  <layout:Field field="sv1#page3#alt2#page9#enu1#fld6"/>
+                  <layout:Field field="sv1#page3#alt2#page9#enu1#fld7"/>
+                  <layout:Link link="sv1#page3#alt2#page9#enu1#ln2"/>
+                  <layout:Link link="sv1#page3#alt2#page9#enu1#ln11"/>
+                </layout:Unit>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Alternative gr:x="0" gr:y="0" id="sv1#page3#alt2" name="Alternative" defaultPage="sv1#page3#alt2#page4">
+    <Page gr:x="0" gr:y="0" id="sv1#page3#alt2#page4" name="DefaultPage">
+      <ContentUnits>
+        <NoOpContentUnit gr:x="5" gr:y="0" id="sv1#page3#alt2#page4#gctu2" name="New" entity="ent20" linkOrder="sv1#page3#alt2#page4#gctu2#ln3">
+          <Link id="sv1#page3#alt2#page4#gctu2#ln3" name="New" to="sv1#page3#alt2#page9#seu2" type="normal" validate="true" gr:bendpoints="-62,47,-127,-298;-63,197,-128,-148">
+            <LinkParameter id="sv1#page3#alt2#page4#gctu2#ln3#par1" name="0_KeyCondition6 [oid]" sourceValue="0" target="sv1#page3#alt2#page9#seu2#su6#kcond6.ent20#att32"/>
+          </Link>
+        </NoOpContentUnit>
+        <MultiMessageUnit gr:x="0" gr:y="145" id="sv1#page3#alt2#page4#mssu1" name="MultiMessageUnit"/>
+        <PowerIndexUnit gr:x="125" gr:y="0" id="sv1#page3#alt2#page4#pwu2" name="List2" sortable="true" checkable="false" useCountQuery="false" entity="ent20" linkOrder="sv1#page3#alt2#page4#pwu2#ln17 sv1#page3#alt2#page4#pwu2#ln18 sv1#page3#alt2#page4#pwu2#ln19" displayAttributes="ent20#att33 ent20#att35">
+          <Link id="sv1#page3#alt2#page4#pwu2#ln17" name="Detalles" to="sv1#page3#alt2#page5#dau2" automaticCoupling="true" type="normal" validate="true"/>
+          <Link id="sv1#page3#alt2#page4#pwu2#ln18" name="Modificar" to="sv1#page3#alt2#page9#seu2" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="6,208,76,-122"/>
+          <Link id="sv1#page3#alt2#page4#pwu2#ln19" name="Eliminar" to="sv1#dlu2" automaticCoupling="true" type="normal" validate="true"/>
+        </PowerIndexUnit>
+      </ContentUnits>
+    </Page>
+    <Page gr:x="400" gr:y="0" id="sv1#page3#alt2#page5" name="Details" landmark="true">
+      <ContentUnits>
+        <DataUnit gr:x="0" gr:y="0" id="sv1#page3#alt2#page5#dau2" name="DataUnit" entity="ent20" linkOrder="sv1#page3#alt2#page5#dau2#ln1" displayAttributes="ent20#att32 ent20#att33 ent20#att34 ent20#att35 ent20#att36">
+          <Selector id="sv1#page3#alt2#page5#dau2#su5" defaultPolicy="fill" booleanOperator="and">
+            <KeyCondition id="sv1#page3#alt2#page5#dau2#su5#kcond5" name="KeyCondition5" predicate="in" implied="false"/>
+          </Selector>
+          <Link id="sv1#page3#alt2#page5#dau2#ln1" name="Close" to="sv1#page3#alt2#page4#mssu1" automaticCoupling="true" type="normal" validate="true"/>
+        </DataUnit>
+      </ContentUnits>
+    </Page>
+    <Page gr:x="55" gr:y="325" id="sv1#page3#alt2#page9" name="Form" landmark="true">
+      <ContentUnits>
+        <EntryUnit gr:x="150" gr:y="120" id="sv1#page3#alt2#page9#enu1" name="EntryUnit" entity="ent20" linkOrder="sv1#page3#alt2#page9#enu1#ln2 sv1#page3#alt2#page9#enu1#ln11">
+          <Field id="sv1#page3#alt2#page9#enu1#fld3" name="oid" type="integer" modifiable="false" hidden="true" preloaded="true"/>
+          <Field id="sv1#page3#alt2#page9#enu1#fld4" name="aforo" type="integer" modifiable="true" preloaded="true"/>
+          <Field id="sv1#page3#alt2#page9#enu1#fld5" name="direccion" type="string" modifiable="true" preloaded="true"/>
+          <Field id="sv1#page3#alt2#page9#enu1#fld6" name="nombre" type="string" modifiable="true" preloaded="true"/>
+          <Field id="sv1#page3#alt2#page9#enu1#fld7" name="precio/alquiler" type="integer" modifiable="true" preloaded="true"/>
+          <Link id="sv1#page3#alt2#page9#enu1#ln2" name="Cancel" to="sv1#page3#alt2#page4#mssu1" automaticCoupling="true" type="normal" validate="false"/>
+          <Link id="sv1#page3#alt2#page9#enu1#ln11" name="Accept" to="sv1#inn2" type="normal" validate="true">
+            <LinkParameter id="sv1#page3#alt2#page9#enu1#ln11#par5" name="oid_oid" source="sv1#page3#alt2#page9#enu1#fld3" target="sv1#inn2.isnotnull"/>
+          </Link>
+          <Link id="sv1#page3#alt2#page9#enu1#ln15" name="Load" to="sv1#cru2" type="transport" validate="true">
+            <LinkParameter id="sv1#page3#alt2#page9#enu1#ln15#par20" name="nombre_nombre" source="sv1#page3#alt2#page9#enu1#fld6" target="sv1#cru2.ent20#att35"/>
+            <LinkParameter id="sv1#page3#alt2#page9#enu1#ln15#par21" name="aforo_aforo" source="sv1#page3#alt2#page9#enu1#fld4" target="sv1#cru2.ent20#att33"/>
+            <LinkParameter id="sv1#page3#alt2#page9#enu1#ln15#par22" name="direccion_direccion" source="sv1#page3#alt2#page9#enu1#fld5" target="sv1#cru2.ent20#att34"/>
+            <LinkParameter id="sv1#page3#alt2#page9#enu1#ln15#par23" name="precio/alquiler_precio/alquiler" source="sv1#page3#alt2#page9#enu1#fld7" target="sv1#cru2.ent20#att36"/>
+          </Link>
+          <Link id="sv1#page3#alt2#page9#enu1#ln16" name="Load" to="sv1#mfu2" type="transport" validate="true">
+            <LinkParameter id="sv1#page3#alt2#page9#enu1#ln16#par26" name="aforo_aforo" source="sv1#page3#alt2#page9#enu1#fld4" target="sv1#mfu2.ent20#att33"/>
+            <LinkParameter id="sv1#page3#alt2#page9#enu1#ln16#par27" name="direccion_direccion" source="sv1#page3#alt2#page9#enu1#fld5" target="sv1#mfu2.ent20#att34"/>
+            <LinkParameter id="sv1#page3#alt2#page9#enu1#ln16#par28" name="Key [oid]_KeyCondition8 [oid]" source="key.ent20#att32" target="sv1#mfu2#su8#kcond8.ent20#att32"/>
+            <LinkParameter id="sv1#page3#alt2#page9#enu1#ln16#par29" name="nombre_nombre" source="sv1#page3#alt2#page9#enu1#fld6" target="sv1#mfu2.ent20#att35"/>
+            <LinkParameter id="sv1#page3#alt2#page9#enu1#ln16#par30" name="precio/alquiler_precio/alquiler" source="sv1#page3#alt2#page9#enu1#fld7" target="sv1#mfu2.ent20#att36"/>
+          </Link>
+        </EntryUnit>
+        <SelectorUnit gr:x="0" gr:y="0" id="sv1#page3#alt2#page9#seu2" name="Selector" entity="ent20">
+          <Selector id="sv1#page3#alt2#page9#seu2#su6" defaultPolicy="fill" booleanOperator="and">
+            <KeyCondition id="sv1#page3#alt2#page9#seu2#su6#kcond6" name="KeyCondition6" predicate="in" implied="false"/>
+          </Selector>
+          <Link id="sv1#page3#alt2#page9#seu2#ln14" name="Load" to="sv1#page3#alt2#page9#enu1" type="transport" validate="true">
+            <LinkParameter id="sv1#page3#alt2#page9#seu2#ln14#par10" name="nombre_nombre" source="ent20#att35Array" target="sv1#page3#alt2#page9#enu1#fld6_slot"/>
+            <LinkParameter id="sv1#page3#alt2#page9#seu2#ln14#par13" name="aforo_aforo" source="ent20#att33Array" target="sv1#page3#alt2#page9#enu1#fld4_slot"/>
+            <LinkParameter id="sv1#page3#alt2#page9#seu2#ln14#par14" name="direccion_direccion" source="ent20#att34Array" target="sv1#page3#alt2#page9#enu1#fld5_slot"/>
+            <LinkParameter id="sv1#page3#alt2#page9#seu2#ln14#par18" name="oid_oid" source="ent20#att32Array" target="sv1#page3#alt2#page9#enu1#fld3_slot"/>
+            <LinkParameter id="sv1#page3#alt2#page9#seu2#ln14#par19" name="precio/alquiler_precio/alquiler" source="ent20#att36Array" target="sv1#page3#alt2#page9#enu1#fld7_slot"/>
+          </Link>
+        </SelectorUnit>
+      </ContentUnits>
+    </Page>
+  </Alternative>
+</Page>
