@@ -89,7 +89,7 @@
     <Attribute id="ent18#att28" name="PrecioTotal" type="integer" db:column="preciototal"/>
     <Attribute id="ent18#att29" name="CantidadTotal" type="integer" db:column="cantidadtotal"/>
   </Entity>
-  <Entity id="ent19" name="ProductosOferta" duration="persistent" attributeOrder="ent19#att30 ent19#att31" gr:x="453" gr:y="535" db:database="db1" db:table="productosoferta">
+  <Entity id="ent19" name="ProductosOferta" duration="persistent" attributeOrder="ent19#att30 ent19#att31" gr:x="500" gr:y="555" db:database="db1" db:table="productosoferta">
     <Generalization superEntity="ent17">
       <db:JoinColumn attribute="ent17#att20" name="productos_oid"/>
     </Generalization>
@@ -189,6 +189,5 @@
       <db:JoinColumn attribute="ent17#att20" name="oid"/>
     </RelationshipRole2>
   </Relationship>
-  <db:Database id="db1" name="Database1" type="PostgreSQL 9" url="jdbc:postgresql://localhost:5432/ExtreventosDB" username="postgres" cryptedPassword="true" password="YWRtaW4=" schema="public">
-  </db:Database>
+  <db:Database id="db1" name="Database1" type="PostgreSQL 9" url="jdbc:postgresql://localhost:5432/ExtreventosDB" username="postgres" cryptedPassword="true" password="YWRtaW4=" schema="public"/>
 </DataModel>

@@ -1,0 +1,36 @@
+[03 may 2022 11:51:34] Building database metadata model
+[03 may 2022 11:51:34] Properties: {partialRefresh=true, processColumnsUsingSelect=, includePrimaryKeys=true, eventSocketClient=com.webratio.commons.net.EventSocketClient@7f261b7d, includeTables=true, username=postgres, outputLogPath=C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\Extreventos\.Temp~\DB.xml.log, readIndexes=null, driverClass=org.postgresql.Driver, includeSynonyms=true, metaDataProviderClass=com.webratio.commons.db.metadata.PostgreSQLMetaDataProvider, outputPath=C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\Extreventos\.Temp~\DB.xml, schemaRegex=null, readProcedures=null, includeViews=true, derby.system.home=C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\.metadata\.plugins\com.webratio.commons.db\derby, url=jdbc:postgresql://localhost:5432/ExtreventosDB, tableRegex=null, readSQLDefinitions=true, includeForeignKeys=false, retrieveAllNames=true, tablesToRefresh=, eventSocketPort=59401}
+[03 may 2022 11:51:34] URL: jdbc:postgresql://localhost:5432/ExtreventosDB
+[03 may 2022 11:51:34] Product name: PostgreSQL
+[03 may 2022 11:51:34] Product version: 9.3.25
+[03 may 2022 11:51:34] Driver name: PostgreSQL Native Driver
+[03 may 2022 11:51:34] Driver version: PostgreSQL 9.1 JDBC3g (build 903)
+[03 may 2022 11:51:34] Driver major version: 9
+[03 may 2022 11:51:34] Driver minor version: 1
+[03 may 2022 11:51:34] Identifier quote string: 1
+[03 may 2022 11:51:34] Retrieving schemas
+[03 may 2022 11:51:34]   Found schema: information_schema
+[03 may 2022 11:51:34]   Found schema: pg_catalog
+[03 may 2022 11:51:34]   Found schema: public
+[03 may 2022 11:51:34] Retrieving sequences
+[03 may 2022 11:51:34] Retrieving [TABLE, VIEW, SYNONYM] for schema 'information_schema'
+[03 may 2022 11:51:34] Retrieving [TABLE, VIEW, SYNONYM] for schema 'pg_catalog'
+[03 may 2022 11:51:34] Retrieving [TABLE, VIEW, SYNONYM] for schema 'public'
+[03 may 2022 11:51:34]   Found 'public.almacen' [type = TABLE]
+[03 may 2022 11:51:34]   Found 'public.categoria' [type = TABLE]
+[03 may 2022 11:51:34]   Found 'public.eventos' [type = TABLE]
+[03 may 2022 11:51:34]   Found 'public.group' [type = TABLE]
+[03 may 2022 11:51:34]   Found 'public.group_module' [type = TABLE]
+[03 may 2022 11:51:34]   Found 'public.module' [type = TABLE]
+[03 may 2022 11:51:34]   Found 'public.productos' [type = TABLE]
+[03 may 2022 11:51:34]   Found 'public.productosasignados' [type = TABLE]
+[03 may 2022 11:51:34]   Found 'public.productosoferta' [type = TABLE]
+[03 may 2022 11:51:34]   Found 'public.stand' [type = TABLE]
+[03 may 2022 11:51:34]   Found 'public.tipostand' [type = TABLE]
+[03 may 2022 11:51:34]   Found 'public.tipostand_productos' [type = TABLE]
+[03 may 2022 11:51:34]   Found 'public.ubicacion' [type = TABLE]
+[03 may 2022 11:51:34]   Found 'public.ubicacion_evento_fecha' [type = TABLE]
+[03 may 2022 11:51:34]   Found 'public.user' [type = TABLE]
+[03 may 2022 11:51:34]   Found 'public.user_group' [type = TABLE]
+[03 may 2022 11:51:34] Database metadata retrieved (39 ms)
+[03 may 2022 11:51:34] Database connection closed

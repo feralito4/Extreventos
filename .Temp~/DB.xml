@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DBMetaData driverMajorVersion="9" driverMinorVersion="1" driverVersion="PostgreSQL 9.1 JDBC3g (build 903)" productVersion="9.3.25" identifierQuoteString="&quot;" transactionLevel="Read Committed" driverName="PostgreSQL Native Driver" productName="PostgreSQL">
+  <Schema name="information_schema"/>
+  <Schema name="pg_catalog"/>
+  <Schema name="public"/>
+  <Table schema="public" ignoreIndexes="false" name="almacen" type="TABLE" refreshed="false"/>
+  <Table schema="public" ignoreIndexes="false" name="categoria" type="TABLE" refreshed="false"/>
+  <Table schema="public" ignoreIndexes="false" name="eventos" type="TABLE" refreshed="false"/>
+  <Table schema="public" ignoreIndexes="false" name="group" type="TABLE" refreshed="false"/>
+  <Table schema="public" ignoreIndexes="false" name="group_module" type="TABLE" refreshed="false"/>
+  <Table schema="public" ignoreIndexes="false" name="module" type="TABLE" refreshed="false"/>
+  <Table schema="public" ignoreIndexes="false" name="productos" type="TABLE" refreshed="false"/>
+  <Table schema="public" ignoreIndexes="false" name="productosasignados" type="TABLE" refreshed="false"/>
+  <Table schema="public" ignoreIndexes="false" name="productosoferta" type="TABLE" refreshed="false"/>
+  <Table schema="public" ignoreIndexes="false" name="stand" type="TABLE" refreshed="false"/>
+  <Table schema="public" ignoreIndexes="false" name="tipostand" type="TABLE" refreshed="false"/>
+  <Table schema="public" ignoreIndexes="false" name="tipostand_productos" type="TABLE" refreshed="false"/>
+  <Table schema="public" ignoreIndexes="false" name="ubicacion" type="TABLE" refreshed="false"/>
+  <Table schema="public" ignoreIndexes="false" name="ubicacion_evento_fecha" type="TABLE" refreshed="false"/>
+  <Table schema="public" ignoreIndexes="false" name="user" type="TABLE" refreshed="false"/>
+  <Table schema="public" ignoreIndexes="false" name="user_group" type="TABLE" refreshed="false"/>
+</DBMetaData>

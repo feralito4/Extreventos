@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Registry>
+  <Pattern id="p0" name="AllInOne (default)">
+    <SiteView id="sv1" name="SiteView">
+      <Page id="page2"/>
+      <XOR id="alt1"/>
+      <Page id="page6"/>
+      <Page id="page7"/>
+      <Page id="page8"/>
+      <NoOpContentUnit id="gctu1"/>
+      <MultiMessageUnit id="mssu4"/>
+      <PowerIndexUnit id="pwu1"/>
+      <DataUnit id="dau1"/>
+      <EntryUnit id="enu4"/>
+      <SelectorUnit id="seu1"/>
+      <CreateUnit id="cru1"/>
+      <DeleteUnit id="dlu1"/>
+      <UpdateUnit id="mfu1"/>
+      <IsNotNullUnit id="inn1"/>
+      <NormalNavigationFlow id="ln4"/>
+      <NormalNavigationFlow id="ln5"/>
+      <NormalNavigationFlow id="ln6"/>
+      <NormalNavigationFlow id="ln7"/>
+      <NormalNavigationFlow id="ln8"/>
+      <NormalNavigationFlow id="ln9"/>
+      <NormalNavigationFlow id="ln10"/>
+      <OKLink id="oln4"/>
+      <OKLink id="oln5"/>
+      <KOLink id="kln1"/>
+      <KOLink id="kln2"/>
+      <KOLink id="kln3"/>
+      <KOLink id="kln4"/>
+      <DataFlow id="ln11"/>
+      <DataFlow id="ln12"/>
+      <DataFlow id="ln13"/>
+      <OKLink id="oln6"/>
+      <OKLink id="oln7"/>
+    </SiteView>
+  </Pattern>
+<Pattern id="p0" name="AllInOne (default)">
+    <SiteView id="sv1" name="SiteView">
+      <Page id="page9"/>
+      <XOR id="alt2"/>
+      <Page id="page10"/>
+      <Page id="page11"/>
+      <Page id="page12"/>
+      <NoOpContentUnit id="gctu2"/>
+      <MultiMessageUnit id="mssu5"/>
+      <PowerIndexUnit id="pwu2"/>
+      <DataUnit id="dau2"/>
+      <EntryUnit id="enu5"/>
+      <SelectorUnit id="seu2"/>
+      <CreateUnit id="cru2"/>
+      <DeleteUnit id="dlu2"/>
+      <UpdateUnit id="mfu2"/>
+      <IsNotNullUnit id="inn2"/>
+      <NormalNavigationFlow id="ln14"/>
+      <NormalNavigationFlow id="ln15"/>
+      <NormalNavigationFlow id="ln16"/>
+      <NormalNavigationFlow id="ln17"/>
+      <NormalNavigationFlow id="ln18"/>
+      <NormalNavigationFlow id="ln19"/>
+      <NormalNavigationFlow id="ln20"/>
+      <OKLink id="oln8"/>
+      <OKLink id="oln9"/>
+      <KOLink id="kln5"/>
+      <KOLink id="kln6"/>
+      <KOLink id="kln7"/>
+      <KOLink id="kln8"/>
+      <DataFlow id="ln21"/>
+      <DataFlow id="ln22"/>
+      <DataFlow id="ln23"/>
+      <OKLink id="oln10"/>
+      <OKLink id="oln11"/>
+    </SiteView>
+  </Pattern>
+<Pattern id="p0" name="AllInOne (default)">
+    <SiteView id="sv1" name="SiteView">
+      <Page id="page13"/>
+      <XOR id="alt3"/>
+      <Page id="page14"/>
+      <Page id="page15"/>
+      <Page id="page16"/>
+      <NoOpContentUnit id="gctu3"/>
+      <MultiMessageUnit id="mssu6"/>
+      <PowerIndexUnit id="pwu3"/>
+      <DataUnit id="dau3"/>
+      <EntryUnit id="enu6"/>
+      <SelectorUnit id="seu3"/>
+      <CreateUnit id="cru3"/>
+      <DeleteUnit id="dlu3"/>
+      <UpdateUnit id="mfu3"/>
+      <IsNotNullUnit id="inn3"/>
+      <SelectorUnit id="seu4"/>
+      <SelectorUnit id="seu5"/>
+      <ConnectUnit id="cnu1"/>
+      <ReconnectUnit id="rcnu1"/>
+      <SelectorUnit id="seu6"/>
+      <NormalNavigationFlow id="ln24"/>
+      <NormalNavigationFlow id="ln25"/>
+      <NormalNavigationFlow id="ln26"/>
+      <NormalNavigationFlow id="ln27"/>
+      <NormalNavigationFlow id="ln28"/>
+      <NormalNavigationFlow id="ln29"/>
+      <NormalNavigationFlow id="ln30"/>
+      <OKLink id="oln12"/>
+      <OKLink id="oln13"/>
+      <KOLink id="kln9"/>
+      <KOLink id="kln10"/>
+      <KOLink id="kln11"/>
+      <KOLink id="kln12"/>
+      <DataFlow id="ln31"/>
+      <DataFlow id="ln32"/>
+      <DataFlow id="ln33"/>
+      <DataFlow id="ln34"/>
+      <DataFlow id="ln35"/>
+      <DataFlow id="ln36"/>
+      <DataFlow id="ln37"/>
+      <KOLink id="kln13"/>
+      <DataFlow id="ln38"/>
+      <KOLink id="kln14"/>
+      <OKLink id="oln14"/>
+      <OKLink id="oln15"/>
+      <DataFlow id="ln39"/>
+      <OKLink id="oln16"/>
+      <OKLink id="oln17"/>
+    </SiteView>
+  </Pattern>
+<Pattern id="p0" name="AllInOne (default)">
+    <SiteView id="sv1" name="SiteView">
+      <Page id="page17"/>
+      <XOR id="alt4"/>
+      <Page id="page18"/>
+      <Page id="page19"/>
+      <Page id="page20"/>
+      <NoOpContentUnit id="gctu4"/>
+      <MultiMessageUnit id="mssu7"/>
+      <PowerIndexUnit id="pwu6"/>
+      <DataUnit id="dau4"/>
+      <EntryUnit id="enu8"/>
+      <SelectorUnit id="seu9"/>
+      <CreateUnit id="cru4"/>
+      <DeleteUnit id="dlu4"/>
+      <UpdateUnit id="mfu4"/>
+      <IsNotNullUnit id="inn4"/>
+      <NormalNavigationFlow id="ln48"/>
+      <NormalNavigationFlow id="ln49"/>
+      <NormalNavigationFlow id="ln50"/>
+      <NormalNavigationFlow id="ln51"/>
+      <NormalNavigationFlow id="ln52"/>
+      <NormalNavigationFlow id="ln53"/>
+      <NormalNavigationFlow id="ln54"/>
+      <OKLink id="oln19"/>
+      <OKLink id="oln20"/>
+      <KOLink id="kln15"/>
+      <KOLink id="kln16"/>
+      <KOLink id="kln17"/>
+      <KOLink id="kln18"/>
+      <DataFlow id="ln55"/>
+      <DataFlow id="ln56"/>
+      <DataFlow id="ln57"/>
+      <OKLink id="oln21"/>
+      <OKLink id="oln22"/>
+    </SiteView>
+  </Pattern>
+<Pattern id="p0" name="AllInOne (default)">
+    <SiteView id="sv1" name="SiteView">
+      <Page id="page21"/>
+      <XOR id="alt5"/>
+      <Page id="page22"/>
+      <Page id="page23"/>
+      <Page id="page24"/>
+      <NoOpContentUnit id="gctu5"/>
+      <MultiMessageUnit id="mssu8"/>
+      <PowerIndexUnit id="pwu8"/>
+      <DataUnit id="dau5"/>
+      <EntryUnit id="enu9"/>
+      <SelectorUnit id="seu10"/>
+      <CreateUnit id="cru5"/>
+      <DeleteUnit id="dlu5"/>
+      <UpdateUnit id="mfu5"/>
+      <IsNotNullUnit id="inn5"/>
+      <SelectorUnit id="seu11"/>
+      <NormalNavigationFlow id="ln61"/>
+      <NormalNavigationFlow id="ln62"/>
+      <NormalNavigationFlow id="ln63"/>
+      <NormalNavigationFlow id="ln64"/>
+      <NormalNavigationFlow id="ln65"/>
+      <NormalNavigationFlow id="ln66"/>
+      <NormalNavigationFlow id="ln67"/>
+      <OKLink id="oln23"/>
+      <OKLink id="oln24"/>
+      <KOLink id="kln19"/>
+      <KOLink id="kln20"/>
+      <KOLink id="kln21"/>
+      <KOLink id="kln22"/>
+      <DataFlow id="ln68"/>
+      <DataFlow id="ln69"/>
+      <DataFlow id="ln70"/>
+      <DataFlow id="ln71"/>
+      <OKLink id="oln25"/>
+      <OKLink id="oln26"/>
+    </SiteView>
+  </Pattern>
+</Registry>
