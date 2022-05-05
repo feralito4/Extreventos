@@ -54,7 +54,7 @@
     <Attribute id="ent8#att4" name="PRECIOPRODUCTO" type="float" db:column="precioproducto"/>
     <Attribute id="ent8#att5" name="UNIDADESPRODUCTO" type="integer" db:column="unidadesproducto"/>
   </Entity>
-  <Entity id="ent9" name="Eventos" duration="persistent" attributeOrder="ent9#att6 ent9#att7 ent9#att8 ent9#att9 ent9#att10" gr:x="358" gr:y="45" db:database="db1" db:table="eventos">
+  <Entity id="ent9" name="Eventos" duration="persistent" attributeOrder="ent9#att6 ent9#att7 ent9#att8 ent9#att9 ent9#att10" gr:x="0" gr:y="40" db:database="db1" db:table="eventos">
     <Attribute id="ent9#att6" name="oid" key="true" type="integer" db:column="oid"/>
     <Attribute id="ent9#att7" name="nombre" type="string" db:column="nombre"/>
     <Attribute id="ent9#att8" name="fecha" key="false" type="date" db:column="fecha"/>
@@ -97,7 +97,7 @@
     <Attribute id="ent19#att30" name="PorcentajeDescuento" type="float" db:column="porcentajedescuento"/>
     <Attribute id="ent19#att31" name="precioConDescuento" type="float" db:column="preciocondescuento"/>
   </Entity>
-  <Entity id="ent20" name="Ubicacion" duration="persistent" attributeOrder="ent20#att32 ent20#att33 ent20#att34 ent20#att35 ent20#att36 ent20#att46" gr:x="128" gr:y="40" db:database="db1" db:table="ubicacion">
+  <Entity id="ent20" name="Ubicacion" duration="persistent" attributeOrder="ent20#att32 ent20#att33 ent20#att34 ent20#att35 ent20#att36 ent20#att46" gr:x="270" gr:y="-70" db:database="db1" db:table="ubicacion">
     <Attribute id="ent20#att32" name="oid" key="true" type="integer" db:column="oid"/>
     <Attribute id="ent20#att33" name="aforo" type="integer" db:column="aforo"/>
     <Attribute id="ent20#att34" name="direccion" type="string" db:column="direccion"/>
@@ -193,4 +193,12 @@
   </Relationship>
   <db:Database id="db1" name="Database1" type="PostgreSQL 9" url="jdbc:postgresql://localhost:5432/ExtreventosDB" username="postgres" cryptedPassword="true" password="YWRtaW4=" schema="public">
   </db:Database>
+  <Relationship id="rel1" name="User_Eventos" sourceEntity="User" targetEntity="ent9" db:database="db1" db:table="eventos">
+    <RelationshipRole1 id="rel1#role19" name="UserToEventos" maxCard="N">
+      <db:JoinColumn attribute="userOID" name="user_oid"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="rel1#role20" name="EventosToUser" maxCard="1">
+      <db:JoinColumn attribute="ent9#att6" name="oid"/>
+    </RelationshipRole2>
+  </Relationship>
 </DataModel>

@@ -1,27 +1,28 @@
-[03 may 2022 19:59:47] DEBUG Executing SQL script
-[03 may 2022 19:59:47] INFO ================================================================================
-[03 may 2022 19:59:47] INFO onError= 'stop'
-[03 may 2022 19:59:47] INFO autoCommit= 'false'
-[03 may 2022 19:59:47] INFO username= 'postgres'
-[03 may 2022 19:59:47] INFO outputPath= 'C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\Extreventos\.Temp~\UpdateSQL.xml'
-[03 may 2022 19:59:47] INFO outputLogPath= 'C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\Extreventos\.Temp~\UpdateSQL.xml.log'
-[03 may 2022 19:59:47] INFO encoding= ''
-[03 may 2022 19:59:47] INFO driverClass= 'org.postgresql.Driver'
-[03 may 2022 19:59:47] INFO sqlScript= 'C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\Extreventos\.Temp~\UpdateSQL.sql'
-[03 may 2022 19:59:47] INFO eventSocketPort= '56179'
-[03 may 2022 19:59:47] INFO statementSeparator= ';'
-[03 may 2022 19:59:47] INFO derby.system.home= 'C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\.metadata\.plugins\com.webratio.commons.db\derby'
-[03 may 2022 19:59:47] INFO password= 'admin'
-[03 may 2022 19:59:47] INFO url= 'jdbc:postgresql://localhost:5432/ExtreventosDB'
-[03 may 2022 19:59:47] INFO ================================================================================
-[03 may 2022 19:59:47] INFO Connecting to the Database...
-[03 may 2022 19:59:47] INFO Database connection estabilished
-[03 may 2022 19:59:47] INFO transaction isolation: 2
-[03 may 2022 19:59:47] DEBUG ================================================================================
-[03 may 2022 19:59:47] DEBUG Executing SQL script file: C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\Extreventos\.Temp~\UpdateSQL.sql
-[03 may 2022 19:59:47] DEBUG Executing statement:  alter table "public"."user"  add column  "fecha_alta"  varchar(255)
-[03 may 2022 19:59:47] DEBUG Executing statement:    alter table "public"."ubicacion"  add column  "maxstands"  int4
-[03 may 2022 19:59:47] DEBUG ================================================================================
-[03 may 2022 19:59:47] DEBUG SQL SCRIPT SUCCESSFULLY EXECUTED
-[03 may 2022 19:59:47] INFO Database connection closed
-[03 may 2022 19:59:47] DEBUG Total time: 148 milliseconds
+[05 may 2022 19:09:01] DEBUG Executing SQL script
+[05 may 2022 19:09:01] INFO ================================================================================
+[05 may 2022 19:09:01] INFO onError= 'stop'
+[05 may 2022 19:09:01] INFO autoCommit= 'false'
+[05 may 2022 19:09:01] INFO username= 'postgres'
+[05 may 2022 19:09:01] INFO outputPath= 'C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\Extreventos\.Temp~\UpdateSQL.xml'
+[05 may 2022 19:09:01] INFO outputLogPath= 'C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\Extreventos\.Temp~\UpdateSQL.xml.log'
+[05 may 2022 19:09:01] INFO encoding= ''
+[05 may 2022 19:09:01] INFO driverClass= 'org.postgresql.Driver'
+[05 may 2022 19:09:01] INFO sqlScript= 'C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\Extreventos\.Temp~\UpdateSQL.sql'
+[05 may 2022 19:09:01] INFO eventSocketPort= '49820'
+[05 may 2022 19:09:01] INFO statementSeparator= ';'
+[05 may 2022 19:09:01] INFO derby.system.home= 'C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\.metadata\.plugins\com.webratio.commons.db\derby'
+[05 may 2022 19:09:01] INFO password= 'admin'
+[05 may 2022 19:09:01] INFO url= 'jdbc:postgresql://localhost:5432/ExtreventosDB'
+[05 may 2022 19:09:01] INFO ================================================================================
+[05 may 2022 19:09:01] INFO Connecting to the Database...
+[05 may 2022 19:09:01] INFO Database connection estabilished
+[05 may 2022 19:09:01] INFO transaction isolation: 2
+[05 may 2022 19:09:01] DEBUG ================================================================================
+[05 may 2022 19:09:01] DEBUG Executing SQL script file: C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\Extreventos\.Temp~\UpdateSQL.sql
+[05 may 2022 19:09:01] DEBUG Executing statement:  alter table "public"."user"  add column  "fecha_alta"  varchar(255)
+[05 may 2022 19:09:01] DEBUG Executing statement:    alter table "public"."eventos"  add column  "user_oid"  int4
+[05 may 2022 19:09:01] DEBUG Executing statement:  alter table "public"."eventos"   add constraint fk_eventos_user foreign key ("user_oid") references "public"."user" ("oid")
+[05 may 2022 19:09:01] DEBUG ================================================================================
+[05 may 2022 19:09:02] DEBUG SQL SCRIPT SUCCESSFULLY EXECUTED
+[05 may 2022 19:09:02] INFO Database connection closed
+[05 may 2022 19:09:02] DEBUG Total time: 469 milliseconds

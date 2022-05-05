@@ -1,0 +1,34 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="870" gr:y="330" id="sv2#page35" name="Page 35">
+  <ContentUnits>
+    <IndexUnit gr:x="0" gr:y="0" id="sv2#page35#inu6" name="Simple List6" entity="ent20" displayAttributes="ent20#att33 ent20#att34 ent20#att35 ent20#att36 ent20#att46" linkOrder="sv2#page35#inu6#ln77">
+      <Link id="sv2#page35#inu6#ln77" name="Flow77" to="sv2#seu17" type="normal" validate="true">
+        <LinkParameter id="sv2#page35#inu6#ln77#par168" name="oid_KeyCondition15 [oid]" source="data[].ent20#att32" target="sv2#seu17#su28#kcond15.ent20#att32"/>
+      </Link>
+    </IndexUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#page35#inu6">
+          <layout:Attribute attribute="ent20#att33"/>
+          <layout:Attribute attribute="ent20#att34"/>
+          <layout:Attribute attribute="ent20#att35"/>
+          <layout:Attribute attribute="ent20#att36"/>
+          <layout:Attribute attribute="ent20#att46"/>
+          <layout:Link link="sv2#page35#inu6#ln77"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

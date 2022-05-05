@@ -1,9 +1,32 @@
-<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv3" name="public" protected="false" homePage="sv3#page33">
+<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv3" name="Home" protected="false" homePage="sv3#page33">
   <OperationUnits>
-    <LoginUnit id="sv3#lgu3" name="Login1" gr:x="130" gr:y="275">
-      <KOLink id="sv3#lgu3#kln33" name="KOFlow2" to="sv3#page33#mssu10" gr:bendpoints="103,-1,-2,154">
-        <LinkParameter id="sv3#lgu3#kln33#par158" name="Error en username o password_Shown Messages" target="sv3#page33#mssu10.shownMessages" sourceValue="Error en username o password"/>
+    <LoginUnit id="sv3#lgu3" name="Login1" gr:x="285" gr:y="290">
+      <KOLink id="sv3#lgu3#kln33" name="KOFlow2" to="sv3#page33#mssu10" gr:bendpoints="-150,-3,0,147">
+        <LinkParameter id="sv3#lgu3#kln33#par158" name="Error en username o password_Shown Messages" target="sv3#page33#mssu10.shownMessages" sourceValue="Nombre de usuario o contrase&#241;a incorrectos"/>
       </KOLink>
     </LoginUnit>
+    <SelectorUnit gr:x="945" gr:y="175" id="sv3#seu4" name="&#191;Existe?" entity="User">
+      <Selector id="sv3#seu4#su13" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="sv3#seu4#su13#acond1" name="usernameCondition" predicate="eq" booleanOperator="or" implied="false" attributes="userName" ignoreCase="false"/>
+        <AttributesCondition id="sv3#seu4#su13#acond2" name="emailCondition" predicate="eq" booleanOperator="or" implied="false" ignoreCase="true" attributes="email"/>
+      </Selector>
+      <OKLink id="sv3#seu4#oln13" name="OKFlow13" to="sv3#inn6">
+        <LinkParameter id="sv3#seu4#oln13#par55" name="oid_Input" source="userOIDArray" target="sv3#inn6.isnotnull"/>
+      </OKLink>
+    </SelectorUnit>
+    <IsNotNullUnit gr:x="1205" gr:y="200" id="sv3#inn6" name="&#191;Est&#225; registrado?" emptyStringAsNull="false">
+      <KOLink id="sv3#inn6#kln13" name="KOFlow13" to="sv3#tmu2" automaticCoupling="true"/>
+      <OKLink id="sv3#inn6#oln17" name="OKFlow17" to="sv3#page14#mssu3" gr:bendpoints="0,-111,545,-1">
+        <LinkParameter id="sv3#inn6#oln17#par62" name="Error: el nombre de ususario indicado ya est&#225; en uso_Shown Messages" sourceValue="Error: usuario ya registrado" target="sv3#page14#mssu3.shownMessages"/>
+      </OKLink>
+    </IsNotNullUnit>
+    <TimeUnit gr:x="1210" gr:y="380" id="sv3#tmu2" name="Fecha registro">
+      <OKLink id="sv3#tmu2#oln15" name="OKFlow15" to="sv3#cru6">
+        <LinkParameter id="sv3#tmu2#oln15#par61" name="Current/Input Date_fecha_alta" source="currentTimestamp" target="sv3#cru6.User#att45"/>
+      </OKLink>
+    </TimeUnit>
+    <CreateUnit gr:x="700" gr:y="370" id="sv3#cru6" name="A&#241;adir usuario" entity="User">
+      <OKLink id="sv3#cru6#oln14" name="OKFlow14" to="sv3#lgu3" gr:bendpoints="-105,0,0,235"/>
+    </CreateUnit>
   </OperationUnits>
 </SiteView>

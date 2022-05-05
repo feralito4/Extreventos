@@ -2,7 +2,7 @@
   <ContentUnits>
     <IndexUnit gr:x="5" gr:y="0" id="sv1#page1#inu1" name="Productos disponibles" entity="ent17" displayAttributes="ent17#att21 ent17#att22 ent17#att23 ent17#att24"/>
     <IndexUnit gr:x="0" gr:y="100" id="sv1#page1#inu2" name="Almacenes disponibles" entity="ent22" displayAttributes="ent22#att41 ent22#att42 ent22#att43 ent22#att44"/>
-    <IndexUnit gr:x="35" gr:y="200" id="sv1#page1#inu3" name="Categor&#237;as" entity="ent16" displayAttributes="ent16#att19"/>
+    <IndexUnit gr:x="25" gr:y="200" id="sv1#page1#inu3" name="Categor&#237;as" entity="ent16" displayAttributes="ent16#att19"/>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>

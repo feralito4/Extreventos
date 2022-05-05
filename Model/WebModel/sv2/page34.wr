@@ -1,0 +1,98 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="190" gr:y="230" id="sv2#page34" name="Crear evento" landmark="true">
+  <ContentUnits>
+    <EntryUnit gr:x="110" gr:y="230" id="sv2#page34#enu3" name="Form3" entity="ent9" linkOrder="sv2#page34#enu3#ln79">
+      <Field id="sv2#page34#enu3#fld13" name="aforo" type="integer" modifiable="true"/>
+      <Field id="sv2#page34#enu3#fld14" name="nombre" type="string" modifiable="true" attribute="ent9#att7"/>
+      <Field id="sv2#page34#enu3#fld27" name="descripcion" type="text" modifiable="true" attribute="ent9#att9"/>
+      <Field id="sv2#page34#enu3#fld28" name="precioEntrada" type="float" modifiable="true" attribute="ent9#att10"/>
+      <Link id="sv2#page34#enu3#ln53" name="Flow53" to="sv2#seu16" type="transport" validate="true">
+        <LinkParameter id="sv2#page34#enu3#ln53#par167" name="aforo_AttCondition6" source="sv2#page34#enu3#fld13" target="sv2#seu16#su27#acond6"/>
+      </Link>
+      <Link id="sv2#page34#enu3#ln79" name="Flow79" to="sv2#cru11" type="normal" validate="true" gr:bendpoints="110,79,-710,409;1060,29,240,359">
+        <LinkParameter id="sv2#page34#enu3#ln79#par169" name="descripcion_descripcion" source="sv2#page34#enu3#fld27" target="sv2#cru11.ent9#att9"/>
+        <LinkParameter id="sv2#page34#enu3#ln79#par170" name="nombre_nombre" source="sv2#page34#enu3#fld14" target="sv2#cru11.ent9#att7"/>
+        <LinkParameter id="sv2#page34#enu3#ln79#par171" name="precioEntrada_precioEntrada" source="sv2#page34#enu3#fld28" target="sv2#cru11.ent9#att10"/>
+      </Link>
+    </EntryUnit>
+    <EventCalendarUnit gr:x="0" gr:y="100" id="sv2#page34#ecu1" name="Calendar1" shortMonths="true" shortWeekdays="true" linkOrder="sv2#page34#ecu1#ln51">
+      <Link id="sv2#page34#ecu1#ln51" name="Flow51" to="sv2#seu15" type="normal" validate="true">
+        <LinkParameter id="sv2#page34#ecu1#ln51#par161" name="Selected Date_date" source="date[].date" target="sv2#seu15#su26#acond5"/>
+      </Link>
+      <Link id="sv2#page34#ecu1#ln84" name="Flow84" to="sv2#cru11" type="transport" validate="true" gr:bendpoints="42,-190,-888,0">
+        <LinkParameter id="sv2#page34#ecu1#ln84#par172" name="Selected Date_fecha" source="date[].date" target="sv2#cru11.ent9#att8"/>
+      </Link>
+    </EventCalendarUnit>
+    <MultiMessageUnit gr:x="100" gr:y="0" id="sv2#page34#mssu14" name="Message14"/>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#page34#enu3">
+          <layout:Field field="sv2#page34#enu3#fld13"/>
+          <layout:Field field="sv2#page34#enu3#fld14"/>
+          <layout:Field field="sv2#page34#enu3#fld27"/>
+          <layout:Field field="sv2#page34#enu3#fld28"/>
+          <layout:Link link="sv2#page34#enu3#ln79"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#page34#ecu1">
+          <layout:Link link="sv2#page34#ecu1#ln51"/>
+          <layout:Link link="sv2#page34#ecu1-month-0"/>
+          <layout:Link link="sv2#page34#ecu1-month-1"/>
+          <layout:Link link="sv2#page34#ecu1-month-2"/>
+          <layout:Link link="sv2#page34#ecu1-month-3"/>
+          <layout:Link link="sv2#page34#ecu1-month-4"/>
+          <layout:Link link="sv2#page34#ecu1-month-5"/>
+          <layout:Link link="sv2#page34#ecu1-month-6"/>
+          <layout:Link link="sv2#page34#ecu1-month-7"/>
+          <layout:Link link="sv2#page34#ecu1-month-8"/>
+          <layout:Link link="sv2#page34#ecu1-month-9"/>
+          <layout:Link link="sv2#page34#ecu1-month-10"/>
+          <layout:Link link="sv2#page34#ecu1-month-11"/>
+          <layout:Link link="sv2#page34#ecu1-year"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#page34#mssu14"/>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

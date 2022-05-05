@@ -1,3 +1,32 @@
-<SiteView id="sv2" name="cliente">
-  <OperationUnits/>
+<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2" name="cliente" landmarks="sv2#lou2 sv2#page34" homePage="sv2#page16">
+  <OperationUnits>
+    <LogoutUnit gr:x="30" gr:y="25" id="sv2#lou2" name="Cerrar sesi&#243;n" siteView="sv3" landmark="true"/>
+    <SelectorUnit gr:x="425" gr:y="345" id="sv2#seu15" name="Selector15" entity="ent9">
+      <Selector id="sv2#seu15#su26" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="sv2#seu15#su26#acond5" name="date" predicate="eq" booleanOperator="or" implied="false" attributes="ent9#att8"/>
+      </Selector>
+      <OKLink id="sv2#seu15#oln38" name="OKFlow38" to="sv2#inn9">
+        <LinkParameter id="sv2#seu15#oln38#par162" name="oid_Input" source="ent9#att6Array" target="sv2#inn9.isnotnull"/>
+      </OKLink>
+    </SelectorUnit>
+    <IsNotNullUnit gr:x="580" gr:y="365" id="sv2#inn9" name="Is Not Null9">
+      <OKLink id="sv2#inn9#oln39" name="OKFlow39" to="sv2#page34#mssu14" gr:bendpoints="0,-100,280,0">
+        <LinkParameter id="sv2#inn9#oln39#par163" name="Dia ocupado_Shown Messages" sourceValue="Dia ocupado" target="sv2#page34#mssu14.shownMessages"/>
+      </OKLink>
+      <KOLink id="sv2#inn9#kln23" name="KOFlow23" to="sv2#page35" automaticCoupling="true"/>
+    </IsNotNullUnit>
+    <SelectorUnit gr:x="465" gr:y="485" id="sv2#seu16" name="Selector16" entity="ent20" linkOrder="sv2#seu16#ln64">
+      <Selector id="sv2#seu16#su27" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="sv2#seu16#su27#acond6" name="AttCondition6" predicate="gteq" booleanOperator="or" implied="false" attributes="ent20#att33"/>
+      </Selector>
+      <Link id="sv2#seu16#ln64" name="Flow64" to="sv2#page35#inu6" automaticCoupling="true" type="transport" validate="true"/>
+    </SelectorUnit>
+    <SelectorUnit gr:x="1130" gr:y="355" id="sv2#seu17" name="Selector17" entity="ent20" linkOrder="sv2#seu17#ln78">
+      <Selector id="sv2#seu17#su28" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#seu17#su28#kcond15" name="KeyCondition15" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv2#seu17#ln78" name="Flow78" to="sv2#cru11" automaticCoupling="true" type="transport" validate="true"/>
+    </SelectorUnit>
+    <CreateUnit gr:x="1135" gr:y="165" id="sv2#cru11" name="Create11" entity="ent9"/>
+  </OperationUnits>
 </SiteView>

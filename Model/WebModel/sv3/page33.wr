@@ -1,14 +1,15 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#page33" name="Inicio" gr:x="105" gr:y="95">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#page33" name="Inicio" gr:x="80" gr:y="100" landmark="false">
   <ContentUnits>
-    <EntryUnit id="sv3#page33#enu10" name="login usuario" linkOrder="sv3#page33#enu10#ln94" gr:x="0" gr:y="0" entity="User">
+    <EntryUnit id="sv3#page33#enu10" name="Iniciar sesi&#243;n" linkOrder="sv3#page33#enu10#ln94 sv3#page33#enu10#ln9" gr:x="180" gr:y="0" entity="User">
       <Field id="sv3#page33#enu10#fld31" name="userName" type="string" modifiable="true" attribute="userName"/>
       <Field id="sv3#page33#enu10#fld32" name="password" type="password" modifiable="true" attribute="password"/>
       <Link id="sv3#page33#enu10#ln94" name="Acceder" to="sv3#lgu3" type="normal" validate="true">
         <LinkParameter id="sv3#page33#enu10#ln94#par159" name="userName_Username" source="sv3#page33#enu10#fld31" target="sv3#lgu3.username"/>
         <LinkParameter id="sv3#page33#enu10#ln94#par160" name="password_Password" source="sv3#page33#enu10#fld32" target="sv3#lgu3.password"/>
       </Link>
+      <Link id="sv3#page33#enu10#ln9" name="Registrarse" to="sv3#page14" automaticCoupling="true" type="normal" validate="true"/>
     </EntryUnit>
-    <MultiMessageUnit id="sv3#page33#mssu10" name="Informa" gr:x="120" gr:y="15"/>
+    <MultiMessageUnit id="sv3#page33#mssu10" name="Error de inicio de sesi&#243;n" gr:x="0" gr:y="10"/>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
@@ -17,6 +18,7 @@
           <layout:Field field="sv3#page33#enu10#fld31"/>
           <layout:Field field="sv3#page33#enu10#fld32"/>
           <layout:Link link="sv3#page33#enu10#ln94"/>
+          <layout:Link link="sv3#page33#enu10#ln9"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
