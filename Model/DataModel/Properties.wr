@@ -105,9 +105,7 @@
     <Attribute id="ent20#att36" name="precio/alquiler" type="integer" db:column="precio_alquiler"/>
     <Attribute id="ent20#att46" name="maxStands" type="integer" db:column="maxstands"/>
   </Entity>
-  <Entity id="ent21" name="ubicacion-evento-fecha" duration="persistent" attributeOrder="ent21#att37 ent21#att38 ent21#att39" gr:x="238" gr:y="225" db:database="db1" db:table="ubicacion_evento_fecha">
-    <Attribute id="ent21#att37" name="oidevent" key="false" type="integer" db:column="oidevent"/>
-    <Attribute id="ent21#att38" name="iod sitio" key="true" type="string" db:column="iod_sitio"/>
+  <Entity id="ent21" name="ubicacion-evento-fecha" duration="persistent" attributeOrder="ent21#att39" gr:x="238" gr:y="225" db:database="db1" db:table="ubicacion_evento_fecha">
     <Attribute id="ent21#att39" name="fecha" key="true" type="date" db:column="fecha"/>
   </Entity>
   <Entity id="ent22" name="Almacen" duration="persistent" attributeOrder="ent22#att40 ent22#att41 ent22#att42 ent22#att43 ent22#att44" gr:x="918" gr:y="370" db:database="db1" db:table="almacen">
@@ -122,7 +120,6 @@
       <db:JoinColumn attribute="ent9#att6" name="eventos_oid"/>
     </RelationshipRole1>
     <RelationshipRole2 id="rel4#role2" name="sitio-evento-fechaToEventos" maxCard="1">
-      <db:JoinColumn attribute="ent21#att38" name="iod_sitio"/>
       <db:JoinColumn attribute="ent21#att39" name="fecha"/>
     </RelationshipRole2>
   </Relationship>
@@ -152,7 +149,6 @@
   </Relationship>
   <Relationship id="rel14" name="sitio-evento-fecha_sitio" sourceEntity="ent21" targetEntity="ent20" db:database="db1" db:table="ubicacion_evento_fecha">
     <RelationshipRole1 id="rel14#role9" name="sitio-evento-fechaTositio" maxCard="1">
-      <db:JoinColumn attribute="ent21#att38" name="iod_sitio"/>
       <db:JoinColumn attribute="ent21#att39" name="fecha"/>
     </RelationshipRole1>
     <RelationshipRole2 id="rel14#role10" name="sitioTositio-evento-fecha" maxCard="N">
@@ -191,8 +187,7 @@
       <db:JoinColumn attribute="ent17#att20" name="oid"/>
     </RelationshipRole2>
   </Relationship>
-  <db:Database id="db1" name="Database1" type="PostgreSQL 9" url="jdbc:postgresql://localhost:5432/ExtreventosDB" username="postgres" cryptedPassword="true" password="YWRtaW4=" schema="public">
-  </db:Database>
+  <db:Database id="db1" name="Database1" type="PostgreSQL 9" url="jdbc:postgresql://localhost:5432/ExtreventosDB" username="postgres" cryptedPassword="true" password="YWRtaW4=" schema="public"/>
   <Relationship id="rel1" name="User_Eventos" sourceEntity="User" targetEntity="ent9" db:database="db1" db:table="eventos">
     <RelationshipRole1 id="rel1#role19" name="UserToEventos" maxCard="N">
       <db:JoinColumn attribute="userOID" name="user_oid"/>
