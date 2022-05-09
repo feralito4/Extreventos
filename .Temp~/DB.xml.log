@@ -1,155 +1,36 @@
-[05 may 2022 19:09:08] Building database metadata model
-[05 may 2022 19:09:08] Properties: {partialRefresh=false, processColumnsUsingSelect=, includePrimaryKeys=true, eventSocketClient=com.webratio.commons.net.EventSocketClient@21093d9e, includeTables=true, username=postgres, outputLogPath=C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\Extreventos\.Temp~\DB.xml.log, readIndexes=null, driverClass=org.postgresql.Driver, includeSynonyms=true, metaDataProviderClass=com.webratio.commons.db.metadata.PostgreSQLMetaDataProvider, outputPath=C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\Extreventos\.Temp~\DB.xml, schemaRegex=null, readProcedures=null, includeViews=true, derby.system.home=C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\.metadata\.plugins\com.webratio.commons.db\derby, url=jdbc:postgresql://localhost:5432/ExtreventosDB, tableRegex=null, readSQLDefinitions=true, includeForeignKeys=false, retrieveAllNames=false, tablesToRefresh=, eventSocketPort=49826}
-[05 may 2022 19:09:08] URL: jdbc:postgresql://localhost:5432/ExtreventosDB
-[05 may 2022 19:09:08] Product name: PostgreSQL
-[05 may 2022 19:09:08] Product version: 9.3.25
-[05 may 2022 19:09:08] Driver name: PostgreSQL Native Driver
-[05 may 2022 19:09:08] Driver version: PostgreSQL 9.1 JDBC3g (build 903)
-[05 may 2022 19:09:08] Driver major version: 9
-[05 may 2022 19:09:08] Driver minor version: 1
-[05 may 2022 19:09:08] Identifier quote string: 1
-[05 may 2022 19:09:08] Retrieving schemas
-[05 may 2022 19:09:08]   Found schema: information_schema
-[05 may 2022 19:09:08]   Found schema: pg_catalog
-[05 may 2022 19:09:08]   Found schema: public
-[05 may 2022 19:09:08] Retrieving sequences
-[05 may 2022 19:09:08] Retrieving [TABLE, VIEW, SYNONYM] for schema 'information_schema'
-[05 may 2022 19:09:08] Retrieving [TABLE, VIEW, SYNONYM] for schema 'pg_catalog'
-[05 may 2022 19:09:08] Retrieving [TABLE, VIEW, SYNONYM] for schema 'public'
-[05 may 2022 19:09:08]   Found 'public.almacen' [type = TABLE]
-[05 may 2022 19:09:08]   Found 'public.categoria' [type = TABLE]
-[05 may 2022 19:09:08]   Found 'public.eventos' [type = TABLE]
-[05 may 2022 19:09:08]   Found 'public.group' [type = TABLE]
-[05 may 2022 19:09:08]   Found 'public.group_module' [type = TABLE]
-[05 may 2022 19:09:08]   Found 'public.module' [type = TABLE]
-[05 may 2022 19:09:08]   Found 'public.productos' [type = TABLE]
-[05 may 2022 19:09:08]   Found 'public.productosasignados' [type = TABLE]
-[05 may 2022 19:09:08]   Found 'public.productosoferta' [type = TABLE]
-[05 may 2022 19:09:08]   Found 'public.stand' [type = TABLE]
-[05 may 2022 19:09:08]   Found 'public.tipostand' [type = TABLE]
-[05 may 2022 19:09:08]   Found 'public.tipostand_productos' [type = TABLE]
-[05 may 2022 19:09:08]   Found 'public.ubicacion' [type = TABLE]
-[05 may 2022 19:09:08]   Found 'public.ubicacion_evento_fecha' [type = TABLE]
-[05 may 2022 19:09:08]   Found 'public.user' [type = TABLE]
-[05 may 2022 19:09:08]   Found 'public.user_group' [type = TABLE]
-[05 may 2022 19:09:08] Retrieving columns for 'public.almacen' [type = TABLE]
-[05 may 2022 19:09:08]   Found column: oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[05 may 2022 19:09:08]   Found column: nombre [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[05 may 2022 19:09:08]   Found column: direccion [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[05 may 2022 19:09:08]   Found column: capacidadmaxima [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[05 may 2022 19:09:08]   Found column: descripcion [type = text][SQL/XOPEN type = 12][size = 2147483647][dec. digits = 0]
-[05 may 2022 19:09:08] Retrieving primary keys for 'public.almacen' [type = TABLE]
-[05 may 2022 19:09:08]   Found primary key column: oid
-[05 may 2022 19:09:08] Retrieving columns for 'public.categoria' [type = TABLE]
-[05 may 2022 19:09:08]   Found column: oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[05 may 2022 19:09:08]   Found column: nombrecategoria [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[05 may 2022 19:09:08]   Found column: almacen_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[05 may 2022 19:09:08] Retrieving primary keys for 'public.categoria' [type = TABLE]
-[05 may 2022 19:09:08]   Found primary key column: oid
-[05 may 2022 19:09:08] Retrieving columns for 'public.eventos' [type = TABLE]
-[05 may 2022 19:09:08]   Found column: oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[05 may 2022 19:09:08]   Found column: nombre [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[05 may 2022 19:09:08]   Found column: fecha [type = date][SQL/XOPEN type = 91][size = 13][dec. digits = 0]
-[05 may 2022 19:09:08]   Found column: descripcion [type = text][SQL/XOPEN type = 12][size = 2147483647][dec. digits = 0]
-[05 may 2022 19:09:08]   Found column: precioentrada [type = float8][SQL/XOPEN type = 8][size = 17][dec. digits = 17]
-[05 may 2022 19:09:08]   Found column: user_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[05 may 2022 19:09:08] Retrieving primary keys for 'public.eventos' [type = TABLE]
-[05 may 2022 19:09:08]   Found primary key column: oid
-[05 may 2022 19:09:08] Retrieving columns for 'public.group' [type = TABLE]
-[05 may 2022 19:09:08]   Found column: oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[05 may 2022 19:09:08]   Found column: groupname [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[05 may 2022 19:09:08]   Found column: module_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[05 may 2022 19:09:08] Retrieving primary keys for 'public.group' [type = TABLE]
-[05 may 2022 19:09:08]   Found primary key column: oid
-[05 may 2022 19:09:08] Retrieving columns for 'public.group_module' [type = TABLE]
-[05 may 2022 19:09:08]   Found column: group_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[05 may 2022 19:09:08]   Found column: module_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[05 may 2022 19:09:08] Retrieving primary keys for 'public.group_module' [type = TABLE]
-[05 may 2022 19:09:08]   Found primary key column: group_oid
-[05 may 2022 19:09:08]   Found primary key column: module_oid
-[05 may 2022 19:09:08] Retrieving columns for 'public.module' [type = TABLE]
-[05 may 2022 19:09:08]   Found column: oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[05 may 2022 19:09:08]   Found column: moduleid [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[05 may 2022 19:09:08]   Found column: modulename [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[05 may 2022 19:09:08] Retrieving primary keys for 'public.module' [type = TABLE]
-[05 may 2022 19:09:08]   Found primary key column: oid
-[05 may 2022 19:09:08] Retrieving columns for 'public.productos' [type = TABLE]
-[05 may 2022 19:09:08]   Found column: oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[05 may 2022 19:09:08]   Found column: nombreproducto [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[05 may 2022 19:09:08]   Found column: descripcionproducto [type = text][SQL/XOPEN type = 12][size = 2147483647][dec. digits = 0]
-[05 may 2022 19:09:08]   Found column: precioproducto [type = float8][SQL/XOPEN type = 8][size = 17][dec. digits = 17]
-[05 may 2022 19:09:08]   Found column: unidadesproducto [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[05 may 2022 19:09:08]   Found column: almacen_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[05 may 2022 19:09:08] Retrieving primary keys for 'public.productos' [type = TABLE]
-[05 may 2022 19:09:08]   Found primary key column: oid
-[05 may 2022 19:09:08] Retrieving columns for 'public.productosasignados' [type = TABLE]
-[05 may 2022 19:09:08]   Found column: oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[05 may 2022 19:09:08]   Found column: nombreproducto [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[05 may 2022 19:09:08]   Found column: descripcionproducto [type = text][SQL/XOPEN type = 12][size = 2147483647][dec. digits = 0]
-[05 may 2022 19:09:08]   Found column: precioproducto [type = float8][SQL/XOPEN type = 8][size = 17][dec. digits = 17]
-[05 may 2022 19:09:08]   Found column: unidadesproducto [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[05 may 2022 19:09:08]   Found column: stand_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[05 may 2022 19:09:08]   Found column: productos_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[05 may 2022 19:09:08] Retrieving primary keys for 'public.productosasignados' [type = TABLE]
-[05 may 2022 19:09:08]   Found primary key column: oid
-[05 may 2022 19:09:08] Retrieving columns for 'public.productosoferta' [type = TABLE]
-[05 may 2022 19:09:08]   Found column: productos_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[05 may 2022 19:09:08]   Found column: porcentajedescuento [type = float8][SQL/XOPEN type = 8][size = 17][dec. digits = 17]
-[05 may 2022 19:09:08]   Found column: preciocondescuento [type = float8][SQL/XOPEN type = 8][size = 17][dec. digits = 17]
-[05 may 2022 19:09:08] Retrieving primary keys for 'public.productosoferta' [type = TABLE]
-[05 may 2022 19:09:08]   Found primary key column: productos_oid
-[05 may 2022 19:09:08] Retrieving columns for 'public.stand' [type = TABLE]
-[05 may 2022 19:09:08]   Found column: oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[05 may 2022 19:09:08]   Found column: representante [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[05 may 2022 19:09:08]   Found column: nombre [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[05 may 2022 19:09:08]   Found column: preciototal [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[05 may 2022 19:09:08]   Found column: cantidadtotal [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[05 may 2022 19:09:08]   Found column: tipostand_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[05 may 2022 19:09:08]   Found column: eventos_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[05 may 2022 19:09:08] Retrieving primary keys for 'public.stand' [type = TABLE]
-[05 may 2022 19:09:08]   Found primary key column: oid
-[05 may 2022 19:09:08] Retrieving columns for 'public.tipostand' [type = TABLE]
-[05 may 2022 19:09:08]   Found column: oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[05 may 2022 19:09:08]   Found column: nombrecategoria [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[05 may 2022 19:09:08] Retrieving primary keys for 'public.tipostand' [type = TABLE]
-[05 may 2022 19:09:08]   Found primary key column: oid
-[05 may 2022 19:09:08] Retrieving columns for 'public.tipostand_productos' [type = TABLE]
-[05 may 2022 19:09:08]   Found column: tipostand_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[05 may 2022 19:09:08]   Found column: productos_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[05 may 2022 19:09:08] Retrieving primary keys for 'public.tipostand_productos' [type = TABLE]
-[05 may 2022 19:09:08]   Found primary key column: tipostand_oid
-[05 may 2022 19:09:08]   Found primary key column: productos_oid
-[05 may 2022 19:09:08] Retrieving columns for 'public.ubicacion' [type = TABLE]
-[05 may 2022 19:09:08]   Found column: oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[05 may 2022 19:09:08]   Found column: aforo [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[05 may 2022 19:09:08]   Found column: direccion [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[05 may 2022 19:09:08]   Found column: nombre [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[05 may 2022 19:09:08]   Found column: precio_alquiler [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[05 may 2022 19:09:08] Retrieving primary keys for 'public.ubicacion' [type = TABLE]
-[05 may 2022 19:09:08]   Found primary key column: oid
-[05 may 2022 19:09:08] Retrieving columns for 'public.ubicacion_evento_fecha' [type = TABLE]
-[05 may 2022 19:09:08]   Found column: oidevent [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[05 may 2022 19:09:08]   Found column: iod_sitio [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[05 may 2022 19:09:08]   Found column: fecha [type = date][SQL/XOPEN type = 91][size = 13][dec. digits = 0]
-[05 may 2022 19:09:08]   Found column: ubicacion_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[05 may 2022 19:09:08]   Found column: eventos_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[05 may 2022 19:09:08] Retrieving primary keys for 'public.ubicacion_evento_fecha' [type = TABLE]
-[05 may 2022 19:09:08]   Found primary key column: iod_sitio
-[05 may 2022 19:09:08]   Found primary key column: fecha
-[05 may 2022 19:09:08] Retrieving columns for 'public.user' [type = TABLE]
-[05 may 2022 19:09:08]   Found column: oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[05 may 2022 19:09:08]   Found column: username [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[05 may 2022 19:09:08]   Found column: password [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[05 may 2022 19:09:08]   Found column: email [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[05 may 2022 19:09:08]   Found column: group_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[05 may 2022 19:09:08]   Found column: fecha_alta [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[05 may 2022 19:09:08] Retrieving primary keys for 'public.user' [type = TABLE]
-[05 may 2022 19:09:08]   Found primary key column: oid
-[05 may 2022 19:09:08] Retrieving columns for 'public.user_group' [type = TABLE]
-[05 may 2022 19:09:08]   Found column: user_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[05 may 2022 19:09:08]   Found column: group_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[05 may 2022 19:09:08] Retrieving primary keys for 'public.user_group' [type = TABLE]
-[05 may 2022 19:09:08]   Found primary key column: user_oid
-[05 may 2022 19:09:08]   Found primary key column: group_oid
-[05 may 2022 19:09:08] Database metadata retrieved (266 ms)
-[05 may 2022 19:09:08] Database connection closed
+[08 may 2022 20:33:15] Building database metadata model
+[08 may 2022 20:33:15] Properties: {partialRefresh=true, processColumnsUsingSelect=, includePrimaryKeys=true, eventSocketClient=com.webratio.commons.net.EventSocketClient@1ed6ecc2, includeTables=true, username=postgres, outputLogPath=C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\Extreventos\.Temp~\DB.xml.log, readIndexes=null, driverClass=org.postgresql.Driver, includeSynonyms=true, metaDataProviderClass=com.webratio.commons.db.metadata.PostgreSQLMetaDataProvider, outputPath=C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\Extreventos\.Temp~\DB.xml, schemaRegex=null, readProcedures=null, includeViews=true, derby.system.home=C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\.metadata\.plugins\com.webratio.commons.db\derby, url=jdbc:postgresql://localhost:5432/ExtreventosDB, tableRegex=null, readSQLDefinitions=true, includeForeignKeys=false, retrieveAllNames=true, tablesToRefresh=, eventSocketPort=49234}
+[08 may 2022 20:33:15] URL: jdbc:postgresql://localhost:5432/ExtreventosDB
+[08 may 2022 20:33:15] Product name: PostgreSQL
+[08 may 2022 20:33:15] Product version: 9.3.25
+[08 may 2022 20:33:15] Driver name: PostgreSQL Native Driver
+[08 may 2022 20:33:15] Driver version: PostgreSQL 9.1 JDBC3g (build 903)
+[08 may 2022 20:33:15] Driver major version: 9
+[08 may 2022 20:33:15] Driver minor version: 1
+[08 may 2022 20:33:15] Identifier quote string: 1
+[08 may 2022 20:33:15] Retrieving schemas
+[08 may 2022 20:33:15]   Found schema: information_schema
+[08 may 2022 20:33:15]   Found schema: pg_catalog
+[08 may 2022 20:33:15]   Found schema: public
+[08 may 2022 20:33:15] Retrieving sequences
+[08 may 2022 20:33:15] Retrieving [TABLE, VIEW, SYNONYM] for schema 'information_schema'
+[08 may 2022 20:33:15] Retrieving [TABLE, VIEW, SYNONYM] for schema 'pg_catalog'
+[08 may 2022 20:33:15] Retrieving [TABLE, VIEW, SYNONYM] for schema 'public'
+[08 may 2022 20:33:15]   Found 'public.almacen' [type = TABLE]
+[08 may 2022 20:33:15]   Found 'public.categoria' [type = TABLE]
+[08 may 2022 20:33:15]   Found 'public.eventos' [type = TABLE]
+[08 may 2022 20:33:15]   Found 'public.group' [type = TABLE]
+[08 may 2022 20:33:15]   Found 'public.group_module' [type = TABLE]
+[08 may 2022 20:33:15]   Found 'public.module' [type = TABLE]
+[08 may 2022 20:33:15]   Found 'public.productos' [type = TABLE]
+[08 may 2022 20:33:15]   Found 'public.productosasignados' [type = TABLE]
+[08 may 2022 20:33:15]   Found 'public.productosoferta' [type = TABLE]
+[08 may 2022 20:33:15]   Found 'public.stand' [type = TABLE]
+[08 may 2022 20:33:15]   Found 'public.tipostand' [type = TABLE]
+[08 may 2022 20:33:15]   Found 'public.tipostand_productos' [type = TABLE]
+[08 may 2022 20:33:15]   Found 'public.ubicacion' [type = TABLE]
+[08 may 2022 20:33:15]   Found 'public.ubicacion_evento_fecha' [type = TABLE]
+[08 may 2022 20:33:15]   Found 'public.user' [type = TABLE]
+[08 may 2022 20:33:15]   Found 'public.user_group' [type = TABLE]
+[08 may 2022 20:33:15] Database metadata retrieved (46 ms)
+[08 may 2022 20:33:15] Database connection closed

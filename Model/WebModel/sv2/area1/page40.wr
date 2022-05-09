@@ -1,0 +1,57 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area1#page40" name="Definir evento" gr:x="1115" gr:y="515">
+  <ContentUnits>
+    <EntryUnit id="sv2#area1#page40#enu15" name="Form11" gr:x="0" gr:y="0" entity="ent9" linkOrder="sv2#area1#page40#enu15#ln152">
+      <Field id="sv2#area1#page40#enu15#fld54" name="Ubicaci&#243;n" type="string" modifiable="false" preloaded="true"/>
+      <Field id="sv2#area1#page40#enu15#fld55" name="nombre" type="string" modifiable="true" attribute="ent9#att7"/>
+      <Field id="sv2#area1#page40#enu15#fld56" name="descripcion" type="text" modifiable="true" attribute="ent9#att9"/>
+      <Field id="sv2#area1#page40#enu15#fld57" name="precioEntrada" type="float" modifiable="true" attribute="ent9#att10"/>
+      <Field id="sv2#area1#page40#enu15#fld58" name="id_ub" type="integer" modifiable="false" hidden="true" preloaded="true"/>
+      <Field id="sv2#area1#page40#enu15#fld59" name="fecha" type="date" modifiable="false" attribute="ent9#att8" preloaded="true" hidden="true"/>
+      <Link id="sv2#area1#page40#enu15#ln150" name="Flow150" to="sv2#area1#pcu7" type="transport" validate="true">
+        <LinkParameter id="sv2#area1#page40#enu15#ln150#par332" name="descripcion_descripcion" source="sv2#area1#page40#enu15#fld56" target="sv2#area1#pcu7#pcp21"/>
+        <LinkParameter id="sv2#area1#page40#enu15#ln150#par333" name="id_ub_id_sitio" source="sv2#area1#page40#enu15#fld58" target="sv2#area1#pcu7#pcp25"/>
+        <LinkParameter id="sv2#area1#page40#enu15#ln150#par334" name="nombre_nombre" source="sv2#area1#page40#enu15#fld55" target="sv2#area1#pcu7#pcp22"/>
+        <LinkParameter id="sv2#area1#page40#enu15#ln150#par335" name="precioEntrada_precioEntrada" source="sv2#area1#page40#enu15#fld57" target="sv2#area1#pcu7#pcp23"/>
+      </Link>
+      <Link id="sv2#area1#page40#enu15#ln152" name="Flow152" to="sv2#area1#seu18" automaticCoupling="true" type="normal" validate="true"/>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area1#page40#enu15">
+          <layout:Field field="sv2#area1#page40#enu15#fld54"/>
+          <layout:Field field="sv2#area1#page40#enu15#fld55"/>
+          <layout:Field field="sv2#area1#page40#enu15#fld56"/>
+          <layout:Field field="sv2#area1#page40#enu15#fld57"/>
+          <layout:Link link="sv2#area1#page40#enu15#ln152"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

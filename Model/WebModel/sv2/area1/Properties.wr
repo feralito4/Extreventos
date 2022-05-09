@@ -1,0 +1,118 @@
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="35" gr:y="250" id="sv2#area1" name="Area 1" landmark="true" defaultPage="sv2#area1#page38">
+  <OperationUnits>
+    <ParameterCollectorUnit id="sv2#area1#pcu6" name="Parameter Collector2" gr:x="80" gr:y="500">
+      <OKLink id="sv2#area1#pcu6#oln57" name="OKFlow49" to="sv2#area1#cru16">
+        <LinkParameter id="sv2#area1#pcu6#oln57#par330" name="Fecha_fecha" source="sv2#area1#pcu6#pcp18" target="sv2#area1#cru16.ent1#att37"/>
+      </OKLink>
+      <CollectorParameter id="sv2#area1#pcu6#pcp18" name="Fecha"/>
+      <CollectorParameter id="sv2#area1#pcu6#pcp19" name="Aforo"/>
+      <Link id="sv2#area1#pcu6#ln117" name="Flow43" to="sv2#area1#seu15" type="transport" validate="true">
+        <LinkParameter id="sv2#area1#pcu6#ln117#par245" name="Aforo_AttCondition5" source="sv2#area1#pcu6#pcp19" target="sv2#area1#seu15#su35#acond7"/>
+      </Link>
+    </ParameterCollectorUnit>
+    <SelectorUnit id="sv2#area1#seu7" name="Selector5" gr:x="350" gr:y="270" entity="ent21">
+      <OKLink id="sv2#area1#seu7#oln58" name="OKFlow16" to="sv2#area1#inn12">
+        <LinkParameter id="sv2#area1#seu7#oln58#par276" name="fecha_Input" source="ent21#att39Array" target="sv2#area1#inn12.isnotnull"/>
+      </OKLink>
+      <Selector id="sv2#area1#seu7#su29" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area1#seu7#su29#kcond16" name="KeyCondition13" predicate="in" implied="false"/>
+      </Selector>
+    </SelectorUnit>
+    <IsNotNullUnit id="sv2#area1#inn12" name="Is Not Null9" gr:x="555" gr:y="175" emptyStringAsNull="true">
+      <OKLink id="sv2#area1#inn12#oln60" name="OKFlow39" to="sv2#area1#page38#mssu17" gr:bendpoints="-306,-91,139,4">
+        <LinkParameter id="sv2#area1#inn12#oln60#par275" name="Fecha no disponible_Shown Messages" sourceValue="Fecha no disponible" target="sv2#area1#page38#mssu17.shownMessages"/>
+      </OKLink>
+      <KOLink id="sv2#area1#inn12#kln26" name="KOFlow23" to="sv2#area1#seu15" automaticCoupling="true"/>
+    </IsNotNullUnit>
+    <SelectorUnit id="sv2#area1#seu15" name="Selector6" gr:x="570" gr:y="495" entity="ent20">
+      <Selector id="sv2#area1#seu15#su35" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="sv2#area1#seu15#su35#acond7" name="AttCondition5" predicate="gteq" booleanOperator="or" implied="false" attributes="ent20#att33"/>
+      </Selector>
+      <OKLink id="sv2#area1#seu15#oln61" name="OKFlow46" to="sv2#area1#inn13">
+        <LinkParameter id="sv2#area1#seu15#oln61#par278" name="oid_Input" source="ent20#att32Array" target="sv2#area1#inn13.isnotnull"/>
+      </OKLink>
+    </SelectorUnit>
+    <IsNotNullUnit id="sv2#area1#inn13" name="Is Not Null10" gr:x="750" gr:y="510">
+      <OKLink id="sv2#area1#inn13#oln62" name="OKFlow47" to="sv2#area1#page39#pwu3">
+        <LinkParameter id="sv2#area1#inn13#oln62#par280" name="Input Value_AttCondition6" source="inputValue" target="sv2#area1#page39#pwu3#su36#acond8"/>
+      </OKLink>
+      <KOLink id="sv2#area1#inn13#kln31" name="KOFlow24" to="sv2#area1#page39#mssu18" gr:bendpoints="95,2,0,107">
+        <LinkParameter id="sv2#area1#inn13#kln31#par279" name="No hay ubicaciones para ese aforo_Shown Messages" sourceValue="No hay ubicaciones para ese aforo" target="sv2#area1#page39#mssu18.shownMessages"/>
+      </KOLink>
+    </IsNotNullUnit>
+    <ParameterCollectorUnit id="sv2#area1#pcu7" name="Parameter Collector1" gr:x="1185" gr:y="285" linkOrder="sv2#area1#pcu7#ln147 sv2#area1#pcu7#ln156">
+      <CollectorParameter id="sv2#area1#pcu7#pcp20" name="User"/>
+      <CollectorParameter id="sv2#area1#pcu7#pcp21" name="descripcion"/>
+      <CollectorParameter id="sv2#area1#pcu7#pcp22" name="nombre"/>
+      <CollectorParameter id="sv2#area1#pcu7#pcp23" name="precioEntrada"/>
+      <OKLink id="sv2#area1#pcu7#oln63" name="OKFlow50" to="sv2#area1#cru11">
+        <LinkParameter id="sv2#area1#pcu7#oln63#par281" name="descripcion_descripcion" source="sv2#area1#pcu7#pcp21" target="sv2#area1#cru11.ent9#att9"/>
+        <LinkParameter id="sv2#area1#pcu7#oln63#par282" name="nombre_nombre" source="sv2#area1#pcu7#pcp22" target="sv2#area1#cru11.ent9#att7"/>
+        <LinkParameter id="sv2#area1#pcu7#oln63#par283" name="precioEntrada_precioEntrada" source="sv2#area1#pcu7#pcp23" target="sv2#area1#cru11.ent9#att10"/>
+        <LinkParameter id="sv2#area1#pcu7#oln63#par320" name="Fecha_fecha" source="sv2#area1#pcu7#pcp24" target="sv2#area1#cru11.ent9#att8"/>
+      </OKLink>
+      <CollectorParameter id="sv2#area1#pcu7#pcp24" name="Fecha"/>
+      <CollectorParameter id="sv2#area1#pcu7#pcp25" name="id_sitio"/>
+      <Link id="sv2#area1#pcu7#ln147" name="Flow147" to="sv2#area1#cru15" type="transport" validate="true" gr:bendpoints="-71,-219,99,101">
+        <LinkParameter id="sv2#area1#pcu7#ln147#par327" name="id_sitio_Ubicacion.oid(sitio-evento-fechaTositio)" source="sv2#area1#pcu7#pcp25" target="sv2#area1#cru15.rel14#role9.ent20#att32"/>
+        <LinkParameter id="sv2#area1#pcu7#ln147#par338" name="Fecha_fecha" source="sv2#area1#pcu7#pcp24" target="sv2#area1#cru15.ent21#att39"/>
+      </Link>
+      <Link id="sv2#area1#pcu7#ln156" name="Flow156" to="sv2#area1#pcu10" type="transport" validate="true" gr:bendpoints="-135,-223,275,87">
+        <LinkParameter id="sv2#area1#pcu7#ln156#par345" name="id_sitio_id_ubi" source="sv2#area1#pcu7#pcp25" target="sv2#area1#pcu10#pcp35"/>
+      </Link>
+    </ParameterCollectorUnit>
+    <CreateUnit id="sv2#area1#cru11" name="Create9" gr:x="1260" gr:y="60" entity="ent9" linkOrder="sv2#area1#cru11#ln157">
+      <OKLink id="sv2#area1#cru11#oln74" name="OKFlow74" to="sv2#area1#cru15">
+        <LinkParameter id="sv2#area1#cru11#oln74#par326" name="oid_Eventos.oid(sitio-evento-fechaToEventos)" source="ent9#att6Array" target="sv2#area1#cru15.rel4#role2.ent9#att6"/>
+      </OKLink>
+      <Link id="sv2#area1#cru11#ln157" name="Flow157" to="sv2#area1#pcu10" type="transport" validate="true" gr:bendpoints="-54,-105,391,-60;-277,-115,168,-70">
+        <LinkParameter id="sv2#area1#cru11#ln157#par346" name="oid_id_evento" source="ent9#att6Array" target="sv2#area1#pcu10#pcp36"/>
+      </Link>
+    </CreateUnit>
+    <CreateUnit gr:x="1025" gr:y="20" id="sv2#area1#cru15" name="Create15" entity="ent21">
+      <OKLink id="sv2#area1#cru15#oln82" name="OKFlow82" to="sv2#area1#pcu10">
+        <LinkParameter id="sv2#area1#cru15#oln82#par344" name="fecha_Fecha" source="ent21#att39Array" target="sv2#area1#pcu10#pcp34"/>
+      </OKLink>
+    </CreateUnit>
+    <CreateUnit gr:x="185" gr:y="375" id="sv2#area1#cru16" name="Create16" entity="ent1">
+      <OKLink id="sv2#area1#cru16#oln77" name="OKFlow77" to="sv2#area1#seu7">
+        <LinkParameter id="sv2#area1#cru16#oln77#par329" name="fecha_KeyCondition13 [fecha]" source="ent1#att37Array" target="sv2#area1#seu7#su29#kcond16.ent21#att39"/>
+      </OKLink>
+    </CreateUnit>
+    <SelectorUnit gr:x="1005" gr:y="310" id="sv2#area1#seu18" name="Selector18" entity="ent1">
+      <OKLink id="sv2#area1#seu18#oln78" name="OKFlow78" to="sv2#area1#pcu7">
+        <LinkParameter id="sv2#area1#seu18#oln78#par331" name="fecha_Fecha" source="ent1#att37Array" target="sv2#area1#pcu7#pcp24"/>
+      </OKLink>
+    </SelectorUnit>
+    <GetUnit id="sv2#area1#gtu7" name="Get2" gr:x="995" gr:y="220" contextParameters="UserCtxParam">
+      <Link id="sv2#area1#gtu7#ln155" name="Flow97" to="sv2#area1#cru11" type="transport" validate="true" gr:bendpoints="5,-109,0,126">
+        <LinkParameter id="sv2#area1#gtu7#ln155#par351" name="UserCtxParam.oid_User.oid(EventosToUser)" source="sv2#area1#gtu7.UserCtxParam" target="sv2#area1#cru11.rel1#role20.userOID"/>
+      </Link>
+    </GetUnit>
+    <ModifyUnit gr:x="625" gr:y="5" id="sv2#area1#mfu6" name="Update6" entity="ent9">
+      <Selector id="sv2#area1#mfu6#su41" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area1#mfu6#su41#kcond26" name="KeyCondition26" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv2#area1#mfu6#oln80" name="OKFlow80" to="sv2#area1#mfu9" automaticCoupling="true"/>
+    </ModifyUnit>
+    <ModifyUnit gr:x="465" gr:y="5" id="sv2#area1#mfu9" name="Update9" entity="ent20">
+      <Selector id="sv2#area1#mfu9#su42" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area1#mfu9#su42#kcond27" name="KeyCondition27" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv2#area1#mfu9#oln81" name="OKFlow81" to="sv2#page16" automaticCoupling="true"/>
+    </ModifyUnit>
+    <ParameterCollectorUnit gr:x="775" gr:y="0" id="sv2#area1#pcu10" name="Parameter Collector10" linkOrder="sv2#area1#pcu10#ln158">
+      <OKLink id="sv2#area1#pcu10#oln83" name="OKFlow83" to="sv2#area1#mfu6">
+        <LinkParameter id="sv2#area1#pcu10#oln83#par347" name="id_evento_KeyCondition26 [oid]" source="sv2#area1#pcu10#pcp36" target="sv2#area1#mfu6#su41#kcond26.ent9#att6"/>
+        <LinkParameter id="sv2#area1#pcu10#oln83#par348" name="Fecha_ubicacion-evento-fecha.fecha(EventosTositio-evento-fecha)" source="sv2#area1#pcu10#pcp34" target="sv2#area1#mfu6.rel4#role1.ent21#att39"/>
+      </OKLink>
+      <CollectorParameter id="sv2#area1#pcu10#pcp34" name="Fecha"/>
+      <CollectorParameter id="sv2#area1#pcu10#pcp35" name="id_ubi"/>
+      <CollectorParameter id="sv2#area1#pcu10#pcp36" name="id_evento"/>
+      <Link id="sv2#area1#pcu10#ln158" name="Flow158" to="sv2#area1#mfu9" type="transport" validate="true" gr:bendpoints="-201,79,144,84">
+        <LinkParameter id="sv2#area1#pcu10#ln158#par349" name="id_ubi_KeyCondition27 [oid]" source="sv2#area1#pcu10#pcp35" target="sv2#area1#mfu9#su42#kcond27.ent20#att32"/>
+        <LinkParameter id="sv2#area1#pcu10#ln158#par350" name="Fecha_ubicacion-evento-fecha.fecha(sitioTositio-evento-fecha)" source="sv2#area1#pcu10#pcp34" target="sv2#area1#mfu9.rel14#role10.ent21#att39"/>
+      </Link>
+    </ParameterCollectorUnit>
+  </OperationUnits>
+</Area>

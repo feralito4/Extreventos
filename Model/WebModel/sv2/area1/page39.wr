@@ -1,0 +1,69 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area1#page39" name="Page 35" gr:x="715" gr:y="255">
+  <ContentUnits>
+    <PowerIndexUnit id="sv2#area1#page39#pwu3" name="List1" linkOrder="sv2#area1#page39#pwu3#ln120" gr:x="0" gr:y="0" sortable="true" checkable="false" useCountQuery="false" entity="ent20" displayAttributes="ent20#att33 ent20#att34 ent20#att35 ent20#att36 ent20#att46">
+      <Selector id="sv2#area1#page39#pwu3#su36" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="sv2#area1#page39#pwu3#su36#acond8" name="AttCondition6" predicate="eq" booleanOperator="or" implied="false" attributes="ent20#att32"/>
+      </Selector>
+      <Link id="sv2#area1#page39#pwu3#ln120" name="Flow47" to="sv2#area1#page40#enu15" type="normal" validate="true" gr:bendpoints="185,40,-210,-215;220,164,-175,-91">
+        <LinkParameter id="sv2#area1#page39#pwu3#ln120#par324" name="oid_id_ub" source="data[].ent20#att32" target="sv2#area1#page40#enu15#fld58_slot"/>
+        <LinkParameter id="sv2#area1#page39#pwu3#ln120#par325" name="nombre_Ubicaci&#243;n" source="data[].ent20#att35" target="sv2#area1#page40#enu15#fld54_slot"/>
+      </Link>
+    </PowerIndexUnit>
+    <MultiMessageUnit id="sv2#area1#page39#mssu18" name="Message13" gr:x="100" gr:y="105"/>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area1#page39#pwu3">
+          <layout:Attribute attribute="ent20#att33"/>
+          <layout:Attribute attribute="ent20#att34"/>
+          <layout:Attribute attribute="ent20#att35"/>
+          <layout:Attribute attribute="ent20#att36"/>
+          <layout:Attribute attribute="ent20#att46"/>
+          <layout:Link link="sv2#area1#page39#pwu3#ln120"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area1#page39#mssu18"/>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

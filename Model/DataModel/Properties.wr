@@ -187,7 +187,8 @@
       <db:JoinColumn attribute="ent17#att20" name="oid"/>
     </RelationshipRole2>
   </Relationship>
-  <db:Database id="db1" name="Database1" type="PostgreSQL 9" url="jdbc:postgresql://localhost:5432/ExtreventosDB" username="postgres" cryptedPassword="true" password="YWRtaW4=" schema="public"/>
+  <db:Database id="db1" name="Database1" type="PostgreSQL 9" url="jdbc:postgresql://localhost:5432/ExtreventosDB" username="postgres" cryptedPassword="true" password="YWRtaW4=" schema="public">
+  </db:Database>
   <Relationship id="rel1" name="User_Eventos" sourceEntity="User" targetEntity="ent9" db:database="db1" db:table="eventos">
     <RelationshipRole1 id="rel1#role19" name="UserToEventos" maxCard="N">
       <db:JoinColumn attribute="userOID" name="user_oid"/>
@@ -196,4 +197,7 @@
       <db:JoinColumn attribute="ent9#att6" name="oid"/>
     </RelationshipRole2>
   </Relationship>
+  <Entity gr:x="150" gr:y="355" id="ent1" name="Fecha_volatil" duration="volatile" volatileStorage="database" attributeOrder="ent1#att37" volatileScope="application">
+    <Attribute id="ent1#att37" key="true" name="fecha" type="date"/>
+  </Entity>
 </DataModel>
