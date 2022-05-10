@@ -1,0 +1,59 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="810" gr:y="640" id="sv2#area1#page35" name="Page 35">
+  <ContentUnits>
+    <EntryUnit gr:x="0" gr:y="0" id="sv2#area1#page35#enu3" name="crear Stand" entity="ent18" linkOrder="sv2#area1#page35#enu3#ln104">
+      <Field id="sv2#area1#page35#enu3#fld13" name="nombre" type="string" modifiable="true"/>
+      <Field id="sv2#area1#page35#enu3#fld14" name="representante" type="string" modifiable="true" attribute="ent18#att26"/>
+      <SelectionField id="sv2#area1#page35#enu3#sfld3" name="Selection Field3" type="string" splitOutput="false" role="rel16#role13"/>
+      <Link id="sv2#area1#page35#enu3#ln104" name="Flow104" to="sv2#area1#pcu2" type="normal" validate="true">
+        <LinkParameter id="sv2#area1#page35#enu3#ln104#par200" name="nombre_nombre" source="sv2#area1#page35#enu3#fld13" target="sv2#area1#pcu2#pcp3"/>
+        <LinkParameter id="sv2#area1#page35#enu3#ln104#par201" name="representante_representante" source="sv2#area1#page35#enu3#fld14" target="sv2#area1#pcu2#pcp4"/>
+        <LinkParameter id="sv2#area1#page35#enu3#ln104#par202" name="Selection Field3_tipoStand" source="sv2#area1#page35#enu3#sfld3" target="sv2#area1#pcu2#pcp6"/>
+      </Link>
+    </EntryUnit>
+    <SelectorUnit gr:x="115" gr:y="0" id="sv2#area1#page35#seu23" name="Selector23" entity="ent12">
+      <Link id="sv2#area1#page35#seu23#ln97" name="Flow97" to="sv2#area1#page35#enu3" type="transport" validate="true">
+        <LinkParameter id="sv2#area1#page35#seu23#ln97#par189" name="oid_Key Condition [oid]" source="ent12#att11Array" target="sv2#area1#page35#enu3.ent18#att25"/>
+        <LinkParameter id="sv2#area1#page35#seu23#ln97#par190" name="seleciona tipo de stand_Selection Field3 - Preselection" target="sv2#area1#page35#enu3#sfld3_presel" blank="true"/>
+        <LinkParameter id="sv2#area1#page35#seu23#ln97#par191" name="nombreCategoria_Selection Field3 [label]" source="ent12#att12Array" target="sv2#area1#page35#enu3#sfld3_label"/>
+        <LinkParameter id="sv2#area1#page35#seu23#ln97#par192" name="oid_Selection Field3 [output]" source="ent12#att11Array" target="sv2#area1#page35#enu3#sfld3_output"/>
+      </Link>
+    </SelectorUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area1#page35#enu3">
+          <layout:Field field="sv2#area1#page35#enu3#fld13"/>
+          <layout:Field field="sv2#area1#page35#enu3#fld14"/>
+          <layout:Field field="sv2#area1#page35#enu3#sfld3"/>
+          <layout:Link link="sv2#area1#page35#enu3#ln104"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

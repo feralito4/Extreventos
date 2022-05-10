@@ -1,0 +1,51 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="205" id="sv2#area1#page38" name="Page 38">
+  <ContentUnits>
+    <MultiMessageUnit id="sv2#area1#page38#mssu17" name="Message14" gr:x="10" gr:y="0"/>
+    <EntryUnit id="sv2#area1#page38#enu14" name="Form3" linkOrder="sv2#area1#page38#enu14#ln116" gr:x="0" gr:y="70" entity="ent9">
+      <Field id="sv2#area1#page38#enu14#fld51" name="Aforo" type="integer" modifiable="true"/>
+      <Field id="sv2#area1#page38#enu14#fld52" name="Fecha" type="date" modifiable="true"/>
+      <Link id="sv2#area1#page38#enu14#ln116" name="Comprobar disponibilidad" to="sv2#area1#pcu6" type="normal" validate="true">
+        <LinkParameter id="sv2#area1#page38#enu14#ln116#par240" name="Fecha_Collector Parameter4" source="sv2#area1#page38#enu14#fld52" target="sv2#area1#pcu6#pcp18"/>
+        <LinkParameter id="sv2#area1#page38#enu14#ln116#par242" name="Aforo_Ubicacion" source="sv2#area1#page38#enu14#fld51" target="sv2#area1#pcu6#pcp19"/>
+      </Link>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area1#page38#mssu17"/>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area1#page38#enu14">
+          <layout:Field field="sv2#area1#page38#enu14#fld51"/>
+          <layout:Field field="sv2#area1#page38#enu14#fld52"/>
+          <layout:Link link="sv2#area1#page38#enu14#ln116"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

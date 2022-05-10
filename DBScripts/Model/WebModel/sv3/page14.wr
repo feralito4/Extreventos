@@ -1,0 +1,87 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="640" gr:y="100" id="sv3#page14" name="Registro" landmark="false">
+  <ContentUnits>
+    <MultiMessageUnit gr:x="15" gr:y="0" id="sv3#page14#mssu3" name="Error"/>
+    <EntryUnit gr:x="0" gr:y="105" id="sv3#page14#enu6" name="Nuevo usuario" entity="User" linkOrder="sv3#page14#enu6#ln7">
+      <Field id="sv3#page14#enu6#fld33" name="userName" type="string" modifiable="true" attribute="userName"/>
+      <Field id="sv3#page14#enu6#fld34" name="password" type="password" modifiable="true" attribute="password"/>
+      <Field id="sv3#page14#enu6#fld35" name="email" type="string" modifiable="true" attribute="email"/>
+      <Link id="sv3#page14#enu6#ln7" name="Crear cuenta" to="sv3#seu4" type="normal" validate="true">
+        <LinkParameter id="sv3#page14#enu6#ln7#par54" name="userName_nameCondition" target="sv3#seu4#su13#acond1" source="sv3#page14#enu6#fld33"/>
+        <LinkParameter id="sv3#page14#enu6#ln7#par56" name="email_emailCondition" source="sv3#page14#enu6#fld35" target="sv3#seu4#su13#acond3"/>
+      </Link>
+      <Link id="sv3#page14#enu6#ln8" name="Flow8" to="sv3#cru6" type="transport" validate="true">
+        <LinkParameter id="sv3#page14#enu6#ln8#par57" name="email_email" source="sv3#page14#enu6#fld35" target="sv3#cru6.email"/>
+        <LinkParameter id="sv3#page14#enu6#ln8#par58" name="1_Group.oid(defaultGroup)" sourceValue="2" target="sv3#cru6.User2DefaultGroup.groupOID"/>
+        <LinkParameter id="sv3#page14#enu6#ln8#par59" name="password_password" source="sv3#page14#enu6#fld34" target="sv3#cru6.password"/>
+        <LinkParameter id="sv3#page14#enu6#ln8#par60" name="userName_userName" source="sv3#page14#enu6#fld33" target="sv3#cru6.userName"/>
+      </Link>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#page14#mssu3"/>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#page14#enu6">
+          <layout:Field field="sv3#page14#enu6#fld33"/>
+          <layout:Field field="sv3#page14#enu6#fld34"/>
+          <layout:Field field="sv3#page14#enu6#fld35"/>
+          <layout:Link link="sv3#page14#enu6#ln7"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

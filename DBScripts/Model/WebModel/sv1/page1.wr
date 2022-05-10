@@ -1,0 +1,69 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="95" gr:y="145" id="sv1#page1" name="Inicio" linkVisibilityPolicy="always">
+  <ContentUnits>
+    <IndexUnit gr:x="5" gr:y="0" id="sv1#page1#inu1" name="Productos disponibles" entity="ent17" displayAttributes="ent17#att21 ent17#att22 ent17#att23 ent17#att24"/>
+    <IndexUnit gr:x="0" gr:y="100" id="sv1#page1#inu2" name="Almacenes disponibles" entity="ent22" displayAttributes="ent22#att41 ent22#att42 ent22#att43 ent22#att44"/>
+    <IndexUnit gr:x="25" gr:y="200" id="sv1#page1#inu3" name="Categor&#237;as" entity="ent16" displayAttributes="ent16#att19"/>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#page1#inu1">
+          <layout:Attribute attribute="ent17#att21"/>
+          <layout:Attribute attribute="ent17#att22"/>
+          <layout:Attribute attribute="ent17#att23"/>
+          <layout:Attribute attribute="ent17#att24"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#page1#inu2">
+          <layout:Attribute attribute="ent22#att41"/>
+          <layout:Attribute attribute="ent22#att42"/>
+          <layout:Attribute attribute="ent22#att43"/>
+          <layout:Attribute attribute="ent22#att44"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#page1#inu3">
+          <layout:Attribute attribute="ent16#att19"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>
