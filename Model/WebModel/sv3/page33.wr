@@ -7,7 +7,7 @@
         <LinkParameter id="sv3#page33#enu10#ln94#par159" name="userName_Username" source="sv3#page33#enu10#fld31" target="sv3#lgu3.username"/>
         <LinkParameter id="sv3#page33#enu10#ln94#par160" name="password_Password" source="sv3#page33#enu10#fld32" target="sv3#lgu3.password"/>
       </Link>
-      <Link id="sv3#page33#enu10#ln9" name="Registrarse" to="sv3#page14" automaticCoupling="true" type="normal" validate="true"/>
+      <Link id="sv3#page33#enu10#ln9" name="Registrarse" to="sv3#page14#enu6" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="217,0,-168,-105;217,104,-168,-1"/>
     </EntryUnit>
     <MultiMessageUnit id="sv3#page33#mssu10" name="Error de inicio de sesi&#243;n" gr:x="0" gr:y="10"/>
   </ContentUnits>

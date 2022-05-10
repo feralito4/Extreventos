@@ -1,16 +1,16 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="225" gr:y="-30" id="sv2#page16" name="Mis eventos">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="400" gr:y="-30" id="sv2#page16" name="Mis eventos">
   <ContentUnits>
     <IndexUnit gr:x="0" gr:y="0" id="sv2#page16#inu5" name="Eventos" entity="ent9" displayAttributes="ent9#att7 ent9#att8 ent9#att9 ent9#att10">
       <Selector id="sv2#page16#inu5#su16" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv2#page16#inu5#su16#rcond6" name="RoleCondition6" predicate="in" implied="false" role="rel1#role19"/>
       </Selector>
     </IndexUnit>
-    <GetUnit gr:x="185" gr:y="5" id="sv2#page16#gtu2" name="Get2" contextParameters="UserCtxParam">
+    <GetUnit gr:x="195" gr:y="15" id="sv2#page16#gtu2" name="Get2" contextParameters="UserCtxParam">
       <Link id="sv2#page16#gtu2#ln45" name="Flow45" to="sv2#page16#inu5" type="transport" validate="true">
         <LinkParameter id="sv2#page16#gtu2#ln45#par144" name="UserCtxParam.oid_RoleCondition6 [oid]" source="sv2#page16#gtu2.UserCtxParam" target="sv2#page16#inu5#su16#rcond6.userOID"/>
       </Link>
     </GetUnit>
-    <IndexUnit gr:x="5" gr:y="105" id="sv2#page16#inu10" name="Simple List10" entity="ent21" displayAttributes="ent21#att39"/>
+    <IndexUnit gr:x="85" gr:y="110" id="sv2#page16#inu10" name="Simple List10" entity="ent21" displayAttributes="ent21#att39"/>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>

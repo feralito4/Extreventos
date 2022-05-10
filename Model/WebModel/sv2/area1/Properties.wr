@@ -32,11 +32,11 @@
         <LinkParameter id="sv2#area1#seu15#oln61#par278" name="oid_Input" source="ent20#att32Array" target="sv2#area1#inn13.isnotnull"/>
       </OKLink>
     </SelectorUnit>
-    <IsNotNullUnit id="sv2#area1#inn13" name="Is Not Null10" gr:x="750" gr:y="510">
+    <IsNotNullUnit id="sv2#area1#inn13" name="Is Not Null10" gr:x="730" gr:y="515">
       <OKLink id="sv2#area1#inn13#oln62" name="OKFlow47" to="sv2#area1#page39#pwu3">
         <LinkParameter id="sv2#area1#inn13#oln62#par280" name="Input Value_AttCondition6" source="inputValue" target="sv2#area1#page39#pwu3#su36#acond8"/>
       </OKLink>
-      <KOLink id="sv2#area1#inn13#kln31" name="KOFlow24" to="sv2#area1#page39#mssu18" gr:bendpoints="95,2,0,107">
+      <KOLink id="sv2#area1#inn13#kln31" name="KOFlow24" to="sv2#area1#page39#mssu18" gr:bendpoints="99,0,4,120">
         <LinkParameter id="sv2#area1#inn13#kln31#par279" name="No hay ubicaciones para ese aforo_Shown Messages" sourceValue="No hay ubicaciones para ese aforo" target="sv2#area1#page39#mssu18.shownMessages"/>
       </KOLink>
     </IsNotNullUnit>
@@ -84,7 +84,7 @@
         <LinkParameter id="sv2#area1#seu18#oln78#par331" name="fecha_Fecha" source="ent1#att37Array" target="sv2#area1#pcu7#pcp24"/>
       </OKLink>
     </SelectorUnit>
-    <GetUnit id="sv2#area1#gtu7" name="Get2" gr:x="995" gr:y="220" contextParameters="UserCtxParam">
+    <GetUnit id="sv2#area1#gtu7" name="Get2" gr:x="1415" gr:y="60" contextParameters="UserCtxParam">
       <Link id="sv2#area1#gtu7#ln155" name="Flow97" to="sv2#area1#cru11" type="transport" validate="true" gr:bendpoints="5,-109,0,126">
         <LinkParameter id="sv2#area1#gtu7#ln155#par351" name="UserCtxParam.oid_User.oid(EventosToUser)" source="sv2#area1#gtu7.UserCtxParam" target="sv2#area1#cru11.rel1#role20.userOID"/>
       </Link>

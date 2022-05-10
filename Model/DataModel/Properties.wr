@@ -1,16 +1,16 @@
 <DataModel xmlns:db="http://www.webratio.com/2006/WebML/Database" xmlns:gr="http://www.webratio.com/2006/WebML/Graph">
-  <Entity id="User" name="User" duration="persistent" gr:x="-5" gr:y="605" gr:hideAttributes="false" attributeOrder="userOID userName password email User#att45" db:database="db1" db:table="user">
+  <Entity id="User" name="User" duration="persistent" gr:x="-205" gr:y="595" gr:hideAttributes="false" attributeOrder="userOID userName password email User#att45" db:database="db1" db:table="user">
     <Attribute name="oid" id="userOID" type="integer" key="true" db:column="oid"/>
     <Attribute name="userName" id="userName" type="string" db:column="username"/>
     <Attribute name="password" id="password" type="password" db:column="password"/>
     <Attribute name="email" id="email" type="string" db:column="email"/>
     <Attribute id="User#att45" name="fecha_alta" type="string" db:column="fecha_alta"/>
   </Entity>
-  <Entity id="Group" name="Group" duration="persistent" gr:x="230" gr:y="625" gr:hideAttributes="false" attributeOrder="groupOID groupName" db:database="db1" db:table="group">
+  <Entity id="Group" name="Group" duration="persistent" gr:x="95" gr:y="625" gr:hideAttributes="false" attributeOrder="groupOID groupName" db:database="db1" db:table="group">
     <Attribute name="oid" id="groupOID" type="integer" key="true" db:column="oid"/>
     <Attribute name="groupName" id="groupName" type="string" db:column="groupname"/>
   </Entity>
-  <Entity id="Module" name="Module" duration="persistent" gr:x="465" gr:y="640" gr:hideAttributes="false" attributeOrder="moduleOID moduleID moduleName" db:database="db1" db:table="module">
+  <Entity id="Module" name="Module" duration="persistent" gr:x="390" gr:y="615" gr:hideAttributes="false" attributeOrder="moduleOID moduleID moduleName" db:database="db1" db:table="module">
     <Attribute name="oid" id="moduleOID" type="integer" key="true" db:column="oid"/>
     <Attribute name="moduleID" id="moduleID" type="string" db:column="moduleid"/>
     <Attribute name="moduleName" id="moduleName" type="string" db:column="modulename"/>
@@ -47,7 +47,7 @@
       <db:JoinColumn attribute="moduleOID" name="module_oid"/>
     </RelationshipRole2>
   </Relationship>
-  <Entity id="ent8" name="ProductosAsignados" duration="persistent" attributeOrder="ent8#att1 ent8#att2 ent8#att3 ent8#att4 ent8#att5" gr:x="548" gr:y="220" db:database="db1" db:table="productosasignados">
+  <Entity id="ent8" name="ProductosAsignados" duration="persistent" attributeOrder="ent8#att1 ent8#att2 ent8#att3 ent8#att4 ent8#att5" gr:x="560" gr:y="375" db:database="db1" db:table="productosasignados">
     <Attribute id="ent8#att1" name="oid" key="true" type="integer" db:column="oid"/>
     <Attribute id="ent8#att2" name="NOMBREPRODUCTO" type="string" db:column="nombreproducto"/>
     <Attribute id="ent8#att3" name="DESCRIPCIONPRODUCTO" type="text" db:column="descripcionproducto"/>
@@ -61,43 +61,43 @@
     <Attribute id="ent9#att9" name="descripcion" type="text" db:column="descripcion"/>
     <Attribute id="ent9#att10" name="precioEntrada" type="float" db:column="precioentrada"/>
   </Entity>
-  <Entity id="ent12" name="tipoStand" duration="persistent" attributeOrder="ent12#att11 ent12#att12" gr:x="798" gr:y="45" db:database="db1" db:table="tipostand">
+  <Entity id="ent12" name="tipoStand" duration="persistent" attributeOrder="ent12#att11 ent12#att12" gr:x="895" gr:y="70" db:database="db1" db:table="tipostand">
     <Attribute id="ent12#att11" name="oid" key="true" type="integer" db:column="oid"/>
     <Attribute id="ent12#att12" name="nombreCategoria" type="string" db:column="nombrecategoria"/>
   </Entity>
-  <Entity id="ent15" name="CARRITO" duration="volatile" attributeOrder="ent15#att13 ent15#att14 ent15#att15 ent15#att16 ent15#att17" volatileStorage="database" gr:x="258" gr:y="415">
+  <Entity id="ent15" name="CARRITO" duration="volatile" attributeOrder="ent15#att13 ent15#att14 ent15#att15 ent15#att16 ent15#att17" volatileStorage="database" gr:x="165" gr:y="430">
     <Attribute id="ent15#att13" name="oid" key="true" type="integer"/>
     <Attribute id="ent15#att14" name="NombreStand" type="string"/>
     <Attribute id="ent15#att15" name="PrecioTotal" type="float"/>
     <Attribute id="ent15#att16" name="CantidadTotal" type="integer"/>
     <Attribute id="ent15#att17" name="OID_Stand" type="integer"/>
   </Entity>
-  <Entity id="ent16" name="Categoria" duration="persistent" attributeOrder="ent16#att18 ent16#att19" gr:x="908" gr:y="215" db:database="db1" db:table="categoria">
+  <Entity id="ent16" name="Categoria" duration="persistent" attributeOrder="ent16#att18 ent16#att19" gr:x="1180" gr:y="70" db:database="db1" db:table="categoria">
     <Attribute id="ent16#att18" name="oid" key="true" type="integer" db:column="oid"/>
     <Attribute id="ent16#att19" name="nombreCategoria" type="string" db:column="nombrecategoria"/>
   </Entity>
-  <Entity id="ent17" name="PRODUCTOS" duration="persistent" attributeOrder="ent17#att20 ent17#att21 ent17#att22 ent17#att23 ent17#att24" gr:x="618" gr:y="395" db:database="db1" db:table="productos">
+  <Entity id="ent17" name="PRODUCTOS" duration="persistent" attributeOrder="ent17#att20 ent17#att21 ent17#att22 ent17#att23 ent17#att24" gr:x="880" gr:y="375" db:database="db1" db:table="productos">
     <Attribute id="ent17#att20" name="oid" key="true" type="integer" db:column="oid"/>
     <Attribute id="ent17#att21" name="NOMBREPRODUCTO" type="string" db:column="nombreproducto"/>
     <Attribute id="ent17#att22" name="DESCRIPCIONPRODUCTO" type="text" db:column="descripcionproducto"/>
     <Attribute id="ent17#att23" name="PRECIOPRODUCTO" type="float" db:column="precioproducto"/>
     <Attribute id="ent17#att24" name="UNIDADESPRODUCTO" type="integer" db:column="unidadesproducto"/>
   </Entity>
-  <Entity id="ent18" name="stand" duration="persistent" attributeOrder="ent18#att25 ent18#att26 ent18#att27 ent18#att28 ent18#att29" gr:x="578" gr:y="45" db:database="db1" db:table="stand">
+  <Entity id="ent18" name="stand" duration="persistent" attributeOrder="ent18#att25 ent18#att26 ent18#att27 ent18#att28 ent18#att29" gr:x="580" gr:y="40" db:database="db1" db:table="stand">
     <Attribute id="ent18#att25" name="oid" key="true" type="integer" db:column="oid"/>
     <Attribute id="ent18#att26" name="representante" type="string" db:column="representante"/>
     <Attribute id="ent18#att27" name="Nombre" type="string" db:column="nombre"/>
     <Attribute id="ent18#att28" name="PrecioTotal" type="integer" db:column="preciototal"/>
     <Attribute id="ent18#att29" name="CantidadTotal" type="integer" db:column="cantidadtotal"/>
   </Entity>
-  <Entity id="ent19" name="ProductosOferta" duration="persistent" attributeOrder="ent19#att30 ent19#att31" gr:x="500" gr:y="555" db:database="db1" db:table="productosoferta">
+  <Entity id="ent19" name="ProductosOferta" duration="persistent" attributeOrder="ent19#att30 ent19#att31" gr:x="890" gr:y="590" db:database="db1" db:table="productosoferta">
     <Generalization superEntity="ent17">
       <db:JoinColumn attribute="ent17#att20" name="productos_oid"/>
     </Generalization>
     <Attribute id="ent19#att30" name="PorcentajeDescuento" type="float" db:column="porcentajedescuento"/>
     <Attribute id="ent19#att31" name="precioConDescuento" type="float" db:column="preciocondescuento"/>
   </Entity>
-  <Entity id="ent20" name="Ubicacion" duration="persistent" attributeOrder="ent20#att32 ent20#att33 ent20#att34 ent20#att35 ent20#att36 ent20#att46" gr:x="270" gr:y="-70" db:database="db1" db:table="ubicacion">
+  <Entity id="ent20" name="Ubicacion" duration="persistent" attributeOrder="ent20#att32 ent20#att33 ent20#att34 ent20#att35 ent20#att36 ent20#att46" gr:x="305" gr:y="125" db:database="db1" db:table="ubicacion">
     <Attribute id="ent20#att32" name="oid" key="true" type="integer" db:column="oid"/>
     <Attribute id="ent20#att33" name="aforo" type="integer" db:column="aforo"/>
     <Attribute id="ent20#att34" name="direccion" type="string" db:column="direccion"/>
@@ -105,17 +105,17 @@
     <Attribute id="ent20#att36" name="precio/alquiler" type="integer" db:column="precio_alquiler"/>
     <Attribute id="ent20#att46" name="maxStands" type="integer" db:column="maxstands"/>
   </Entity>
-  <Entity id="ent21" name="ubicacion-evento-fecha" duration="persistent" attributeOrder="ent21#att39" gr:x="238" gr:y="225" db:database="db1" db:table="ubicacion_evento_fecha">
+  <Entity id="ent21" name="ubicacion-evento-fecha" duration="persistent" attributeOrder="ent21#att39" gr:x="305" gr:y="335" db:database="db1" db:table="ubicacion_evento_fecha">
     <Attribute id="ent21#att39" name="fecha" key="true" type="date" db:column="fecha"/>
   </Entity>
-  <Entity id="ent22" name="Almacen" duration="persistent" attributeOrder="ent22#att40 ent22#att41 ent22#att42 ent22#att43 ent22#att44" gr:x="918" gr:y="370" db:database="db1" db:table="almacen">
+  <Entity id="ent22" name="Almacen" duration="persistent" attributeOrder="ent22#att40 ent22#att41 ent22#att42 ent22#att43 ent22#att44" gr:x="1175" gr:y="375" db:database="db1" db:table="almacen">
     <Attribute id="ent22#att40" name="oid" key="true" type="integer" db:column="oid"/>
     <Attribute id="ent22#att41" name="Nombre" type="string" db:column="nombre"/>
     <Attribute id="ent22#att42" name="direccion" type="string" db:column="direccion"/>
     <Attribute id="ent22#att43" name="capacidadMaxima" type="integer" db:column="capacidadmaxima"/>
     <Attribute id="ent22#att44" name="descripcion" type="text" db:column="descripcion"/>
   </Entity>
-  <Relationship id="rel4" name="Eventos_sitio-evento-fecha" sourceEntity="ent9" targetEntity="ent21" db:database="db1" db:table="ubicacion_evento_fecha">
+  <Relationship id="rel4" name="Eventos_sitio-evento-fecha" sourceEntity="ent9" targetEntity="ent21" db:database="db1" db:table="ubicacion_evento_fecha" gr:bendpoints="-1,254,-311,-1">
     <RelationshipRole1 id="rel4#role1" name="EventosTositio-evento-fecha" maxCard="N">
       <db:JoinColumn attribute="ent9#att6" name="eventos_oid"/>
     </RelationshipRole1>
@@ -187,9 +187,8 @@
       <db:JoinColumn attribute="ent17#att20" name="oid"/>
     </RelationshipRole2>
   </Relationship>
-  <db:Database id="db1" name="Database1" type="PostgreSQL 9" url="jdbc:postgresql://localhost:5432/ExtreventosDB" username="postgres" cryptedPassword="true" password="YWRtaW4=" schema="public">
-  </db:Database>
-  <Relationship id="rel1" name="User_Eventos" sourceEntity="User" targetEntity="ent9" db:database="db1" db:table="eventos">
+  <db:Database id="db1" name="Database1" type="PostgreSQL 9" url="jdbc:postgresql://localhost:5432/ExtreventosDB" username="postgres" cryptedPassword="true" password="YWRtaW4=" schema="public"/>
+  <Relationship id="rel1" name="User_Eventos" sourceEntity="User" targetEntity="ent9" db:database="db1" db:table="eventos" gr:bendpoints="-1,-556,-206,-1">
     <RelationshipRole1 id="rel1#role19" name="UserToEventos" maxCard="N">
       <db:JoinColumn attribute="userOID" name="user_oid"/>
     </RelationshipRole1>
@@ -197,7 +196,7 @@
       <db:JoinColumn attribute="ent9#att6" name="oid"/>
     </RelationshipRole2>
   </Relationship>
-  <Entity gr:x="150" gr:y="355" id="ent1" name="Fecha_volatil" duration="volatile" volatileStorage="database" attributeOrder="ent1#att37" volatileScope="application">
+  <Entity gr:x="-50" gr:y="425" id="ent1" name="Fecha_volatil" duration="volatile" volatileStorage="database" attributeOrder="ent1#att37" volatileScope="application">
     <Attribute id="ent1#att37" key="true" name="fecha" type="date"/>
   </Entity>
 </DataModel>
