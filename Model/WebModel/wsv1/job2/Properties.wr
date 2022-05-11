@@ -1,0 +1,31 @@
+<Job xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="wsv1#job2" name="TareaBorrarProductos" gr:x="100" gr:y="65">
+  <OperationUnits>
+    <InitJobUnit id="wsv1#job2#iju2" name="Init Job" gr:x="0" gr:y="5">
+      <OKLink id="wsv1#job2#iju2#oln16" name="OKFlow8" to="wsv1#job2#seu27">
+        <LinkParameter id="wsv1#job2#iju2#oln16#par177" name="stand_RoleCondition8 [oid]" source="wsv1#job2#iju2#iji1" target="wsv1#job2#seu27#su49#rcond8.ent18#att25"/>
+      </OKLink>
+      <JobInputParameter id="wsv1#job2#iju2#iji1" name="stand"/>
+    </InitJobUnit>
+    <SelectorUnit id="wsv1#job2#seu27" name="Productos" gr:x="200" gr:y="0" entity="ent8">
+      <Selector id="wsv1#job2#seu27#su49" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="wsv1#job2#seu27#su49#rcond8" name="RoleCondition8" predicate="in" implied="false" role="rel10#role3"/>
+      </Selector>
+      <OKLink id="wsv1#job2#seu27#oln50" name="OKFlow28" to="wsv1#job2#lpu2">
+        <LinkParameter id="wsv1#job2#seu27#oln50#par126" name="oid_Input Array" source="ent8#att1Array" target="wsv1#job2#lpu2.array"/>
+      </OKLink>
+    </SelectorUnit>
+    <LoopUnit id="wsv1#job2#lpu2" name="bucle" gr:x="235" gr:y="195">
+      <OKLink id="wsv1#job2#lpu2#oln71" name="OKFlow33" to="wsv1#job2#dlu11" code="next">
+        <LinkParameter id="wsv1#job2#lpu2#oln71#par175" name="Next Element_KeyCondition15 [oid]" source="next" target="wsv1#job2#dlu11#su55#kcond45.ent8#att1"/>
+      </OKLink>
+      <OKLink id="wsv1#job2#lpu2#oln72" name="OKFlow38" to="wsv1#job2#opu1" code="end" automaticCoupling="true"/>
+    </LoopUnit>
+    <DeleteUnit id="wsv1#job2#dlu11" name="borrar producto" gr:x="225" gr:y="355" entity="ent8">
+      <Selector id="wsv1#job2#dlu11#su55" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="wsv1#job2#dlu11#su55#kcond45" name="KeyCondition15" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="wsv1#job2#dlu11#oln73" name="OKFlow37" to="wsv1#job2#lpu2" automaticCoupling="true" gr:bendpoints="72,-100,77,75"/>
+    </DeleteUnit>
+    <NoOpOperationUnit id="wsv1#job2#opu1" name="fin" gr:x="90" gr:y="260"/>
+  </OperationUnits>
+</Job>

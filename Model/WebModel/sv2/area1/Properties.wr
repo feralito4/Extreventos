@@ -1,4 +1,4 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="220" gr:y="355" id="sv2#area1" name="Nuevo evento" landmark="true" defaultPage="sv2#area1#page38">
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="295" gr:y="325" id="sv2#area1" name="Nuevo evento" landmark="true" defaultPage="sv2#area1#page38">
   <OperationUnits>
     <ParameterCollectorUnit id="sv2#area1#pcu6" name="Parameter Collector2" gr:x="0" gr:y="500">
       <OKLink id="sv2#area1#pcu6#oln57" name="OKFlow49" to="sv2#area1#cru16">
@@ -19,7 +19,7 @@
       </Selector>
     </SelectorUnit>
     <IsNotNullUnit id="sv2#area1#inn12" name="Is Not Null9" gr:x="565" gr:y="175" emptyStringAsNull="true">
-      <OKLink id="sv2#area1#inn12#oln60" name="OKFlow39" to="sv2#area1#page38#mssu17" gr:bendpoints="-306,-91,139,4">
+      <OKLink id="sv2#area1#inn12#oln60" name="OKFlow39" to="sv2#area1#page38#mssu17">
         <LinkParameter id="sv2#area1#inn12#oln60#par275" name="Fecha no disponible_Shown Messages" sourceValue="Fecha no disponible" target="sv2#area1#page38#mssu17.shownMessages"/>
       </OKLink>
       <KOLink id="sv2#area1#inn12#kln26" name="KOFlow23" to="sv2#area1#seu15" automaticCoupling="true"/>
@@ -83,7 +83,7 @@
       <OKLink id="sv2#area1#seu18#oln78" name="OKFlow78" to="sv2#area1#pcu7">
         <LinkParameter id="sv2#area1#seu18#oln78#par331" name="fecha_Fecha" source="ent1#att37Array" target="sv2#area1#pcu7#pcp24"/>
       </OKLink>
-      <KOLink id="sv2#area1#seu18#kln24" name="KOFlow24" to="sv2#area1#page38" automaticCoupling="true" gr:bendpoints="-97,-138,977,-133;-578,-145,496,-140;-1050,-168,24,-163"/>
+      <KOLink id="sv2#area1#seu18#kln24" name="KOFlow24" to="sv2#area1#page38" automaticCoupling="true" gr:bendpoints="-97,-138,977,-133;-985,-139,91,-133"/>
     </SelectorUnit>
     <GetUnit id="sv2#area1#gtu7" name="Get2" gr:x="1425" gr:y="60" contextParameters="UserCtxParam">
       <Link id="sv2#area1#gtu7#ln155" name="Flow97" to="sv2#area1#cru11" type="transport" validate="true" gr:bendpoints="5,-109,0,126">
@@ -281,7 +281,7 @@
         <LinkParameter id="sv2#area1#mathu4#oln56#par206" name="Result_PrecioTotal" source="result" target="sv2#area1#mfu13.ent18#att28"/>
       </OKLink>
     </MathUnit>
-    <DeleteUnit gr:x="610" gr:y="690" id="sv2#area1#dlu9" name="Delete Carrito" entity="ent15">
+    <DeleteUnit gr:x="595" gr:y="690" id="sv2#area1#dlu9" name="Delete Carrito" entity="ent15">
       <Selector id="sv2#area1#dlu9#su51" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#area1#dlu9#su51#kcond41" name="KeyCondition41" predicate="in" implied="false"/>
       </Selector>

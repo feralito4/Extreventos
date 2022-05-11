@@ -29,6 +29,9 @@
       <Link id="sv2#area1#page25#seu20#ln111" name="Flow111" to="sv2#area1#mathu4" type="transport" validate="true">
         <LinkParameter id="sv2#area1#page25#seu20#ln111#par205" name="PrecioTotal_totalEvento" source="ent18#att28Array" target="sv2#area1#mathu4#mathv6"/>
       </Link>
+      <Link id="sv2#area1#page25#seu20#ln79" name="Flow78" to="sv2#scju1" type="transport" validate="true" gr:bendpoints="-165,97,311,521;-493,71,-17,495">
+        <LinkParameter id="sv2#area1#page25#seu20#ln79#par179" name="oid_stand" source="ent18#att25Array" target="sv2#scju1.wsv1#job2#iju2#iji1"/>
+      </Link>
     </SelectorUnit>
     <SelectorUnit gr:x="185" gr:y="110" id="sv2#area1#page25#seu5" name="Selector5" entity="ent12">
       <Selector id="sv2#area1#page25#seu5#su17" defaultPolicy="fill" booleanOperator="and">
@@ -100,4 +103,5 @@
     </layout:Row>
   </layout:Grid>
   <Link id="sv2#area1#page25#ln100" name="Volver a Crear Stands" to="sv2#area1#seu23" automaticCoupling="true" type="normal" validate="true"/>
+  <Link id="sv2#area1#page25#ln88" name="Borrar Productos de los Stands" to="sv2#scju1" type="normal" automaticCoupling="true" validate="true"/>
 </Page>

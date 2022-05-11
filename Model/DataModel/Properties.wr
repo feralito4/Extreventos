@@ -90,13 +90,6 @@
     <Attribute id="ent18#att28" name="PrecioTotal" type="integer" db:column="preciototal"/>
     <Attribute id="ent18#att29" name="CantidadTotal" type="integer" db:column="cantidadtotal"/>
   </Entity>
-  <Entity id="ent19" name="ProductosOferta" duration="persistent" attributeOrder="ent19#att30 ent19#att31" gr:x="890" gr:y="590" db:database="db1" db:table="productosoferta">
-    <Generalization superEntity="ent17">
-      <db:JoinColumn attribute="ent17#att20" name="productos_oid"/>
-    </Generalization>
-    <Attribute id="ent19#att30" name="PorcentajeDescuento" type="float" db:column="porcentajedescuento"/>
-    <Attribute id="ent19#att31" name="precioConDescuento" type="float" db:column="preciocondescuento"/>
-  </Entity>
   <Entity id="ent20" name="Ubicacion" duration="persistent" attributeOrder="ent20#att32 ent20#att33 ent20#att34 ent20#att35 ent20#att36 ent20#att46" gr:x="305" gr:y="125" db:database="db1" db:table="ubicacion">
     <Attribute id="ent20#att32" name="oid" key="true" type="integer" db:column="oid"/>
     <Attribute id="ent20#att33" name="aforo" type="integer" db:column="aforo"/>
