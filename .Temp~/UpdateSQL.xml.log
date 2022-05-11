@@ -1,70 +1,29 @@
-[10 may 2022 16:58:39] DEBUG Executing SQL script
-[10 may 2022 16:58:39] INFO ================================================================================
-[10 may 2022 16:58:39] INFO outputPath= 'C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\ExtreventosGit\.Temp~\UpdateSQL.xml'
-[10 may 2022 16:58:39] INFO onError= 'stop'
-[10 may 2022 16:58:39] INFO statementSeparator= ';'
-[10 may 2022 16:58:39] INFO derby.system.home= 'C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\.metadata\.plugins\com.webratio.commons.db\derby'
-[10 may 2022 16:58:39] INFO password= 'admin'
-[10 may 2022 16:58:39] INFO url= 'jdbc:postgresql://localhost:5432/ExtreventosDB'
-[10 may 2022 16:58:39] INFO username= 'postgres'
-[10 may 2022 16:58:39] INFO autoCommit= 'false'
-[10 may 2022 16:58:39] INFO outputLogPath= 'C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\ExtreventosGit\.Temp~\UpdateSQL.xml.log'
-[10 may 2022 16:58:39] INFO driverClass= 'org.postgresql.Driver'
-[10 may 2022 16:58:39] INFO encoding= ''
-[10 may 2022 16:58:39] INFO eventSocketPort= '59319'
-[10 may 2022 16:58:39] INFO sqlScript= 'C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\ExtreventosGit\.Temp~\UpdateSQL.sql'
-[10 may 2022 16:58:39] INFO ================================================================================
-[10 may 2022 16:58:39] INFO Connecting to the Database...
-[10 may 2022 16:58:39] INFO Database connection estabilished
-[10 may 2022 16:58:40] INFO transaction isolation: 2
-[10 may 2022 16:58:40] DEBUG ================================================================================
-[10 may 2022 16:58:40] DEBUG Executing SQL script file: C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\ExtreventosGit\.Temp~\UpdateSQL.sql
-[10 may 2022 16:58:40] DEBUG Executing statement:  create table "public"."group_2" ( "oid"  int4  not null, "groupname"  varchar(255), primary key ("oid") )
-[10 may 2022 16:58:40] DEBUG Executing statement:    create table "public"."module_2" ( "oid"  int4  not null, "moduleid"  varchar(255), "modulename"  varchar(255), primary key ("oid") )
-[10 may 2022 16:58:40] DEBUG Executing statement:    create table "public"."user_2" ( "oid"  int4  not null, "username"  varchar(255), "password"  varchar(255), "email"  varchar(255), "fecha_alta"  varchar(255), primary key ("oid") )
-[10 may 2022 16:58:40] DEBUG Executing statement:    create table "public"."tipostand_2" ( "oid"  int4  not null, "nombrecategoria"  varchar(255), primary key ("oid") )
-[10 may 2022 16:58:40] DEBUG Executing statement:    create table "public"."categoria_2" ( "oid"  int4  not null, "nombrecategoria"  varchar(255), primary key ("oid") )
-[10 may 2022 16:58:40] DEBUG Executing statement:    create table "public"."productos_2" ( "oid"  int4  not null, "nombreproducto"  varchar(255), "descripcionproducto"  text, "precioproducto"  float8, "unidadesproducto"  int4, primary key ("oid") )
-[10 may 2022 16:58:40] DEBUG Executing statement:    create table "public"."stand_2" ( "oid"  int4  not null, "representante"  varchar(255), "nombre"  varchar(255), "preciototal"  int4, "cantidadtotal"  int4, primary key ("oid") )
-[10 may 2022 16:58:40] DEBUG Executing statement:    create table "public"."productosoferta_2" ( "productos_2_oid"  int4  not null, "porcentajedescuento"  float8, "preciocondescuento"  float8, primary key ("productos_2_oid") )
-[10 may 2022 16:58:40] DEBUG Executing statement:    create table "public"."ubicacion_2" ( "oid"  int4  not null, "aforo"  int4, "direccion"  varchar(255), "nombre"  varchar(255), "precio_alquiler"  int4, "maxstands"  int4, primary key ("oid") )
-[10 may 2022 16:58:40] DEBUG Executing statement:    create table "public"."ubicacion_evento_fecha_2" ( "fecha"  date  not null, primary key ("fecha") )
-[10 may 2022 16:58:40] DEBUG Executing statement:    create table "public"."almacen_2" ( "oid"  int4  not null, "nombre"  varchar(255), "direccion"  varchar(255), "capacidadmaxima"  int4, "descripcion"  text, primary key ("oid") )
-[10 may 2022 16:58:40] DEBUG Executing statement:    create table "public"."productosasignados_2" ( "oid"  int4  not null, "nombreproducto"  varchar(255), "descripcionproducto"  text, "precioproducto"  float8, "unidadesproducto"  int4, primary key ("oid") )
-[10 may 2022 16:58:40] DEBUG Executing statement:    create table "public"."eventos_2" ( "oid"  int4  not null, "nombre"  varchar(255), "fecha"  date, "descripcion"  text, "precioentrada"  float8, primary key ("oid") )
-[10 may 2022 16:58:40] DEBUG Executing statement:    alter table "public"."group_2"  add column  "module_2_oid"  int4
-[10 may 2022 16:58:40] DEBUG Executing statement:  alter table "public"."group_2"   add constraint fk_group_2_module_2 foreign key ("module_2_oid") references "public"."module_2" ("oid")
-[10 may 2022 16:58:40] DEBUG Executing statement:    create table "public"."group_module_2" ( "group_2_oid"  int4 not null, "module_2_oid"  int4 not null, primary key ("group_2_oid", "module_2_oid") )
-[10 may 2022 16:58:40] DEBUG Executing statement:  alter table "public"."group_module_2"   add constraint fk_group_module_2_group_2 foreign key ("group_2_oid") references "public"."group_2" ("oid")
-[10 may 2022 16:58:40] DEBUG Executing statement:  alter table "public"."group_module_2"   add constraint fk_group_module_2_module_2 foreign key ("module_2_oid") references "public"."module_2" ("oid")
-[10 may 2022 16:58:40] DEBUG Executing statement:    alter table "public"."user_2"  add column  "group_2_oid"  int4
-[10 may 2022 16:58:40] DEBUG Executing statement:  alter table "public"."user_2"   add constraint fk_user_2_group_2 foreign key ("group_2_oid") references "public"."group_2" ("oid")
-[10 may 2022 16:58:40] DEBUG Executing statement:    create table "public"."user_group_2" ( "user_2_oid"  int4 not null, "group_2_oid"  int4 not null, primary key ("user_2_oid", "group_2_oid") )
-[10 may 2022 16:58:40] DEBUG Executing statement:  alter table "public"."user_group_2"   add constraint fk_user_group_2_user_2 foreign key ("user_2_oid") references "public"."user_2" ("oid")
-[10 may 2022 16:58:40] DEBUG Executing statement:  alter table "public"."user_group_2"   add constraint fk_user_group_2_group_2 foreign key ("group_2_oid") references "public"."group_2" ("oid")
-[10 may 2022 16:58:40] DEBUG Executing statement:    alter table "public"."eventos_2"  add column  "user_2_oid"  int4
-[10 may 2022 16:58:40] DEBUG Executing statement:  alter table "public"."eventos_2"   add constraint fk_eventos_2_user_2 foreign key ("user_2_oid") references "public"."user_2" ("oid")
-[10 may 2022 16:58:40] DEBUG Executing statement:    alter table "public"."productosasignados_2"  add column  "stand_2_oid"  int4
-[10 may 2022 16:58:40] DEBUG Executing statement:  alter table "public"."productosasignados_2"   add constraint fk_productosasignados_2_stand foreign key ("stand_2_oid") references "public"."stand_2" ("oid")
-[10 may 2022 16:58:40] DEBUG Executing statement:    create table "public"."tipostand_productos_2" ( "tipostand_2_oid"  int4 not null, "productos_2_oid"  int4 not null, primary key ("tipostand_2_oid", "productos_2_oid") )
-[10 may 2022 16:58:40] DEBUG Executing statement:  alter table "public"."tipostand_productos_2"   add constraint fk_tipostand_productos_2_tipos foreign key ("tipostand_2_oid") references "public"."tipostand_2" ("oid")
-[10 may 2022 16:58:40] DEBUG Executing statement:  alter table "public"."tipostand_productos_2"   add constraint fk_tipostand_productos_2_produ foreign key ("productos_2_oid") references "public"."productos_2" ("oid")
-[10 may 2022 16:58:40] DEBUG Executing statement:    alter table "public"."productosasignados_2"  add column  "productos_2_oid"  int4
-[10 may 2022 16:58:40] DEBUG Executing statement:  alter table "public"."productosasignados_2"   add constraint fk_productosasignados_2_produc foreign key ("productos_2_oid") references "public"."productos_2" ("oid")
-[10 may 2022 16:58:40] DEBUG Executing statement:    alter table "public"."ubicacion_evento_fecha_2"  add column  "ubicacion_2_oid"  int4
-[10 may 2022 16:58:40] DEBUG Executing statement:  alter table "public"."ubicacion_evento_fecha_2"   add constraint fk_ubicacion_evento_fecha_2_ub foreign key ("ubicacion_2_oid") references "public"."ubicacion_2" ("oid")
-[10 may 2022 16:58:40] DEBUG Executing statement:    alter table "public"."categoria_2"  add column  "almacen_2_oid"  int4
-[10 may 2022 16:58:40] DEBUG Executing statement:  alter table "public"."categoria_2"   add constraint fk_categoria_2_almacen_2 foreign key ("almacen_2_oid") references "public"."almacen_2" ("oid")
-[10 may 2022 16:58:40] DEBUG Executing statement:    alter table "public"."stand_2"  add column  "tipostand_2_oid"  int4
-[10 may 2022 16:58:40] DEBUG Executing statement:  alter table "public"."stand_2"   add constraint fk_stand_2_tipostand_2 foreign key ("tipostand_2_oid") references "public"."tipostand_2" ("oid")
-[10 may 2022 16:58:40] DEBUG Executing statement:    alter table "public"."stand_2"  add column  "eventos_2_oid"  int4
-[10 may 2022 16:58:40] DEBUG Executing statement:  alter table "public"."stand_2"   add constraint fk_stand_2_eventos_2 foreign key ("eventos_2_oid") references "public"."eventos_2" ("oid")
-[10 may 2022 16:58:40] DEBUG Executing statement:    alter table "public"."productos_2"  add column  "almacen_2_oid"  int4
-[10 may 2022 16:58:40] DEBUG Executing statement:  alter table "public"."productos_2"   add constraint fk_productos_2_almacen_2 foreign key ("almacen_2_oid") references "public"."almacen_2" ("oid")
-[10 may 2022 16:58:40] DEBUG Executing statement:    alter table "public"."ubicacion_evento_fecha_2"  add column  "eventos_2_oid"  int4
-[10 may 2022 16:58:40] DEBUG Executing statement:  alter table "public"."ubicacion_evento_fecha_2"   add constraint fk_ubicacion_evento_fecha_2_ev foreign key ("eventos_2_oid") references "public"."eventos_2" ("oid")
-[10 may 2022 16:58:40] DEBUG Executing statement:    alter table "public"."productosoferta_2"   add constraint fk_productosoferta_2_productos foreign key ("productos_2_oid") references "public"."productos_2" ("oid")
-[10 may 2022 16:58:40] DEBUG ================================================================================
-[10 may 2022 16:58:40] DEBUG SQL SCRIPT SUCCESSFULLY EXECUTED
-[10 may 2022 16:58:40] INFO Database connection closed
-[10 may 2022 16:58:40] DEBUG Total time: 321 milliseconds
+[11 may 2022 13:00:57] DEBUG Executing SQL script
+[11 may 2022 13:00:57] INFO ================================================================================
+[11 may 2022 13:00:57] INFO onError= 'stop'
+[11 may 2022 13:00:57] INFO autoCommit= 'false'
+[11 may 2022 13:00:57] INFO username= 'postgres'
+[11 may 2022 13:00:57] INFO outputPath= 'C:\Users\gabri\Desktop\Webratio\Extreventos\.Temp~\UpdateSQL.xml'
+[11 may 2022 13:00:57] INFO outputLogPath= 'C:\Users\gabri\Desktop\Webratio\Extreventos\.Temp~\UpdateSQL.xml.log'
+[11 may 2022 13:00:57] INFO encoding= ''
+[11 may 2022 13:00:57] INFO driverClass= 'org.postgresql.Driver'
+[11 may 2022 13:00:57] INFO sqlScript= 'C:\Users\gabri\Desktop\Webratio\Extreventos\.Temp~\UpdateSQL.sql'
+[11 may 2022 13:00:57] INFO eventSocketPort= '56498'
+[11 may 2022 13:00:57] INFO statementSeparator= ';'
+[11 may 2022 13:00:57] INFO derby.system.home= 'C:\Users\gabri\Desktop\Webratio\.metadata\.plugins\com.webratio.commons.db\derby'
+[11 may 2022 13:00:57] INFO password= 'admin'
+[11 may 2022 13:00:57] INFO url= 'jdbc:postgresql://localhost:5432/ExtreventosDB'
+[11 may 2022 13:00:57] INFO ================================================================================
+[11 may 2022 13:00:57] INFO Connecting to the Database...
+[11 may 2022 13:00:57] INFO Database connection estabilished
+[11 may 2022 13:00:57] INFO transaction isolation: 2
+[11 may 2022 13:00:57] DEBUG ================================================================================
+[11 may 2022 13:00:57] DEBUG Executing SQL script file: C:\Users\gabri\Desktop\Webratio\Extreventos\.Temp~\UpdateSQL.sql
+[11 may 2022 13:00:57] DEBUG Executing statement:  alter table "public"."productosasignados"  add column  "stand_oid"  int4
+[11 may 2022 13:00:57] DEBUG Executing statement:  alter table "public"."productosasignados"   add constraint fk_productosasignados_stand foreign key ("stand_oid") references "public"."stand" ("oid")
+[11 may 2022 13:00:57] DEBUG Executing statement:    alter table "public"."productosasignados"  add column  "productos_oid"  int4
+[11 may 2022 13:00:57] DEBUG Executing statement:  alter table "public"."productosasignados"   add constraint fk_productosasignados_producto foreign key ("productos_oid") references "public"."productos" ("oid")
+[11 may 2022 13:00:57] DEBUG ================================================================================
+[11 may 2022 13:00:57] DEBUG SQL SCRIPT SUCCESSFULLY EXECUTED
+[11 may 2022 13:00:57] INFO Database connection closed
+[11 may 2022 13:00:57] DEBUG Total time: 375 milliseconds

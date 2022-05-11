@@ -1,0 +1,78 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1495" gr:y="1025" id="sv2#area1#page25" name="Seleccionar productos" landmark="false" linkOrder="sv2#area1#page25#ln96">
+  <ContentUnits>
+    <PowerIndexUnit gr:x="0" gr:y="5" id="sv2#area1#page25#pwu13" name="List13" sortable="true" checkable="false" useCountQuery="false" entity="ent17" displayAttributes="ent17#att21 ent17#att23 ent17#att24" linkOrder="sv2#area1#page25#pwu13#ln37">
+      <Link id="sv2#area1#page25#pwu13#ln37" name="Flow37" to="sv2#area1#seu17" automaticCoupling="true" type="normal" validate="true"/>
+    </PowerIndexUnit>
+    <PowerIndexUnit gr:x="265" gr:y="0" id="sv2#area1#page25#pwu14" name="Productos asignados" sortable="true" checkable="false" useCountQuery="false" entity="ent8" displayAttributes="ent8#att2 ent8#att5" linkOrder="sv2#area1#page25#pwu14#ln24">
+      <Link id="sv2#area1#page25#pwu14#ln24" name="Flow24" to="sv2#area1#dlu6" automaticCoupling="true" type="normal" validate="true"/>
+      <Selector id="sv2#area1#page25#pwu14#su46" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv2#area1#page25#pwu14#su46#rcond4" name="RoleCondition4" predicate="in" implied="false" role="rel10#role3"/>
+      </Selector>
+    </PowerIndexUnit>
+    <SelectorUnit gr:x="125" gr:y="5" id="sv2#area1#page25#seu20" name="Selector20" entity="ent18">
+      <Selector id="sv2#area1#page25#seu20#su45" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area1#page25#seu20#su45#kcond37" name="KeyCondition37" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv2#area1#page25#seu20#ln84" name="Flow84" to="sv2#area1#cru12" automaticCoupling="true" type="transport" validate="true" gr:bendpoints="109,-154,-181,62"/>
+      <Link id="sv2#area1#page25#seu20#ln95" name="Flow95" to="sv2#area1#page25#pwu14" automaticCoupling="true" type="transport" validate="true"/>
+    </SelectorUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area1#page25#pwu13">
+          <layout:Attribute attribute="ent17#att21"/>
+          <layout:Attribute attribute="ent17#att23"/>
+          <layout:Attribute attribute="ent17#att24"/>
+          <layout:Link link="sv2#area1#page25#pwu13#ln37"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area1#page25#pwu14">
+          <layout:Attribute attribute="ent8#att2"/>
+          <layout:Attribute attribute="ent8#att5"/>
+          <layout:Link link="sv2#area1#page25#pwu14#ln24"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Link id="sv2#area1#page25#ln96" name="Flow96" to="sv2#area1#page15" automaticCoupling="true" type="normal" validate="true"/>
+</Page>

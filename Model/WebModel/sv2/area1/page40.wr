@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area1#page40" name="Definir evento" gr:x="1185" gr:y="450">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area1#page40" name="Definir evento" gr:x="1195" gr:y="450">
   <ContentUnits>
     <EntryUnit id="sv2#area1#page40#enu15" name="Form11" gr:x="0" gr:y="0" entity="ent9" linkOrder="sv2#area1#page40#enu15#ln152">
       <Field id="sv2#area1#page40#enu15#fld54" name="Ubicaci&#243;n" type="string" modifiable="false" preloaded="true"/>

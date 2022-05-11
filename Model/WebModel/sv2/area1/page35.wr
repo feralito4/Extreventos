@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="810" gr:y="640" id="sv2#area1#page35" name="Page 35">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="820" gr:y="640" id="sv2#area1#page35" name="Page 35">
   <ContentUnits>
     <EntryUnit gr:x="0" gr:y="0" id="sv2#area1#page35#enu3" name="crear Stand" entity="ent18" linkOrder="sv2#area1#page35#enu3#ln104">
       <Field id="sv2#area1#page35#enu3#fld13" name="nombre" type="string" modifiable="true"/>
