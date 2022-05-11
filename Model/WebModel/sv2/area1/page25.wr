@@ -1,21 +1,45 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1495" gr:y="1025" id="sv2#area1#page25" name="Seleccionar productos" landmark="false" linkOrder="sv2#area1#page25#ln96">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="740" gr:y="1155" id="sv2#area1#page25" name="Seleccionar productos" landmark="false" linkOrder="sv2#area1#page25#ln100">
   <ContentUnits>
-    <PowerIndexUnit gr:x="0" gr:y="5" id="sv2#area1#page25#pwu13" name="List13" sortable="true" checkable="false" useCountQuery="false" entity="ent17" displayAttributes="ent17#att21 ent17#att23 ent17#att24" linkOrder="sv2#area1#page25#pwu13#ln37">
+    <PowerIndexUnit gr:x="0" gr:y="20" id="sv2#area1#page25#pwu13" name="List13" sortable="true" checkable="false" useCountQuery="false" entity="ent17" displayAttributes="ent17#att21 ent17#att23 ent17#att24" linkOrder="sv2#area1#page25#pwu13#ln37">
       <Link id="sv2#area1#page25#pwu13#ln37" name="Flow37" to="sv2#area1#seu17" automaticCoupling="true" type="normal" validate="true"/>
+      <Selector id="sv2#area1#page25#pwu13#su28" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv2#area1#page25#pwu13#su28#rcond1" name="RoleCondition1" predicate="in" implied="false" role="rel11#role5"/>
+      </Selector>
     </PowerIndexUnit>
-    <PowerIndexUnit gr:x="265" gr:y="0" id="sv2#area1#page25#pwu14" name="Productos asignados" sortable="true" checkable="false" useCountQuery="false" entity="ent8" displayAttributes="ent8#att2 ent8#att5" linkOrder="sv2#area1#page25#pwu14#ln24">
+    <PowerIndexUnit gr:x="415" gr:y="5" id="sv2#area1#page25#pwu14" name="Productos asignados" sortable="true" checkable="false" useCountQuery="false" entity="ent8" displayAttributes="ent8#att2 ent8#att5" linkOrder="sv2#area1#page25#pwu14#ln24">
       <Link id="sv2#area1#page25#pwu14#ln24" name="Flow24" to="sv2#area1#dlu6" automaticCoupling="true" type="normal" validate="true"/>
       <Selector id="sv2#area1#page25#pwu14#su46" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv2#area1#page25#pwu14#su46#rcond4" name="RoleCondition4" predicate="in" implied="false" role="rel10#role3"/>
       </Selector>
     </PowerIndexUnit>
-    <SelectorUnit gr:x="125" gr:y="5" id="sv2#area1#page25#seu20" name="Selector20" entity="ent18">
+    <SelectorUnit gr:x="345" gr:y="135" id="sv2#area1#page25#seu20" name="Selector20" entity="ent18">
       <Selector id="sv2#area1#page25#seu20#su45" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#area1#page25#seu20#su45#kcond37" name="KeyCondition37" predicate="in" implied="false"/>
       </Selector>
       <Link id="sv2#area1#page25#seu20#ln84" name="Flow84" to="sv2#area1#cru12" automaticCoupling="true" type="transport" validate="true" gr:bendpoints="109,-154,-181,62"/>
       <Link id="sv2#area1#page25#seu20#ln95" name="Flow95" to="sv2#area1#page25#pwu14" automaticCoupling="true" type="transport" validate="true"/>
       <Link id="sv2#area1#page25#seu20#ln25" name="Flow25" to="sv2#area1#seu19" automaticCoupling="true" type="transport" validate="true"/>
+      <Link id="sv2#area1#page25#seu20#ln33" name="Flow33" to="sv2#area1#page25#seu5" type="transport" validate="true">
+        <LinkParameter id="sv2#area1#page25#seu20#ln33#par67" name="standTotipoStand.oid_KeyCondition25 [oid]" source="rel16#role13_ent12#att11Array" target="sv2#area1#page25#seu5#su17#kcond25.ent12#att11"/>
+      </Link>
+      <Link id="sv2#area1#page25#seu20#ln108" name="Flow108" to="sv2#area1#mathu3" type="transport" validate="true">
+        <LinkParameter id="sv2#area1#page25#seu20#ln108#par200" name="PrecioTotal_totalEvento" source="ent18#att28Array" target="sv2#area1#mathu3#mathv4"/>
+      </Link>
+      <Link id="sv2#area1#page25#seu20#ln109" name="Flow109" to="sv2#area1#mfu13" automaticCoupling="true" type="transport" validate="true" gr:bendpoints="28,-279,-142,105"/>
+      <Link id="sv2#area1#page25#seu20#ln111" name="Flow111" to="sv2#area1#mathu4" type="transport" validate="true">
+        <LinkParameter id="sv2#area1#page25#seu20#ln111#par205" name="PrecioTotal_totalEvento" source="ent18#att28Array" target="sv2#area1#mathu4#mathv6"/>
+      </Link>
+    </SelectorUnit>
+    <SelectorUnit gr:x="185" gr:y="110" id="sv2#area1#page25#seu5" name="Selector5" entity="ent12">
+      <Selector id="sv2#area1#page25#seu5#su17" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area1#page25#seu5#su17#kcond25" name="KeyCondition25" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv2#area1#page25#seu5#ln39" name="Flow39" to="sv2#area1#page25#pwu13" automaticCoupling="true" type="transport" validate="true"/>
+    </SelectorUnit>
+    <SelectorUnit gr:x="225" gr:y="0" id="sv2#area1#page25#seu22" name="Evento" entity="ent9">
+      <Selector id="sv2#area1#page25#seu22#su39" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area1#page25#seu22#su39#kcond34" name="KeyCondition34" predicate="in" implied="false"/>
+      </Selector>
     </SelectorUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
@@ -75,5 +99,5 @@
       <layout:Cell/>
     </layout:Row>
   </layout:Grid>
-  <Link id="sv2#area1#page25#ln96" name="Flow96" to="sv2#area1#page15" automaticCoupling="true" type="normal" validate="true"/>
+  <Link id="sv2#area1#page25#ln100" name="Volver a Crear Stands" to="sv2#area1#seu23" automaticCoupling="true" type="normal" validate="true"/>
 </Page>
