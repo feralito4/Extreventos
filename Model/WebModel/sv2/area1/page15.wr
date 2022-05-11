@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1485" gr:y="615" id="sv2#area1#page15" name="Crear stands" landmark="true">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1335" gr:y="630" id="sv2#area1#page15" name="Crear stands" landmark="false">
   <ContentUnits>
     <SelectorUnit id="sv2#area1#page15#seu6" name="Selector23" gr:x="145" gr:y="5" entity="ent12">
       <Link id="sv2#area1#page15#seu6#ln34" name="Flow34" to="sv2#area1#page15#enu12" type="transport" validate="true">
