@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="445" gr:y="40" id="sv1#page2" name="CRUDCategoria" landmark="true">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="460" gr:y="20" id="sv1#page2" name="CRUDCategoria" landmark="true">
   <ContentUnits/>
   <layout:Grid containerType="grid">
     <layout:Row>
@@ -139,36 +139,36 @@
     </layout:Row>
   </layout:Grid>
   <Alternative gr:x="0" gr:y="0" id="sv1#page2#alt1" name="Alternative" defaultPage="sv1#page2#alt1#page6">
-    <Page gr:x="0" gr:y="0" id="sv1#page2#alt1#page6" name="DefaultPage">
+    <Page gr:x="0" gr:y="5" id="sv1#page2#alt1#page6" name="DefaultPage">
       <ContentUnits>
-        <NoOpContentUnit gr:x="5" gr:y="5" id="sv1#page2#alt1#page6#gctu1" name="New" entity="ent16" linkOrder="sv1#page2#alt1#page6#gctu1#ln6">
-          <Link id="sv1#page2#alt1#page6#gctu1#ln6" name="New" to="sv1#page2#alt1#page8#seu1" type="normal" validate="true"/>
+        <NoOpContentUnit gr:x="0" gr:y="15" id="sv1#page2#alt1#page6#gctu1" name="Crear categor&#237;as" entity="ent16" linkOrder="sv1#page2#alt1#page6#gctu1#ln6">
+          <Link id="sv1#page2#alt1#page6#gctu1#ln6" name="Nueva categor&#237;a" to="sv1#page2#alt1#page8#seu1" type="normal" validate="true"/>
         </NoOpContentUnit>
-        <MultiMessageUnit gr:x="0" gr:y="150" id="sv1#page2#alt1#page6#mssu4" name="MultiMessageUnit"/>
-        <PowerIndexUnit gr:x="110" gr:y="0" id="sv1#page2#alt1#page6#pwu5" name="List5" sortable="true" checkable="false" useCountQuery="false" entity="ent16" displayAttributes="ent16#att19" linkOrder="sv1#page2#alt1#page6#pwu5#ln40 sv1#page2#alt1#page6#pwu5#ln41 sv1#page2#alt1#page6#pwu5#ln42">
+        <MultiMessageUnit gr:x="275" gr:y="160" id="sv1#page2#alt1#page6#mssu4" name="MultiMessageUnit"/>
+        <PowerIndexUnit gr:x="145" gr:y="0" id="sv1#page2#alt1#page6#pwu5" name="Categor&#237;as" sortable="true" checkable="false" useCountQuery="false" entity="ent16" displayAttributes="ent16#att19" linkOrder="sv1#page2#alt1#page6#pwu5#ln40 sv1#page2#alt1#page6#pwu5#ln41 sv1#page2#alt1#page6#pwu5#ln42">
           <Link id="sv1#page2#alt1#page6#pwu5#ln40" name="Detalles" to="sv1#page2#alt1#page7#dau1" automaticCoupling="true" type="normal" validate="true"/>
-          <Link id="sv1#page2#alt1#page6#pwu5#ln41" name="Modificar" to="sv1#page2#alt1#page8#seu1" automaticCoupling="true" type="normal" validate="true"/>
-          <Link id="sv1#page2#alt1#page6#pwu5#ln42" name="Eliminar" to="sv1#dlu1" automaticCoupling="true" type="normal" validate="true"/>
+          <Link id="sv1#page2#alt1#page6#pwu5#ln41" name="Modificar" to="sv1#page2#alt1#page8#seu1" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="0,355,135,0"/>
+          <Link id="sv1#page2#alt1#page6#pwu5#ln42" name="Eliminar" to="sv1#dlu1" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="0,-91,310,-231;-310,-90,0,-235"/>
         </PowerIndexUnit>
       </ContentUnits>
     </Page>
-    <Page gr:x="400" gr:y="5" id="sv1#page2#alt1#page7" name="Details" landmark="true">
+    <Page gr:x="455" gr:y="0" id="sv1#page2#alt1#page7" name="Details" landmark="true">
       <ContentUnits>
-        <DataUnit gr:x="0" gr:y="0" id="sv1#page2#alt1#page7#dau1" name="DataUnit" entity="ent16" linkOrder="sv1#page2#alt1#page7#dau1#ln4" displayAttributes="ent16#att18 ent16#att19">
+        <DataUnit gr:x="0" gr:y="0" id="sv1#page2#alt1#page7#dau1" name="Detalle categor&#237;a" entity="ent16" linkOrder="sv1#page2#alt1#page7#dau1#ln4" displayAttributes="ent16#att18 ent16#att19">
           <Selector id="sv1#page2#alt1#page7#dau1#su1" defaultPolicy="fill" booleanOperator="and">
             <KeyCondition id="sv1#page2#alt1#page7#dau1#su1#kcond1" name="KeyCondition1" predicate="in" implied="false"/>
           </Selector>
-          <Link id="sv1#page2#alt1#page7#dau1#ln4" name="Close" to="sv1#page2#alt1#page6#mssu4" automaticCoupling="true" type="normal" validate="true"/>
+          <Link id="sv1#page2#alt1#page7#dau1#ln4" name="Volver" to="sv1#page2#alt1#page6#mssu4" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="0,144,175,-1"/>
         </DataUnit>
       </ContentUnits>
     </Page>
-    <Page gr:x="30" gr:y="340" id="sv1#page2#alt1#page8" name="Form" landmark="true">
+    <Page gr:x="10" gr:y="355" id="sv1#page2#alt1#page8" name="Form" landmark="true">
       <ContentUnits>
-        <EntryUnit gr:x="175" gr:y="110" id="sv1#page2#alt1#page8#enu4" name="EntryUnit" entity="ent16" linkOrder="sv1#page2#alt1#page8#enu4#ln5 sv1#page2#alt1#page8#enu4#ln10">
+        <EntryUnit gr:x="260" gr:y="95" id="sv1#page2#alt1#page8#enu4" name="Modificar categor&#237;a" entity="ent16" linkOrder="sv1#page2#alt1#page8#enu4#ln5 sv1#page2#alt1#page8#enu4#ln10">
           <Field id="sv1#page2#alt1#page8#enu4#fld1" name="oid" type="integer" modifiable="false" hidden="true" preloaded="true"/>
           <Field id="sv1#page2#alt1#page8#enu4#fld2" name="nombreCategoria" type="string" modifiable="true" preloaded="true"/>
           <Link id="sv1#page2#alt1#page8#enu4#ln5" name="Cancel" to="sv1#page2#alt1#page6#mssu4" automaticCoupling="true" type="normal" validate="false"/>
-          <Link id="sv1#page2#alt1#page8#enu4#ln10" name="Accept" to="sv1#inn1" type="normal" validate="true">
+          <Link id="sv1#page2#alt1#page8#enu4#ln10" name="Aceptar" to="sv1#inn1" type="normal" validate="true">
             <LinkParameter id="sv1#page2#alt1#page8#enu4#ln10#par2" name="oid_oid" source="sv1#page2#alt1#page8#enu4#fld1" target="sv1#inn1.isnotnull"/>
           </Link>
           <Link id="sv1#page2#alt1#page8#enu4#ln12" name="Load" to="sv1#cru1" type="transport" validate="true">
@@ -183,7 +183,7 @@
           <Selector id="sv1#page2#alt1#page8#seu1#su2" defaultPolicy="fill" booleanOperator="and">
             <KeyCondition id="sv1#page2#alt1#page8#seu1#su2#kcond2" name="KeyCondition2" predicate="in" implied="false"/>
           </Selector>
-          <Link id="sv1#page2#alt1#page8#seu1#ln44" name="Flow44" to="sv1#page2#alt1#page8#enu4" type="transport" validate="true">
+          <Link id="sv1#page2#alt1#page8#seu1#ln44" name="Flow44" to="sv1#page2#alt1#page8#enu4" type="transport" validate="true" gr:bendpoints="-2,85,-282,0">
             <LinkParameter id="sv1#page2#alt1#page8#seu1#ln44#par69" name="oid_oid" source="ent16#att18Array" target="sv1#page2#alt1#page8#enu4#fld1_slot"/>
             <LinkParameter id="sv1#page2#alt1#page8#seu1#ln44#par70" name="nombreCategoria_nombreCategoria" source="ent16#att19Array" target="sv1#page2#alt1#page8#enu4#fld2_slot"/>
           </Link>

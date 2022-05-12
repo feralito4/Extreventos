@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="3235" gr:y="60" id="sv1#page3" name="CRUDUbicaci&#243;n" landmark="true">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="3240" gr:y="60" id="sv1#page3" name="CRUDUbicaci&#243;n" landmark="true">
   <ContentUnits/>
   <layout:Grid containerType="grid">
     <layout:Row>
@@ -148,39 +148,39 @@
   <Alternative gr:x="0" gr:y="0" id="sv1#page3#alt2" name="Alternative" defaultPage="sv1#page3#alt2#page4">
     <Page gr:x="0" gr:y="0" id="sv1#page3#alt2#page4" name="DefaultPage">
       <ContentUnits>
-        <NoOpContentUnit gr:x="5" gr:y="0" id="sv1#page3#alt2#page4#gctu2" name="New" entity="ent20" linkOrder="sv1#page3#alt2#page4#gctu2#ln3">
-          <Link id="sv1#page3#alt2#page4#gctu2#ln3" name="New" to="sv1#page3#alt2#page9#seu2" type="normal" validate="true" gr:bendpoints="-62,47,-127,-298;-63,197,-128,-148">
+        <NoOpContentUnit gr:x="0" gr:y="0" id="sv1#page3#alt2#page4#gctu2" name="Crear ubicaciones" entity="ent20" linkOrder="sv1#page3#alt2#page4#gctu2#ln3">
+          <Link id="sv1#page3#alt2#page4#gctu2#ln3" name="Nueva ubicaci&#243;n" to="sv1#page3#alt2#page9#seu2" type="normal" validate="true">
             <LinkParameter id="sv1#page3#alt2#page4#gctu2#ln3#par1" name="0_KeyCondition6 [oid]" sourceValue="0" target="sv1#page3#alt2#page9#seu2#su6#kcond6.ent20#att32"/>
           </Link>
         </NoOpContentUnit>
-        <MultiMessageUnit gr:x="0" gr:y="145" id="sv1#page3#alt2#page4#mssu1" name="MultiMessageUnit"/>
-        <PowerIndexUnit gr:x="125" gr:y="0" id="sv1#page3#alt2#page4#pwu2" name="List2" sortable="true" checkable="false" useCountQuery="false" entity="ent20" linkOrder="sv1#page3#alt2#page4#pwu2#ln17 sv1#page3#alt2#page4#pwu2#ln18 sv1#page3#alt2#page4#pwu2#ln19" displayAttributes="ent20#att33 ent20#att35">
+        <MultiMessageUnit gr:x="235" gr:y="165" id="sv1#page3#alt2#page4#mssu1" name="MultiMessageUnit"/>
+        <PowerIndexUnit gr:x="155" gr:y="5" id="sv1#page3#alt2#page4#pwu2" name="Ubicaciones" sortable="true" checkable="false" useCountQuery="false" entity="ent20" linkOrder="sv1#page3#alt2#page4#pwu2#ln17 sv1#page3#alt2#page4#pwu2#ln18 sv1#page3#alt2#page4#pwu2#ln19" displayAttributes="ent20#att33 ent20#att35">
           <Link id="sv1#page3#alt2#page4#pwu2#ln17" name="Detalles" to="sv1#page3#alt2#page5#dau2" automaticCoupling="true" type="normal" validate="true"/>
-          <Link id="sv1#page3#alt2#page4#pwu2#ln18" name="Modificar" to="sv1#page3#alt2#page9#seu2" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="6,208,76,-122"/>
-          <Link id="sv1#page3#alt2#page4#pwu2#ln19" name="Eliminar" to="sv1#dlu2" automaticCoupling="true" type="normal" validate="true"/>
+          <Link id="sv1#page3#alt2#page4#pwu2#ln18" name="Modificar" to="sv1#page3#alt2#page9#seu2" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="0,315,140,0"/>
+          <Link id="sv1#page3#alt2#page4#pwu2#ln19" name="Eliminar" to="sv1#dlu2" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="-1,-91,324,-236;-325,-90,0,-235"/>
         </PowerIndexUnit>
       </ContentUnits>
     </Page>
-    <Page gr:x="400" gr:y="0" id="sv1#page3#alt2#page5" name="Details" landmark="true">
+    <Page gr:x="420" gr:y="0" id="sv1#page3#alt2#page5" name="Details" landmark="true">
       <ContentUnits>
-        <DataUnit gr:x="0" gr:y="0" id="sv1#page3#alt2#page5#dau2" name="DataUnit" entity="ent20" linkOrder="sv1#page3#alt2#page5#dau2#ln1" displayAttributes="ent20#att32 ent20#att33 ent20#att34 ent20#att35 ent20#att36">
+        <DataUnit gr:x="0" gr:y="0" id="sv1#page3#alt2#page5#dau2" name="Detalles ubicaci&#243;n" entity="ent20" linkOrder="sv1#page3#alt2#page5#dau2#ln1" displayAttributes="ent20#att32 ent20#att33 ent20#att34 ent20#att35 ent20#att36">
           <Selector id="sv1#page3#alt2#page5#dau2#su5" defaultPolicy="fill" booleanOperator="and">
             <KeyCondition id="sv1#page3#alt2#page5#dau2#su5#kcond5" name="KeyCondition5" predicate="in" implied="false"/>
           </Selector>
-          <Link id="sv1#page3#alt2#page5#dau2#ln1" name="Close" to="sv1#page3#alt2#page4#mssu1" automaticCoupling="true" type="normal" validate="true"/>
+          <Link id="sv1#page3#alt2#page5#dau2#ln1" name="Volver" to="sv1#page3#alt2#page4#mssu1" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="-1,145,184,0"/>
         </DataUnit>
       </ContentUnits>
     </Page>
-    <Page gr:x="55" gr:y="325" id="sv1#page3#alt2#page9" name="Form" landmark="true">
+    <Page gr:x="15" gr:y="315" id="sv1#page3#alt2#page9" name="Form" landmark="true">
       <ContentUnits>
-        <EntryUnit gr:x="150" gr:y="120" id="sv1#page3#alt2#page9#enu1" name="EntryUnit" entity="ent20" linkOrder="sv1#page3#alt2#page9#enu1#ln2 sv1#page3#alt2#page9#enu1#ln11">
+        <EntryUnit gr:x="215" gr:y="120" id="sv1#page3#alt2#page9#enu1" name="Modificar ubicaci&#243;n" entity="ent20" linkOrder="sv1#page3#alt2#page9#enu1#ln2 sv1#page3#alt2#page9#enu1#ln11">
           <Field id="sv1#page3#alt2#page9#enu1#fld3" name="oid" type="integer" modifiable="false" hidden="true" preloaded="true"/>
           <Field id="sv1#page3#alt2#page9#enu1#fld4" name="aforo" type="integer" modifiable="true" preloaded="true"/>
           <Field id="sv1#page3#alt2#page9#enu1#fld5" name="direccion" type="string" modifiable="true" preloaded="true"/>
           <Field id="sv1#page3#alt2#page9#enu1#fld6" name="nombre" type="string" modifiable="true" preloaded="true"/>
           <Field id="sv1#page3#alt2#page9#enu1#fld7" name="precio/alquiler" type="integer" modifiable="true" preloaded="true"/>
           <Link id="sv1#page3#alt2#page9#enu1#ln2" name="Cancel" to="sv1#page3#alt2#page4#mssu1" automaticCoupling="true" type="normal" validate="false"/>
-          <Link id="sv1#page3#alt2#page9#enu1#ln11" name="Accept" to="sv1#inn2" type="normal" validate="true">
+          <Link id="sv1#page3#alt2#page9#enu1#ln11" name="Aceptar" to="sv1#inn2" type="normal" validate="true">
             <LinkParameter id="sv1#page3#alt2#page9#enu1#ln11#par5" name="oid_oid" source="sv1#page3#alt2#page9#enu1#fld3" target="sv1#inn2.isnotnull"/>
           </Link>
           <Link id="sv1#page3#alt2#page9#enu1#ln15" name="Load" to="sv1#cru2" type="transport" validate="true">
@@ -201,7 +201,7 @@
           <Selector id="sv1#page3#alt2#page9#seu2#su6" defaultPolicy="fill" booleanOperator="and">
             <KeyCondition id="sv1#page3#alt2#page9#seu2#su6#kcond6" name="KeyCondition6" predicate="in" implied="false"/>
           </Selector>
-          <Link id="sv1#page3#alt2#page9#seu2#ln14" name="Load" to="sv1#page3#alt2#page9#enu1" type="transport" validate="true">
+          <Link id="sv1#page3#alt2#page9#seu2#ln14" name="Load" to="sv1#page3#alt2#page9#enu1" type="transport" validate="true" gr:bendpoints="2,110,-233,0">
             <LinkParameter id="sv1#page3#alt2#page9#seu2#ln14#par10" name="nombre_nombre" source="ent20#att35Array" target="sv1#page3#alt2#page9#enu1#fld6_slot"/>
             <LinkParameter id="sv1#page3#alt2#page9#seu2#ln14#par13" name="aforo_aforo" source="ent20#att33Array" target="sv1#page3#alt2#page9#enu1#fld4_slot"/>
             <LinkParameter id="sv1#page3#alt2#page9#seu2#ln14#par14" name="direccion_direccion" source="ent20#att34Array" target="sv1#page3#alt2#page9#enu1#fld5_slot"/>

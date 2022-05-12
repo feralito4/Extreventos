@@ -195,8 +195,7 @@
     <Attribute id="ent2#att38" key="true" name="nombre" type="string"/>
     <Attribute id="ent2#att47" name="IdUbi" type="integer"/>
   </Entity>
-  <db:Database id="db1" name="ExtreventosDB" type="PostgreSQL 9" url="jdbc:postgresql://localhost:5432/ExtreventosDB" username="postgres" password="admin" schema="public">
-  </db:Database>
+  <db:Database id="db1" name="ExtreventosDB" type="PostgreSQL 9" url="jdbc:postgresql://localhost:5432/ExtreventosDB" username="postgres" password="admin" schema="public"/>
   <Entity gr:x="-85" gr:y="445" id="ent3" name="Evento_Volatil" duration="volatile" volatileStorage="database" attributeOrder="ent3#att48 ent3#att49" volatileScope="application">
     <Attribute id="ent3#att48" key="true" name="oid" type="integer"/>
     <Attribute id="ent3#att49" name="Id_Evento" type="string"/>

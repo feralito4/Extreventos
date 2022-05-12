@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1375" gr:y="60" id="sv1#page17" name="CRUDAlmacen" landmark="true">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1370" gr:y="55" id="sv1#page17" name="CRUDAlmacen" landmark="true">
   <ContentUnits/>
   <layout:Grid containerType="grid">
     <layout:Row>
@@ -160,39 +160,39 @@
     </layout:Row>
   </layout:Grid>
   <Alternative gr:x="0" gr:y="0" id="sv1#page17#alt4" name="Alternative" defaultPage="sv1#page17#alt4#page18">
-    <Page gr:x="0" gr:y="0" id="sv1#page17#alt4#page18" name="DefaultPage">
+    <Page gr:x="0" gr:y="5" id="sv1#page17#alt4#page18" name="DefaultPage">
       <ContentUnits>
-        <NoOpContentUnit gr:x="5" gr:y="0" id="sv1#page17#alt4#page18#gctu4" name="New" entity="ent22" linkOrder="sv1#page17#alt4#page18#gctu4#ln50">
-          <Link id="sv1#page17#alt4#page18#gctu4#ln50" name="New" to="sv1#page17#alt4#page20#seu9" type="normal" validate="true"/>
+        <NoOpContentUnit gr:x="0" gr:y="0" id="sv1#page17#alt4#page18#gctu4" name="Crear almacenes" entity="ent22" linkOrder="sv1#page17#alt4#page18#gctu4#ln50">
+          <Link id="sv1#page17#alt4#page18#gctu4#ln50" name="Nuevo almac&#233;n" to="sv1#page17#alt4#page20#seu9" type="normal" validate="true"/>
         </NoOpContentUnit>
-        <MultiMessageUnit gr:x="0" gr:y="145" id="sv1#page17#alt4#page18#mssu7" name="MultiMessageUnit"/>
-        <PowerIndexUnit gr:x="125" gr:y="0" id="sv1#page17#alt4#page18#pwu7" name="List7" sortable="true" checkable="false" useCountQuery="false" linkOrder="sv1#page17#alt4#page18#pwu7#ln58 sv1#page17#alt4#page18#pwu7#ln59 sv1#page17#alt4#page18#pwu7#ln60" entity="ent22" displayAttributes="ent22#att41">
+        <MultiMessageUnit gr:x="280" gr:y="150" id="sv1#page17#alt4#page18#mssu7" name="MultiMessageUnit"/>
+        <PowerIndexUnit gr:x="130" gr:y="0" id="sv1#page17#alt4#page18#pwu7" name="Almacenes" sortable="true" checkable="false" useCountQuery="false" linkOrder="sv1#page17#alt4#page18#pwu7#ln58 sv1#page17#alt4#page18#pwu7#ln59 sv1#page17#alt4#page18#pwu7#ln60" entity="ent22" displayAttributes="ent22#att41">
           <Link id="sv1#page17#alt4#page18#pwu7#ln58" name="Detalles" to="sv1#page17#alt4#page19#dau4" automaticCoupling="true" type="normal" validate="true"/>
-          <Link id="sv1#page17#alt4#page18#pwu7#ln59" name="Modificar" to="sv1#page17#alt4#page20#seu9" automaticCoupling="true" type="normal" validate="true"/>
-          <Link id="sv1#page17#alt4#page18#pwu7#ln60" name="Eliminar" to="sv1#dlu4" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="232,114,-273,-51"/>
+          <Link id="sv1#page17#alt4#page18#pwu7#ln59" name="Modificar" to="sv1#page17#alt4#page20#seu9" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="0,315,115,0"/>
+          <Link id="sv1#page17#alt4#page18#pwu7#ln60" name="Eliminar" to="sv1#dlu4" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="-1,-89,274,-224;-275,-89,0,-224"/>
         </PowerIndexUnit>
       </ContentUnits>
     </Page>
-    <Page gr:x="400" gr:y="0" id="sv1#page17#alt4#page19" name="Details" landmark="true">
+    <Page gr:x="455" gr:y="0" id="sv1#page17#alt4#page19" name="Details" landmark="true">
       <ContentUnits>
-        <DataUnit gr:x="0" gr:y="0" id="sv1#page17#alt4#page19#dau4" name="DataUnit" entity="ent22" linkOrder="sv1#page17#alt4#page19#dau4#ln48" displayAttributes="ent22#att40 ent22#att41 ent22#att42 ent22#att43 ent22#att44">
+        <DataUnit gr:x="0" gr:y="0" id="sv1#page17#alt4#page19#dau4" name="Detalle almac&#233;n" entity="ent22" linkOrder="sv1#page17#alt4#page19#dau4#ln48" displayAttributes="ent22#att40 ent22#att41 ent22#att42 ent22#att43 ent22#att44">
           <Selector id="sv1#page17#alt4#page19#dau4#su18" defaultPolicy="fill" booleanOperator="and">
             <KeyCondition id="sv1#page17#alt4#page19#dau4#su18#kcond17" name="KeyCondition17" predicate="in" implied="false"/>
           </Selector>
-          <Link id="sv1#page17#alt4#page19#dau4#ln48" name="Close" to="sv1#page17#alt4#page18#mssu7" automaticCoupling="true" type="normal" validate="true"/>
+          <Link id="sv1#page17#alt4#page19#dau4#ln48" name="Volver" to="sv1#page17#alt4#page18#mssu7" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="0,134,170,-1"/>
         </DataUnit>
       </ContentUnits>
     </Page>
-    <Page gr:x="10" gr:y="310" id="sv1#page17#alt4#page20" name="Form" landmark="true">
+    <Page gr:x="15" gr:y="315" id="sv1#page17#alt4#page20" name="Form" landmark="true">
       <ContentUnits>
-        <EntryUnit gr:x="195" gr:y="135" id="sv1#page17#alt4#page20#enu8" name="EntryUnit" entity="ent22" linkOrder="sv1#page17#alt4#page20#enu8#ln49 sv1#page17#alt4#page20#enu8#ln54">
+        <EntryUnit gr:x="265" gr:y="135" id="sv1#page17#alt4#page20#enu8" name="Modificar almac&#233;n" entity="ent22" linkOrder="sv1#page17#alt4#page20#enu8#ln49 sv1#page17#alt4#page20#enu8#ln54">
           <Field id="sv1#page17#alt4#page20#enu8#fld15" name="oid" type="integer" modifiable="false" hidden="true" preloaded="true"/>
           <Field id="sv1#page17#alt4#page20#enu8#fld16" name="Nombre" type="string" modifiable="true" preloaded="true"/>
           <Field id="sv1#page17#alt4#page20#enu8#fld17" name="direccion" type="string" modifiable="true" preloaded="true"/>
           <Field id="sv1#page17#alt4#page20#enu8#fld18" name="capacidadMaxima" type="integer" modifiable="true" preloaded="true"/>
           <Field id="sv1#page17#alt4#page20#enu8#fld19" name="descripcion" type="text" modifiable="true" preloaded="true"/>
           <Link id="sv1#page17#alt4#page20#enu8#ln49" name="Cancel" to="sv1#page17#alt4#page18#mssu7" automaticCoupling="true" type="normal" validate="false"/>
-          <Link id="sv1#page17#alt4#page20#enu8#ln54" name="Accept" to="sv1#inn4" type="normal" validate="true">
+          <Link id="sv1#page17#alt4#page20#enu8#ln54" name="Aceptar" to="sv1#inn4" type="normal" validate="true">
             <LinkParameter id="sv1#page17#alt4#page20#enu8#ln54#par73" name="oid_oid" source="sv1#page17#alt4#page20#enu8#fld15" target="sv1#inn4.isnotnull"/>
           </Link>
           <Link id="sv1#page17#alt4#page20#enu8#ln56" name="Load" to="sv1#cru4" type="transport" validate="true">
@@ -222,7 +222,7 @@
             <LinkParameter id="sv1#page17#alt4#page20#seu9#ln55#par82" name="capacidadMaxima_capacidadMaxima" source="ent22#att43Array" target="sv1#page17#alt4#page20#enu8#fld18_slot"/>
           </Link>
         </SelectorUnit>
-        <SelectorUnit gr:x="195" gr:y="0" id="sv1#page17#alt4#page20#seu12" name="Selector12" entity="ent16">
+        <SelectorUnit gr:x="0" gr:y="135" id="sv1#page17#alt4#page20#seu12" name="Selector12" entity="ent16">
           <Link id="sv1#page17#alt4#page20#seu12#ln75" name="Flow75" to="sv1#page17#alt4#page20#enu8" type="transport" validate="true">
             <LinkParameter id="sv1#page17#alt4#page20#seu12#ln75#par123" name="nombreCategoria_AlmacenToCategoria [label]" source="ent16#att19Array" target="sv1#page17#alt4#page20#enu8#msfld2_label"/>
             <LinkParameter id="sv1#page17#alt4#page20#seu12#ln75#par124" name="oid_AlmacenToCategoria [output]" source="ent16#att18Array" target="sv1#page17#alt4#page20#enu8#msfld2_output"/>
