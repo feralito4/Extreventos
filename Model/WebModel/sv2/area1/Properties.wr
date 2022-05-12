@@ -121,7 +121,7 @@
         <LinkParameter id="sv2#area1#pcu10#ln99#par182" name="id_evento_KeyCondition28 [oid]" source="sv2#area1#pcu10#pcp36" target="sv2#area1#page15#seu21#su38#kcond28.ent9#att6"/>
       </Link>
     </ParameterCollectorUnit>
-    <CreateUnit gr:x="1215" gr:y="555" id="sv2#area1#cru9" name="Create9" entity="ent2">
+    <CreateUnit gr:x="1245" gr:y="560" id="sv2#area1#cru9" name="Create9" entity="ent2">
       <OKLink id="sv2#area1#cru9#oln38" name="OKFlow38" to="sv2#area1#seu16" automaticCoupling="true"/>
     </CreateUnit>
     <SelectorUnit gr:x="1390" gr:y="425" id="sv2#area1#seu16" name="Selector16" entity="ent2">
@@ -129,6 +129,9 @@
         <LinkParameter id="sv2#area1#seu16#oln40#par169" name="nombre_Ubicaci&#243;n" source="ent2#att38Array" target="sv2#area1#page40#enu15#fld54_slot"/>
         <LinkParameter id="sv2#area1#seu16#oln40#par170" name="IdUbi_id_ub" source="ent2#att47Array" target="sv2#area1#page40#enu15#fld58_slot"/>
       </OKLink>
+      <Selector id="sv2#area1#seu16#su56" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area1#seu16#su56#kcond39" name="KeyCondition39" predicate="in" implied="false"/>
+      </Selector>
     </SelectorUnit>
     <CreateUnit gr:x="985" gr:y="1105" id="sv2#area1#cru10" name="Nuevo_stand" entity="ent18">
       <OKLink id="sv2#area1#cru10#oln53" name="OKFlow53" to="sv2#area1#page15" automaticCoupling="true"/>

@@ -7,7 +7,7 @@
       </Selector>
     </PowerIndexUnit>
     <PowerIndexUnit gr:x="395" gr:y="15" id="sv2#area1#page25#pwu14" name="Productos asignados" sortable="true" checkable="false" useCountQuery="false" entity="ent8" displayAttributes="ent8#att2 ent8#att5" linkOrder="sv2#area1#page25#pwu14#ln24">
-      <Link id="sv2#area1#page25#pwu14#ln24" name="Flow24" to="sv2#area1#dlu6" automaticCoupling="true" type="normal" validate="true"/>
+      <Link id="sv2#area1#page25#pwu14#ln24" name="Eliminar" to="sv2#area1#dlu6" automaticCoupling="true" type="normal" validate="true"/>
       <Selector id="sv2#area1#page25#pwu14#su46" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv2#area1#page25#pwu14#su46#rcond4" name="RoleCondition4" predicate="in" implied="false" role="rel10#role3"/>
       </Selector>

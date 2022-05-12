@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area1#page39" name="Selecci&#243;n de ubicaci&#243;n" gr:x="920" gr:y="420">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area1#page39" name="Selecci&#243;n de ubicaci&#243;n" gr:x="910" gr:y="425">
   <ContentUnits>
     <PowerIndexUnit id="sv2#area1#page39#pwu3" name="List1" gr:x="0" gr:y="0" sortable="true" checkable="false" useCountQuery="false" entity="ent20" displayAttributes="ent20#att33 ent20#att34 ent20#att35 ent20#att36 ent20#att46" linkOrder="sv2#area1#page39#pwu3#ln36">
       <Selector id="sv2#area1#page39#pwu3#su36" defaultPolicy="fill" booleanOperator="and">
@@ -9,7 +9,7 @@
         <LinkParameter id="sv2#area1#page39#pwu3#ln36#par125" name="oid_IdUbi" source="data[].ent20#att32" target="sv2#area1#cru9.ent2#att47"/>
       </Link>
     </PowerIndexUnit>
-    <MultiMessageUnit id="sv2#area1#page39#mssu18" name="Message13" gr:x="75" gr:y="115"/>
+    <MultiMessageUnit id="sv2#area1#page39#mssu18" name="Message13" gr:x="15" gr:y="110"/>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>

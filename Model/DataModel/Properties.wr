@@ -192,8 +192,8 @@
     <Attribute id="ent1#att37" key="true" name="fecha" type="date"/>
   </Entity>
   <Entity gr:x="-85" gr:y="315" id="ent2" name="Ubicacion_volatil" duration="volatile" volatileStorage="database" attributeOrder="ent2#att38 ent2#att47">
-    <Attribute id="ent2#att38" key="true" name="nombre" type="string"/>
-    <Attribute id="ent2#att47" name="IdUbi" type="integer"/>
+    <Attribute id="ent2#att38" key="false" name="nombre" type="string"/>
+    <Attribute id="ent2#att47" name="IdUbi" type="integer" key="true"/>
   </Entity>
   <db:Database id="db1" name="ExtreventosDB" type="PostgreSQL 9" url="jdbc:postgresql://localhost:5432/ExtreventosDB" username="postgres" password="admin" schema="public">
   </db:Database>
