@@ -1,6 +1,6 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="840" gr:y="720" id="sv2#area1#page15" name="Crear stands" landmark="false">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="985" gr:y="725" id="sv2#area1#page15" name="Crear stands" landmark="false">
   <ContentUnits>
-    <SelectorUnit id="sv2#area1#page15#seu6" name="Selector23" gr:x="205" gr:y="50" entity="ent12">
+    <SelectorUnit id="sv2#area1#page15#seu6" name="Selector23" gr:x="0" gr:y="100" entity="ent12">
       <Link id="sv2#area1#page15#seu6#ln34" name="Flow34" to="sv2#area1#page15#enu12" type="transport" validate="true">
         <LinkParameter id="sv2#area1#page15#seu6#ln34#par128" name="oid_Key Condition [oid]" source="ent12#att11Array" target="sv2#area1#page15#enu12.ent18#att25"/>
         <LinkParameter id="sv2#area1#page15#seu6#ln34#par142" name="nombreCategoria_standTotipoStand - Preselection" source="ent12#att12Array" target="sv2#area1#page15#enu12#sfld6_presel"/>
@@ -8,7 +8,7 @@
         <LinkParameter id="sv2#area1#page15#seu6#ln34#par161" name="nombreCategoria_standTotipoStand [output]" source="ent12#att11Array" target="sv2#area1#page15#enu12#sfld6_output"/>
       </Link>
     </SelectorUnit>
-    <EntryUnit gr:x="55" gr:y="15" id="sv2#area1#page15#enu12" name="Alta stand" entity="ent18" linkOrder="sv2#area1#page15#enu12#ln114">
+    <EntryUnit gr:x="5" gr:y="220" id="sv2#area1#page15#enu12" name="Alta stand" entity="ent18" linkOrder="sv2#area1#page15#enu12#ln114">
       <Field id="sv2#area1#page15#enu12#fld36" name="Representante del stand" type="string" modifiable="true" attribute="ent18#att26"/>
       <Field id="sv2#area1#page15#enu12#fld37" name="Nombre del stand" type="string" modifiable="true" attribute="ent18#att27"/>
       <SelectionField id="sv2#area1#page15#enu12#sfld6" name="Tipo de stand" type="string" role="rel16#role13"/>
@@ -19,15 +19,15 @@
         <LinkParameter id="sv2#area1#page15#enu12#ln114#par214" name="standTotipoStand_tipoStand.oid(standTotipoStand)" source="sv2#area1#page15#enu12#sfld6" target="sv2#area1#cru10.rel16#role13.ent12#att11"/>
       </Link>
     </EntryUnit>
-    <PowerIndexUnit gr:x="475" gr:y="100" id="sv2#area1#page15#pwu1" name="Stands" sortable="true" checkable="false" useCountQuery="false" entity="ent18" displayAttributes="ent18#att27" linkOrder="sv2#area1#page15#pwu1#ln47 sv2#area1#page15#pwu1#ln77 sv2#area1#page15#pwu1#ln107">
-      <Link id="sv2#area1#page15#pwu1#ln47" name="Eliminar" to="sv2#area1#dlu8" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="141,-25,-59,-105"/>
-      <Link id="sv2#area1#page15#pwu1#ln77" name="A&#241;adir productos" to="sv2#area1#page25#seu20" type="normal" validate="true" automaticCoupling="true" gr:bendpoints="-330,101,-90,-459"/>
+    <PowerIndexUnit gr:x="380" gr:y="100" id="sv2#area1#page15#pwu1" name="Stands" sortable="true" checkable="false" useCountQuery="false" entity="ent18" displayAttributes="ent18#att27" linkOrder="sv2#area1#page15#pwu1#ln47 sv2#area1#page15#pwu1#ln77 sv2#area1#page15#pwu1#ln107">
+      <Link id="sv2#area1#page15#pwu1#ln47" name="Eliminar" to="sv2#area1#dlu8" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="195,0,0,-90"/>
+      <Link id="sv2#area1#page15#pwu1#ln77" name="A&#241;adir productos" to="sv2#area1#page25#seu20" type="normal" validate="true" automaticCoupling="true" gr:bendpoints="-171,201,89,-444"/>
       <Selector id="sv2#area1#page15#pwu1#su37" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv2#area1#page15#pwu1#su37#rcond2" name="RoleCondition2" predicate="in" implied="false" role="rel17#role16"/>
       </Selector>
       <Link id="sv2#area1#page15#pwu1#ln107" name="A&#241;adir al carrito" to="sv2#area1#seu25" type="normal" automaticCoupling="true" validate="true"/>
     </PowerIndexUnit>
-    <SelectorUnit gr:x="335" gr:y="75" id="sv2#area1#page15#seu21" name="Evento" entity="ent9">
+    <SelectorUnit gr:x="245" gr:y="100" id="sv2#area1#page15#seu21" name="Evento" entity="ent9">
       <Selector id="sv2#area1#page15#seu21#su38" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#area1#page15#seu21#su38#kcond28" name="KeyCondition28" predicate="in" implied="false"/>
       </Selector>
@@ -36,10 +36,10 @@
       </Link>
       <Link id="sv2#area1#page15#seu21#ln64" name="Flow64" to="sv2#area1#page15#pwu1" automaticCoupling="true" type="transport" validate="true"/>
     </SelectorUnit>
-    <PowerIndexUnit gr:x="475" gr:y="0" id="sv2#area1#page15#pwu6" name="Carrito" sortable="true" checkable="false" useCountQuery="false" entity="ent15" displayAttributes="ent15#att14 ent15#att15 ent15#att16" linkOrder="sv2#area1#page15#pwu6#ln112" customDescriptor="false">
-      <Link id="sv2#area1#page15#pwu6#ln112" name="Borrar" to="sv2#area1#seu38" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="-374,-29,350,-59"/>
+    <PowerIndexUnit gr:x="380" gr:y="0" id="sv2#area1#page15#pwu6" name="Carrito" sortable="true" checkable="false" useCountQuery="false" entity="ent15" displayAttributes="ent15#att14 ent15#att15 ent15#att16" linkOrder="sv2#area1#page15#pwu6#ln112" customDescriptor="false">
+      <Link id="sv2#area1#page15#pwu6#ln112" name="Borrar" to="sv2#area1#seu38" automaticCoupling="true" type="normal" validate="true"/>
     </PowerIndexUnit>
-    <MultiMessageUnit gr:x="0" gr:y="130" id="sv2#area1#page15#mssu6" name="Error en la creacion"/>
+    <MultiMessageUnit gr:x="390" gr:y="235" id="sv2#area1#page15#mssu6" name="Error en la creacion"/>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>

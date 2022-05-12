@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="5" gr:y="360" id="sv2#area1#page38" name="Selecci&#243;n de fecha y aforo">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="60" gr:y="265" id="sv2#area1#page38" name="Selecci&#243;n de fecha y aforo">
   <ContentUnits>
     <MultiMessageUnit id="sv2#area1#page38#mssu17" name="Mensaje Fecha" gr:x="0" gr:y="0"/>
     <EntryUnit id="sv2#area1#page38#enu14" name="Seleccion del aforo y la fecha del evento" linkOrder="sv2#area1#page38#enu14#ln116" gr:x="0" gr:y="95" entity="ent9">

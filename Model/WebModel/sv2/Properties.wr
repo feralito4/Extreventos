@@ -1,6 +1,6 @@
 <SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2" name="cliente" landmarks="sv2#lou2 sv2#area1" homePage="sv2#page16" layout:style="Copy_Of_WebRatio" linkVisibilityPolicy="inactive">
   <OperationUnits>
-    <LogoutUnit gr:x="60" gr:y="20" id="sv2#lou2" name="Cerrar sesi&#243;n" siteView="sv3" landmark="true"/>
+    <LogoutUnit gr:x="-5" gr:y="810" id="sv2#lou2" name="Cerrar sesi&#243;n" siteView="sv3" landmark="true"/>
     <ScheduleJobUnit gr:x="755" gr:y="1495" id="sv2#scju1" name="Schedule Job1" schedulePolicy="now" job="wsv1#job2">
       <OKLink id="sv2#scju1#oln75" name="OKFlow75" to="sv2#area1#page25" automaticCoupling="true" gr:bendpoints="191,-55,-339,-135"/>
     </ScheduleJobUnit>

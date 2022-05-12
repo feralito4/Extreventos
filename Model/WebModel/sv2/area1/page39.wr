@@ -1,10 +1,10 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area1#page39" name="Selecci&#243;n de ubicaci&#243;n" gr:x="680" gr:y="345">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area1#page39" name="Selecci&#243;n de ubicaci&#243;n" gr:x="920" gr:y="420">
   <ContentUnits>
     <PowerIndexUnit id="sv2#area1#page39#pwu3" name="List1" gr:x="0" gr:y="0" sortable="true" checkable="false" useCountQuery="false" entity="ent20" displayAttributes="ent20#att33 ent20#att34 ent20#att35 ent20#att36 ent20#att46" linkOrder="sv2#area1#page39#pwu3#ln36">
       <Selector id="sv2#area1#page39#pwu3#su36" defaultPolicy="fill" booleanOperator="and">
         <AttributesCondition id="sv2#area1#page39#pwu3#su36#acond8" name="AttCondition6" predicate="eq" booleanOperator="or" implied="false" attributes="ent20#att32"/>
       </Selector>
-      <Link id="sv2#area1#page39#pwu3#ln36" name="Selecconar ubicaci&#243;n" to="sv2#area1#cru9" type="normal" validate="true" gr:bendpoints="180,30,-85,-115">
+      <Link id="sv2#area1#page39#pwu3#ln36" name="Selecconar ubicaci&#243;n" to="sv2#area1#cru9" type="normal" validate="true">
         <LinkParameter id="sv2#area1#page39#pwu3#ln36#par164" name="nombre_nombre" source="data[].ent20#att35" target="sv2#area1#cru9.ent2#att38"/>
         <LinkParameter id="sv2#area1#page39#pwu3#ln36#par125" name="oid_IdUbi" source="data[].ent20#att32" target="sv2#area1#cru9.ent2#att47"/>
       </Link>
