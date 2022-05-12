@@ -13,7 +13,7 @@
         <RelationshipRoleCondition id="sv2#page16#hinu1#su48#rcond7" name="RoleCondition7" predicate="in" implied="false" role="rel1#role19"/>
       </Selector>
       <HierarchicalIndexLevel id="sv2#page16#hinu1#hiulvl2" name="Level2" entity="ent21" role="rel4#role1" displayAttributes="ent21#att39"/>
-      <Link id="sv2#page16#hinu1#ln96" name="Modificar Stands" to="sv2#area1#page15#seu21" automaticCoupling="true" type="normal" validate="true"/>
+      <Link id="sv2#page16#hinu1#ln96" name="Modificar Stands" to="sv2#area1#seu40" automaticCoupling="true" type="normal" validate="true"/>
     </HierarchicalIndexUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">

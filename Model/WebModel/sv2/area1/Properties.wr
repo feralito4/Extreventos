@@ -286,7 +286,7 @@
       <Selector id="sv2#area1#dlu9#su51" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#area1#dlu9#su51#kcond41" name="KeyCondition41" predicate="in" implied="false"/>
       </Selector>
-      <OKLink id="sv2#area1#dlu9#oln94" name="OKFlow64" to="sv2#area1#page15#pwu6" gr:bendpoints="342,-73,-382,-43"/>
+      <OKLink id="sv2#area1#dlu9#oln94" name="OKFlow64" to="sv2#area1#page15#pwu6" gr:bendpoints="524,-51,-566,-116"/>
     </DeleteUnit>
     <MathUnit gr:x="1895" gr:y="530" id="sv2#area1#mathu5" name="Sumar precio carrito total" resultType="integer" defaultExpression="PrecioStand + PrecioTotalStand">
       <MathVariable id="sv2#area1#mathu5#mathv7" name="PrecioStand"/>
@@ -358,7 +358,7 @@
         <LinkParameter id="sv2#area1#inn11#kln34#par222" name="Numero maximo de stands alcanzado_Shown Messages" sourceValue="Numero maximo de stands alcanzado" target="sv2#area1#page15#mssu6.shownMessages"/>
       </KOLink>
     </IsNotNullUnit>
-    <SelectorUnit gr:x="450" gr:y="755" id="sv2#area1#seu38" name="Selector_a&#241;adir_carrito_borrado" entity="ent15" linkOrder="sv2#area1#seu38#ln126">
+    <SelectorUnit gr:x="475" gr:y="720" id="sv2#area1#seu38" name="Selector_a&#241;adir_carrito_borrado" entity="ent15" linkOrder="sv2#area1#seu38#ln126">
       <Selector id="sv2#area1#seu38#su64" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#area1#seu38#su64#kcond50" name="KeyCondition50" predicate="in" implied="false"/>
       </Selector>
@@ -387,5 +387,29 @@
       </Selector>
       <OKLink id="sv2#area1#mfu16#oln93" name="OKFlow93" to="sv2#area1#dlu9" automaticCoupling="true" gr:bendpoints="39,-238,154,162"/>
     </ModifyUnit>
+    <SelectorUnit gr:x="15" gr:y="915" id="sv2#area1#seu40" name="Seleccion_evento_modificar" entity="ent21" linkOrder="sv2#area1#seu40#ln127">
+      <Selector id="sv2#area1#seu40#su66" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv2#area1#seu40#su66#rcond9" name="RoleCondition9" predicate="in" implied="false" role="rel4#role1"/>
+      </Selector>
+      <OKLink id="sv2#area1#seu40#oln96" name="OKFlow96" to="sv2#area1#seu41">
+        <LinkParameter id="sv2#area1#seu40#oln96#par228" name="sitio-evento-fechaTositio.oid_KeyCondition54 [oid]" source="rel14#role9_ent20#att32Array" target="sv2#area1#seu41#su67#kcond54.ent20#att32"/>
+      </OKLink>
+      <Link id="sv2#area1#seu40#ln127" name="Flow127" to="sv2#area1#cru18" type="transport" validate="true" gr:bendpoints="-34,202,-149,-148">
+        <LinkParameter id="sv2#area1#seu40#ln127#par230" name="sitio-evento-fechaToEventos.oid_Id_Evento" source="rel4#role2_ent9#att6Array" target="sv2#area1#cru18.ent3#att49"/>
+      </Link>
+    </SelectorUnit>
+    <SelectorUnit gr:x="135" gr:y="1115" id="sv2#area1#seu41" name="Seleccion_ubicacion_modificar" entity="ent20">
+      <Selector id="sv2#area1#seu41#su67" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area1#seu41#su67#kcond54" name="KeyCondition54" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv2#area1#seu41#oln97" name="OKFlow97" to="sv2#area1#cru18">
+        <LinkParameter id="sv2#area1#seu41#oln97#par229" name="maxStands_maxStands" source="ent20#att46Array" target="sv2#area1#cru18.ent3#att31"/>
+      </OKLink>
+    </SelectorUnit>
+    <CreateUnit gr:x="120" gr:y="1275" id="sv2#area1#cru18" name="Crear_Evento_Volatil_Modificar" entity="ent3">
+      <OKLink id="sv2#area1#cru18#oln98" name="OKFlow98" to="sv2#area1#page15#seu21">
+        <LinkParameter id="sv2#area1#cru18#oln98#par231" name="Id_Evento_KeyCondition28 [oid]" source="ent3#att49Array" target="sv2#area1#page15#seu21#su38#kcond28.ent9#att6"/>
+      </OKLink>
+    </CreateUnit>
   </OperationUnits>
 </Area>
