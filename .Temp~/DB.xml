@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<DBMetaData driverMajorVersion="9" driverMinorVersion="1" driverVersion="PostgreSQL 9.1 JDBC3g (build 903)" productVersion="9.3.25" identifierQuoteString="&quot;" transactionLevel="Read Committed" driverName="PostgreSQL Native Driver" productName="PostgreSQL">
+<DBMetaData driverMajorVersion="9" driverMinorVersion="1" driverVersion="PostgreSQL 9.1 JDBC3g (build 903)" productVersion="9.6.24" identifierQuoteString="&quot;" transactionLevel="Read Committed" driverName="PostgreSQL Native Driver" productName="PostgreSQL">
   <Schema name="information_schema"/>
   <Schema name="pg_catalog"/>
   <Schema name="public"/>
@@ -15,6 +15,7 @@
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="oid" primaryKey="true" notNull="true"/>
     <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="varchar" size="255" decimalDigits="0" name="nombrecategoria" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="almacen_oid" primaryKey="false" notNull="false"/>
+    <ForeignKey localColumnName="almacen_oid" foreignColumnName="oid" name="fk_categoria_almacen" foreignTableName="almacen" foreignSchemaName="public"/>
   </Table>
   <Table type="TABLE" schema="public" ignoreIndexes="false" name="eventos" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="oid" primaryKey="true" notNull="true"/>
@@ -23,15 +24,19 @@
     <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="text" size="2147483647" decimalDigits="0" name="descripcion" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="8" indexed="unknown" autoIncrement="false" type="float8" size="17" decimalDigits="17" name="precioentrada" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="user_oid" primaryKey="false" notNull="false"/>
+    <ForeignKey localColumnName="user_oid" foreignColumnName="oid" name="fk_eventos_user" foreignTableName="user" foreignSchemaName="public"/>
   </Table>
   <Table type="TABLE" schema="public" ignoreIndexes="false" name="group" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="oid" primaryKey="true" notNull="true"/>
     <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="varchar" size="255" decimalDigits="0" name="groupname" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="module_oid" primaryKey="false" notNull="false"/>
+    <ForeignKey localColumnName="module_oid" foreignColumnName="oid" name="fk_group_module" foreignTableName="module" foreignSchemaName="public"/>
   </Table>
   <Table type="TABLE" schema="public" ignoreIndexes="false" name="group_module" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="group_oid" primaryKey="true" notNull="true"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="module_oid" primaryKey="true" notNull="true"/>
+    <ForeignKey localColumnName="group_oid" foreignColumnName="oid" name="fk_group_module_group" foreignTableName="group" foreignSchemaName="public"/>
+    <ForeignKey localColumnName="module_oid" foreignColumnName="oid" name="fk_group_module_module" foreignTableName="module" foreignSchemaName="public"/>
   </Table>
   <Table type="TABLE" schema="public" ignoreIndexes="false" name="module" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="oid" primaryKey="true" notNull="true"/>
@@ -45,6 +50,7 @@
     <Column sqlTypeId="8" indexed="unknown" autoIncrement="false" type="float8" size="17" decimalDigits="17" name="precioproducto" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="unidadesproducto" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="almacen_oid" primaryKey="false" notNull="false"/>
+    <ForeignKey localColumnName="almacen_oid" foreignColumnName="oid" name="fk_productos_almacen" foreignTableName="almacen" foreignSchemaName="public"/>
   </Table>
   <Table type="TABLE" schema="public" ignoreIndexes="false" name="productosasignados" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="oid" primaryKey="true" notNull="true"/>
@@ -54,6 +60,14 @@
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="unidadesproducto" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="stand_oid" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="productos_oid" primaryKey="false" notNull="false"/>
+    <ForeignKey localColumnName="productos_oid" foreignColumnName="oid" name="fk_productosasignados_producto" foreignTableName="productos" foreignSchemaName="public"/>
+    <ForeignKey localColumnName="stand_oid" foreignColumnName="oid" name="fk_productosasignados_stand" foreignTableName="stand" foreignSchemaName="public"/>
+  </Table>
+  <Table type="TABLE" schema="public" ignoreIndexes="false" name="productosoferta" refreshed="true">
+    <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="productos_oid" primaryKey="true" notNull="true"/>
+    <Column sqlTypeId="8" indexed="unknown" autoIncrement="false" type="float8" size="17" decimalDigits="17" name="porcentajedescuento" primaryKey="false" notNull="false"/>
+    <Column sqlTypeId="8" indexed="unknown" autoIncrement="false" type="float8" size="17" decimalDigits="17" name="preciocondescuento" primaryKey="false" notNull="false"/>
+    <ForeignKey localColumnName="productos_oid" foreignColumnName="oid" name="fk_productosoferta_productos" foreignTableName="productos" foreignSchemaName="public"/>
   </Table>
   <Table type="TABLE" schema="public" ignoreIndexes="false" name="stand" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="oid" primaryKey="true" notNull="true"/>
@@ -63,6 +77,8 @@
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="cantidadtotal" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="tipostand_oid" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="eventos_oid" primaryKey="false" notNull="false"/>
+    <ForeignKey localColumnName="eventos_oid" foreignColumnName="oid" name="fk_stand_eventos" foreignTableName="eventos" foreignSchemaName="public"/>
+    <ForeignKey localColumnName="tipostand_oid" foreignColumnName="oid" name="fk_stand_tipostand" foreignTableName="tipostand" foreignSchemaName="public"/>
   </Table>
   <Table type="TABLE" schema="public" ignoreIndexes="false" name="tipostand" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="oid" primaryKey="true" notNull="true"/>
@@ -71,6 +87,8 @@
   <Table type="TABLE" schema="public" ignoreIndexes="false" name="tipostand_productos" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="tipostand_oid" primaryKey="true" notNull="true"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="productos_oid" primaryKey="true" notNull="true"/>
+    <ForeignKey localColumnName="productos_oid" foreignColumnName="oid" name="fk_tipostand_productos_product" foreignTableName="productos" foreignSchemaName="public"/>
+    <ForeignKey localColumnName="tipostand_oid" foreignColumnName="oid" name="fk_tipostand_productos_tiposta" foreignTableName="tipostand" foreignSchemaName="public"/>
   </Table>
   <Table type="TABLE" schema="public" ignoreIndexes="false" name="ubicacion" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="oid" primaryKey="true" notNull="true"/>
@@ -84,6 +102,8 @@
     <Column sqlTypeId="91" indexed="unknown" autoIncrement="false" type="date" size="13" decimalDigits="0" name="fecha" primaryKey="true" notNull="true"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="ubicacion_oid" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="eventos_oid" primaryKey="false" notNull="false"/>
+    <ForeignKey localColumnName="eventos_oid" foreignColumnName="oid" name="fk_ubicacion_evento_fecha_even" foreignTableName="eventos" foreignSchemaName="public"/>
+    <ForeignKey localColumnName="ubicacion_oid" foreignColumnName="oid" name="fk_ubicacion_evento_fecha_ubic" foreignTableName="ubicacion" foreignSchemaName="public"/>
   </Table>
   <Table type="TABLE" schema="public" ignoreIndexes="false" name="user" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="oid" primaryKey="true" notNull="true"/>
@@ -92,9 +112,12 @@
     <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="varchar" size="255" decimalDigits="0" name="email" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="varchar" size="255" decimalDigits="0" name="fecha_alta" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="group_oid" primaryKey="false" notNull="false"/>
+    <ForeignKey localColumnName="group_oid" foreignColumnName="oid" name="fk_user_group" foreignTableName="group" foreignSchemaName="public"/>
   </Table>
   <Table type="TABLE" schema="public" ignoreIndexes="false" name="user_group" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="user_oid" primaryKey="true" notNull="true"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="group_oid" primaryKey="true" notNull="true"/>
+    <ForeignKey localColumnName="group_oid" foreignColumnName="oid" name="fk_user_group_group" foreignTableName="group" foreignSchemaName="public"/>
+    <ForeignKey localColumnName="user_oid" foreignColumnName="oid" name="fk_user_group_user" foreignTableName="user" foreignSchemaName="public"/>
   </Table>
 </DBMetaData>

@@ -2,9 +2,9 @@
   <ContentUnits>
     <IndexUnit id="sv1#page31#inu4" name="Usuarios registrados" gr:x="0" gr:y="5" entity="User" displayAttributes="userName password email"/>
     <EntryUnit id="sv1#page31#enu7" name="Nuevo usuario" linkOrder="sv1#page31#enu7#ln90" gr:x="180" gr:y="5" entity="User">
-      <Field id="sv1#page31#enu7#fld29" name="userName" type="string" modifiable="true" attribute="userName"/>
-      <Field id="sv1#page31#enu7#fld30" name="email" type="string" modifiable="true" attribute="email"/>
-      <SelectionField id="sv1#page31#enu7#sfld1" name="defaultGroup" type="string" role="User2DefaultGroup"/>
+      <Field id="sv1#page31#enu7#fld29" name="Nombre de usuario" type="string" modifiable="true" attribute="userName"/>
+      <Field id="sv1#page31#enu7#fld30" name="Email" type="string" modifiable="true" attribute="email"/>
+      <SelectionField id="sv1#page31#enu7#sfld1" name="Grupo por defecto" type="string" role="User2DefaultGroup"/>
       <Link id="sv1#page31#enu7#ln89" name="Registrar" to="sv1#cru8" type="transport" validate="true">
         <LinkParameter id="sv1#page31#enu7#ln89#par146" name="email_email" source="sv1#page31#enu7#fld30" target="sv1#cru8.email"/>
         <LinkParameter id="sv1#page31#enu7#ln89#par147" name="defaultGroup_Group.oid(defaultGroup)" source="sv1#page31#enu7#sfld1" target="sv1#cru8.User2DefaultGroup.groupOID"/>

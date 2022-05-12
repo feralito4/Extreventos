@@ -1,6 +1,6 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="905" gr:y="630" id="sv2#area1#page15" name="Crear stands" landmark="false">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="840" gr:y="720" id="sv2#area1#page15" name="Crear stands" landmark="false">
   <ContentUnits>
-    <SelectorUnit id="sv2#area1#page15#seu6" name="Selector23" gr:x="145" gr:y="50" entity="ent12">
+    <SelectorUnit id="sv2#area1#page15#seu6" name="Selector23" gr:x="205" gr:y="50" entity="ent12">
       <Link id="sv2#area1#page15#seu6#ln34" name="Flow34" to="sv2#area1#page15#enu12" type="transport" validate="true">
         <LinkParameter id="sv2#area1#page15#seu6#ln34#par128" name="oid_Key Condition [oid]" source="ent12#att11Array" target="sv2#area1#page15#enu12.ent18#att25"/>
         <LinkParameter id="sv2#area1#page15#seu6#ln34#par142" name="nombreCategoria_standTotipoStand - Preselection" source="ent12#att12Array" target="sv2#area1#page15#enu12#sfld6_presel"/>
@@ -8,19 +8,18 @@
         <LinkParameter id="sv2#area1#page15#seu6#ln34#par161" name="nombreCategoria_standTotipoStand [output]" source="ent12#att11Array" target="sv2#area1#page15#enu12#sfld6_output"/>
       </Link>
     </SelectorUnit>
-    <EntryUnit gr:x="0" gr:y="40" id="sv2#area1#page15#enu12" name="Alta stand" entity="ent18" linkOrder="sv2#area1#page15#enu12#ln35">
-      <Field id="sv2#area1#page15#enu12#fld36" name="representante" type="string" modifiable="true" attribute="ent18#att26"/>
-      <Field id="sv2#area1#page15#enu12#fld37" name="Nombre" type="string" modifiable="true" attribute="ent18#att27"/>
-      <SelectionField id="sv2#area1#page15#enu12#sfld6" name="standTotipoStand" type="string" role="rel16#role13"/>
-      <Link id="sv2#area1#page15#enu12#ln35" name="Crear stand" to="sv2#area1#cru10" type="normal" validate="true">
-        <LinkParameter id="sv2#area1#page15#enu12#ln35#par162" name="Nombre_Nombre" source="sv2#area1#page15#enu12#fld37" target="sv2#area1#cru10.ent18#att27"/>
-        <LinkParameter id="sv2#area1#page15#enu12#ln35#par163" name="Key [oid]_oid" source="key.ent18#att25" target="sv2#area1#cru10.ent18#att25"/>
-        <LinkParameter id="sv2#area1#page15#enu12#ln35#par165" name="representante_representante" source="sv2#area1#page15#enu12#fld36" target="sv2#area1#cru10.ent18#att26"/>
-        <LinkParameter id="sv2#area1#page15#enu12#ln35#par166" name="standTotipoStand_tipoStand.oid(standTotipoStand)" source="sv2#area1#page15#enu12#sfld6" target="sv2#area1#cru10.rel16#role13.ent12#att11"/>
-        <LinkParameter id="sv2#area1#page15#enu12#ln35#par203" name="0_PrecioTotal" sourceValue="0" target="sv2#area1#cru10.ent18#att28"/>
+    <EntryUnit gr:x="55" gr:y="15" id="sv2#area1#page15#enu12" name="Alta stand" entity="ent18" linkOrder="sv2#area1#page15#enu12#ln114">
+      <Field id="sv2#area1#page15#enu12#fld36" name="Representante del stand" type="string" modifiable="true" attribute="ent18#att26"/>
+      <Field id="sv2#area1#page15#enu12#fld37" name="Nombre del stand" type="string" modifiable="true" attribute="ent18#att27"/>
+      <SelectionField id="sv2#area1#page15#enu12#sfld6" name="Tipo de stand" type="string" role="rel16#role13"/>
+      <Link id="sv2#area1#page15#enu12#ln114" name="Crear stand" to="sv2#area1#cru10" type="normal" validate="true">
+        <LinkParameter id="sv2#area1#page15#enu12#ln114#par207" name="Nombre_Nombre" source="sv2#area1#page15#enu12#fld37" target="sv2#area1#cru10.ent18#att27"/>
+        <LinkParameter id="sv2#area1#page15#enu12#ln114#par209" name="0_PrecioTotal" sourceValue="0" target="sv2#area1#cru10.ent18#att28"/>
+        <LinkParameter id="sv2#area1#page15#enu12#ln114#par210" name="representante_representante" source="sv2#area1#page15#enu12#fld36" target="sv2#area1#cru10.ent18#att26"/>
+        <LinkParameter id="sv2#area1#page15#enu12#ln114#par214" name="standTotipoStand_tipoStand.oid(standTotipoStand)" source="sv2#area1#page15#enu12#sfld6" target="sv2#area1#cru10.rel16#role13.ent12#att11"/>
       </Link>
     </EntryUnit>
-    <PowerIndexUnit gr:x="415" gr:y="100" id="sv2#area1#page15#pwu1" name="Stands" sortable="true" checkable="false" useCountQuery="false" entity="ent18" displayAttributes="ent18#att27" linkOrder="sv2#area1#page15#pwu1#ln47 sv2#area1#page15#pwu1#ln77 sv2#area1#page15#pwu1#ln107">
+    <PowerIndexUnit gr:x="475" gr:y="100" id="sv2#area1#page15#pwu1" name="Stands" sortable="true" checkable="false" useCountQuery="false" entity="ent18" displayAttributes="ent18#att27" linkOrder="sv2#area1#page15#pwu1#ln47 sv2#area1#page15#pwu1#ln77 sv2#area1#page15#pwu1#ln107">
       <Link id="sv2#area1#page15#pwu1#ln47" name="Eliminar" to="sv2#area1#dlu8" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="141,-25,-59,-105"/>
       <Link id="sv2#area1#page15#pwu1#ln77" name="A&#241;adir productos" to="sv2#area1#page25#seu20" type="normal" validate="true" automaticCoupling="true" gr:bendpoints="-330,101,-90,-459"/>
       <Selector id="sv2#area1#page15#pwu1#su37" defaultPolicy="fill" booleanOperator="and">
@@ -28,7 +27,7 @@
       </Selector>
       <Link id="sv2#area1#page15#pwu1#ln107" name="A&#241;adir al carrito" to="sv2#area1#seu25" type="normal" automaticCoupling="true" validate="true"/>
     </PowerIndexUnit>
-    <SelectorUnit gr:x="275" gr:y="75" id="sv2#area1#page15#seu21" name="Evento" entity="ent9">
+    <SelectorUnit gr:x="335" gr:y="75" id="sv2#area1#page15#seu21" name="Evento" entity="ent9">
       <Selector id="sv2#area1#page15#seu21#su38" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#area1#page15#seu21#su38#kcond28" name="KeyCondition28" predicate="in" implied="false"/>
       </Selector>
@@ -37,9 +36,10 @@
       </Link>
       <Link id="sv2#area1#page15#seu21#ln64" name="Flow64" to="sv2#area1#page15#pwu1" automaticCoupling="true" type="transport" validate="true"/>
     </SelectorUnit>
-    <PowerIndexUnit gr:x="415" gr:y="0" id="sv2#area1#page15#pwu6" name="Carrito" sortable="true" checkable="false" useCountQuery="false" entity="ent15" displayAttributes="ent15#att14 ent15#att15 ent15#att16" linkOrder="sv2#area1#page15#pwu6#ln112">
-      <Link id="sv2#area1#page15#pwu6#ln112" name="Borrar" to="sv2#area1#dlu9" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="-374,-29,350,-59"/>
+    <PowerIndexUnit gr:x="475" gr:y="0" id="sv2#area1#page15#pwu6" name="Carrito" sortable="true" checkable="false" useCountQuery="false" entity="ent15" displayAttributes="ent15#att14 ent15#att15 ent15#att16" linkOrder="sv2#area1#page15#pwu6#ln112" customDescriptor="false">
+      <Link id="sv2#area1#page15#pwu6#ln112" name="Borrar" to="sv2#area1#seu38" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="-374,-29,350,-59"/>
     </PowerIndexUnit>
+    <MultiMessageUnit gr:x="0" gr:y="130" id="sv2#area1#page15#mssu6" name="Error en la creacion"/>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
@@ -48,7 +48,7 @@
           <layout:Field field="sv2#area1#page15#enu12#fld36"/>
           <layout:Field field="sv2#area1#page15#enu12#fld37"/>
           <layout:Field field="sv2#area1#page15#enu12#sfld6"/>
-          <layout:Link link="sv2#area1#page15#enu12#ln35"/>
+          <layout:Link link="sv2#area1#page15#enu12#ln114"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
@@ -93,6 +93,36 @@
           <layout:Link link="sv2#area1#page15#pwu6#ln112"/>
         </layout:Unit>
       </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area1#page15#mssu6"/>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>

@@ -1,8 +1,8 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#page33" name="Inicio" gr:x="80" gr:y="100" landmark="false">
   <ContentUnits>
     <EntryUnit id="sv3#page33#enu10" name="Iniciar sesi&#243;n" linkOrder="sv3#page33#enu10#ln94 sv3#page33#enu10#ln9" gr:x="180" gr:y="0" entity="User">
-      <Field id="sv3#page33#enu10#fld31" name="userName" type="string" modifiable="true" attribute="userName"/>
-      <Field id="sv3#page33#enu10#fld32" name="password" type="password" modifiable="true" attribute="password"/>
+      <Field id="sv3#page33#enu10#fld31" name="Usuario" type="string" modifiable="true" attribute="userName"/>
+      <Field id="sv3#page33#enu10#fld32" name="Contrase&#241;a" type="password" modifiable="true" attribute="password"/>
       <Link id="sv3#page33#enu10#ln94" name="Acceder" to="sv3#lgu3" type="normal" validate="true">
         <LinkParameter id="sv3#page33#enu10#ln94#par159" name="userName_Username" source="sv3#page33#enu10#fld31" target="sv3#lgu3.username"/>
         <LinkParameter id="sv3#page33#enu10#ln94#par160" name="password_Password" source="sv3#page33#enu10#fld32" target="sv3#lgu3.password"/>

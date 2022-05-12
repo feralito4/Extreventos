@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="5091" gr:y="55" id="sv1#page26" name="CRUDTipoStand" landmark="true">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="5091" gr:y="55" id="sv1#page26" name="Tipos de stand" landmark="true">
   <ContentUnits/>
   <layout:Grid containerType="grid">
     <layout:Row>

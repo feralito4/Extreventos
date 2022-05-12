@@ -221,8 +221,8 @@
         <LinkParameter id="sv1#inn8#kln32#par145" name="1/1/00 0:00:00 AM_fecha_alta" target="sv1#mfu8.User#att10" sourceValue="1/01/00 0:00:00 AM"/>
       </KOLink>
     </IsNotNullUnit>
-    <LogoutUnit id="sv1#lou1" name="Cerrar Sesion" landmark="true" gr:x="110" gr:y="1270" siteView="sv3"/>
-    <SelectorUnit id="sv1#seu14" name="Fix TimeStamp" landmark="true" gr:x="800" gr:y="990" entity="User">
+    <LogoutUnit id="sv1#lou1" name="Cerrar Sesi&#243;n" landmark="true" gr:x="110" gr:y="1270" siteView="sv3"/>
+    <SelectorUnit id="sv1#seu14" name="Arreglar fecha" landmark="true" gr:x="800" gr:y="990" entity="User">
       <OKLink id="sv1#seu14#oln31" name="OKFlow27" to="sv1#lpu1">
         <LinkParameter id="sv1#seu14#oln31#par152" name="oid_Input Array" source="userOIDArray" target="sv1#lpu1.array"/>
         <LinkParameter id="sv1#seu14#oln31#par153" name="fecha_alta_SecondaryArray1" source="User#att10Array" target="sv1#lpu1#lsa1"/>

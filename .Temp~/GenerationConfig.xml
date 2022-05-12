@@ -6,33 +6,33 @@
     <Property name="applicationServer">Tomcat</Property>
     <Property name="cloudDeploy">false</Property>
     <Property name="commonsLibDir">C:\WebRatio\WebRatio Platform 7.2.18.x64bit\WebRatio\plugins\com.webratio.commons.libs_7.2.18.201903231300\lib</Property>
-    <Property name="dbConfigPath">C:\Users\gabri\AppData\Local\Temp\WRDBConfig6793192198115011742.xml</Property>
+    <Property name="dbConfigPath">C:\Users\ALEJAN~1\AppData\Local\Temp\WRDBConfig1704691384734113217.xml</Property>
     <Property name="defaultEncoding"></Property>
     <Property name="deployCorePluginDir">C:\WebRatio\WebRatio Platform 7.2.18.x64bit\WebRatio\configuration\org.eclipse.osgi\bundles\49\1\.cp</Property>
-    <Property name="derbySystemHome">C:\Users\gabri\Desktop\Webratio\.metadata\.plugins\com.webratio.commons.db\derby</Property>
+    <Property name="derbySystemHome">C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\.metadata\.plugins\com.webratio.commons.db\derby</Property>
     <Property name="enterpriseProjectDir"></Property>
-    <Property name="eventSocketPort">62774</Property>
+    <Property name="eventSocketPort">51644</Property>
     <Property name="excludedProjects" type="list"></Property>
-    <Property name="generationTime">202205121035</Property>
+    <Property name="generationTime">202205121325</Property>
     <Property name="helpersPluginDir">C:\WebRatio\WebRatio Platform 7.2.18.x64bit\WebRatio\plugins\com.webratio.generator.helpers_7.2.18.201903231300</Property>
     <Property name="hostAlwaysAllowed">false</Property>
     <Property name="i18nBundleKeysFile" type="file"></Property>
     <Property name="i18nExtraBundleFile" type="file"></Property>
     <Property name="localDeploy">true</Property>
-    <Property name="lockDir">C:\Users\gabri\Desktop\Webratio\Extreventos\.Temp~</Property>
+    <Property name="lockDir">C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\Extreventos\.Temp~</Property>
     <Property name="normalizeDescriptors">false</Property>
     <Property name="outputPath">C:\WebRatio\WebRatio Platform 7.2.18.x64bit\Tomcat\webapps\Extreventos</Property>
     <Property name="phases">All</Property>
-    <Property name="projectDir">C:\Users\gabri\Desktop\Webratio\Extreventos</Property>
+    <Property name="projectDir">C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\Extreventos</Property>
     <Property name="projectName">Extreventos</Property>
-    <Property name="projectPath">C:\Users\gabri\AppData\Local\Temp\Project935051893893928702.wr</Property>
+    <Property name="projectPath">C:\Users\ALEJAN~1\AppData\Local\Temp\Project3370101605422913483.wr</Property>
     <Property name="projectType">WEBPROJECT</Property>
     <Property name="rootModuleName"></Property>
     <Property name="uiPluginDir">C:\WebRatio\WebRatio Platform 7.2.18.x64bit\WebRatio\plugins\com.webratio.ide.ui_7.2.18.201903231300</Property>
     <Property name="webappPluginDir">C:\WebRatio\WebRatio Platform 7.2.18.x64bit\WebRatio\plugins\com.webratio.generator.webapp_7.2.18.201903231300</Property>
     <Property name="wrBuildId">201903231300</Property>
     <Property name="wrGenerateOldValidationRules">false</Property>
-    <Property name="wrModelStatistics">pages=17|units=152</Property>
+    <Property name="wrModelStatistics">pages=17|units=162</Property>
     <Property name="wrVersion">7.2.18</Property>
   </Properties>
   <Plugins>

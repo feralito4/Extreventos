@@ -1,19 +1,19 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area1#page40" name="Definir evento" gr:x="1195" gr:y="450">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area1#page40" name="Definir evento" gr:x="1150" gr:y="540">
   <ContentUnits>
-    <EntryUnit id="sv2#area1#page40#enu15" name="Form11" gr:x="0" gr:y="0" entity="ent9" linkOrder="sv2#area1#page40#enu15#ln152">
+    <EntryUnit id="sv2#area1#page40#enu15" name="Crear nuevo evento" gr:x="0" gr:y="0" entity="ent9" linkOrder="sv2#area1#page40#enu15#ln152">
       <Field id="sv2#area1#page40#enu15#fld54" name="Ubicaci&#243;n" type="string" modifiable="false" preloaded="true"/>
-      <Field id="sv2#area1#page40#enu15#fld55" name="nombre" type="string" modifiable="true" attribute="ent9#att7" contentType="text/plain" preloaded="true"/>
-      <Field id="sv2#area1#page40#enu15#fld56" name="descripcion" type="text" modifiable="true" attribute="ent9#att9"/>
-      <Field id="sv2#area1#page40#enu15#fld57" name="precioEntrada" type="float" modifiable="true" attribute="ent9#att10"/>
+      <Field id="sv2#area1#page40#enu15#fld55" name="Nombre del evento" type="string" modifiable="true" attribute="ent9#att7" contentType="text/plain" preloaded="true"/>
+      <Field id="sv2#area1#page40#enu15#fld56" name="Descripci&#243;n" type="text" modifiable="true" attribute="ent9#att9"/>
+      <Field id="sv2#area1#page40#enu15#fld57" name="Precio de la entrada" type="float" modifiable="true" attribute="ent9#att10"/>
       <Field id="sv2#area1#page40#enu15#fld58" name="id_ub" type="integer" modifiable="false" hidden="true" preloaded="true"/>
-      <Field id="sv2#area1#page40#enu15#fld59" name="fecha" type="date" modifiable="false" attribute="ent9#att8" preloaded="true" hidden="true"/>
+      <Field id="sv2#area1#page40#enu15#fld59" name="Fecha del evento" type="date" modifiable="false" attribute="ent9#att8" preloaded="true" hidden="true"/>
       <Link id="sv2#area1#page40#enu15#ln150" name="Flow150" to="sv2#area1#pcu7" type="transport" validate="true">
         <LinkParameter id="sv2#area1#page40#enu15#ln150#par332" name="descripcion_descripcion" source="sv2#area1#page40#enu15#fld56" target="sv2#area1#pcu7#pcp21"/>
         <LinkParameter id="sv2#area1#page40#enu15#ln150#par333" name="id_ub_id_sitio" source="sv2#area1#page40#enu15#fld58" target="sv2#area1#pcu7#pcp25"/>
         <LinkParameter id="sv2#area1#page40#enu15#ln150#par334" name="nombre_nombre" source="sv2#area1#page40#enu15#fld55" target="sv2#area1#pcu7#pcp22"/>
         <LinkParameter id="sv2#area1#page40#enu15#ln150#par335" name="precioEntrada_precioEntrada" source="sv2#area1#page40#enu15#fld57" target="sv2#area1#pcu7#pcp23"/>
       </Link>
-      <Link id="sv2#area1#page40#enu15#ln152" name="Flow152" to="sv2#area1#seu18" automaticCoupling="true" type="normal" validate="true"/>
+      <Link id="sv2#area1#page40#enu15#ln152" name="Crear" to="sv2#area1#seu18" automaticCoupling="true" type="normal" validate="true"/>
     </EntryUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">

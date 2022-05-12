@@ -1,7 +1,7 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="10" gr:y="180" id="sv2#area1#page38" name="Page 38">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="5" gr:y="360" id="sv2#area1#page38" name="Selecci&#243;n de fecha y aforo">
   <ContentUnits>
     <MultiMessageUnit id="sv2#area1#page38#mssu17" name="Mensaje Fecha" gr:x="0" gr:y="0"/>
-    <EntryUnit id="sv2#area1#page38#enu14" name="Aforo_Fecha" linkOrder="sv2#area1#page38#enu14#ln116" gr:x="0" gr:y="95" entity="ent9">
+    <EntryUnit id="sv2#area1#page38#enu14" name="Seleccion del aforo y la fecha del evento" linkOrder="sv2#area1#page38#enu14#ln116" gr:x="0" gr:y="95" entity="ent9">
       <Field id="sv2#area1#page38#enu14#fld51" name="Aforo" type="integer" modifiable="true"/>
       <Field id="sv2#area1#page38#enu14#fld52" name="Fecha" type="date" modifiable="true"/>
       <Link id="sv2#area1#page38#enu14#ln116" name="Comprobar disponibilidad" to="sv2#area1#pcu6" type="normal" validate="true">

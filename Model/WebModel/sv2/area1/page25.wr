@@ -1,7 +1,7 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="740" gr:y="1155" id="sv2#area1#page25" name="Seleccionar productos" landmark="false" linkOrder="sv2#area1#page25#ln100">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="735" gr:y="1245" id="sv2#area1#page25" name="Seleccionar productos" landmark="false" linkOrder="sv2#area1#page25#ln100">
   <ContentUnits>
-    <PowerIndexUnit gr:x="0" gr:y="20" id="sv2#area1#page25#pwu13" name="List13" sortable="true" checkable="false" useCountQuery="false" entity="ent17" displayAttributes="ent17#att21 ent17#att23 ent17#att24" linkOrder="sv2#area1#page25#pwu13#ln37">
-      <Link id="sv2#area1#page25#pwu13#ln37" name="Flow37" to="sv2#area1#seu17" automaticCoupling="true" type="normal" validate="true"/>
+    <PowerIndexUnit gr:x="0" gr:y="20" id="sv2#area1#page25#pwu13" name="Lista de productos" sortable="true" checkable="false" useCountQuery="false" entity="ent17" displayAttributes="ent17#att21 ent17#att23 ent17#att24" linkOrder="sv2#area1#page25#pwu13#ln37">
+      <Link id="sv2#area1#page25#pwu13#ln37" name="A&#241;adir" to="sv2#area1#seu17" automaticCoupling="true" type="normal" validate="true"/>
       <Selector id="sv2#area1#page25#pwu13#su28" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv2#area1#page25#pwu13#su28#rcond1" name="RoleCondition1" predicate="in" implied="false" role="rel11#role5"/>
       </Selector>
