@@ -4,19 +4,19 @@
   <Schema name="information_schema"/>
   <Schema name="pg_catalog"/>
   <Schema name="public"/>
-  <Table schema="public" ignoreIndexes="false" name="almacen" type="TABLE" refreshed="true">
+  <Table type="TABLE" schema="public" ignoreIndexes="false" name="almacen" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="oid" primaryKey="true" notNull="true"/>
     <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="varchar" size="255" decimalDigits="0" name="nombre" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="varchar" size="255" decimalDigits="0" name="direccion" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="capacidadmaxima" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="text" size="2147483647" decimalDigits="0" name="descripcion" primaryKey="false" notNull="false"/>
   </Table>
-  <Table schema="public" ignoreIndexes="false" name="categoria" type="TABLE" refreshed="true">
+  <Table type="TABLE" schema="public" ignoreIndexes="false" name="categoria" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="oid" primaryKey="true" notNull="true"/>
     <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="varchar" size="255" decimalDigits="0" name="nombrecategoria" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="almacen_oid" primaryKey="false" notNull="false"/>
   </Table>
-  <Table schema="public" ignoreIndexes="false" name="eventos" type="TABLE" refreshed="true">
+  <Table type="TABLE" schema="public" ignoreIndexes="false" name="eventos" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="oid" primaryKey="true" notNull="true"/>
     <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="varchar" size="255" decimalDigits="0" name="nombre" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="91" indexed="unknown" autoIncrement="false" type="date" size="13" decimalDigits="0" name="fecha" primaryKey="false" notNull="false"/>
@@ -24,21 +24,21 @@
     <Column sqlTypeId="8" indexed="unknown" autoIncrement="false" type="float8" size="17" decimalDigits="17" name="precioentrada" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="user_oid" primaryKey="false" notNull="false"/>
   </Table>
-  <Table schema="public" ignoreIndexes="false" name="group" type="TABLE" refreshed="true">
+  <Table type="TABLE" schema="public" ignoreIndexes="false" name="group" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="oid" primaryKey="true" notNull="true"/>
     <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="varchar" size="255" decimalDigits="0" name="groupname" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="module_oid" primaryKey="false" notNull="false"/>
   </Table>
-  <Table schema="public" ignoreIndexes="false" name="group_module" type="TABLE" refreshed="true">
+  <Table type="TABLE" schema="public" ignoreIndexes="false" name="group_module" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="group_oid" primaryKey="true" notNull="true"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="module_oid" primaryKey="true" notNull="true"/>
   </Table>
-  <Table schema="public" ignoreIndexes="false" name="module" type="TABLE" refreshed="true">
+  <Table type="TABLE" schema="public" ignoreIndexes="false" name="module" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="oid" primaryKey="true" notNull="true"/>
     <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="varchar" size="255" decimalDigits="0" name="moduleid" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="varchar" size="255" decimalDigits="0" name="modulename" primaryKey="false" notNull="false"/>
   </Table>
-  <Table schema="public" ignoreIndexes="false" name="productos" type="TABLE" refreshed="true">
+  <Table type="TABLE" schema="public" ignoreIndexes="false" name="productos" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="oid" primaryKey="true" notNull="true"/>
     <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="varchar" size="255" decimalDigits="0" name="nombreproducto" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="text" size="2147483647" decimalDigits="0" name="descripcionproducto" primaryKey="false" notNull="false"/>
@@ -46,7 +46,7 @@
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="unidadesproducto" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="almacen_oid" primaryKey="false" notNull="false"/>
   </Table>
-  <Table schema="public" ignoreIndexes="false" name="productosasignados" type="TABLE" refreshed="true">
+  <Table type="TABLE" schema="public" ignoreIndexes="false" name="productosasignados" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="oid" primaryKey="true" notNull="true"/>
     <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="varchar" size="255" decimalDigits="0" name="nombreproducto" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="text" size="2147483647" decimalDigits="0" name="descripcionproducto" primaryKey="false" notNull="false"/>
@@ -55,12 +55,7 @@
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="stand_oid" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="productos_oid" primaryKey="false" notNull="false"/>
   </Table>
-  <Table schema="public" ignoreIndexes="false" name="productosoferta" type="TABLE" refreshed="true">
-    <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="productos_oid" primaryKey="true" notNull="true"/>
-    <Column sqlTypeId="8" indexed="unknown" autoIncrement="false" type="float8" size="17" decimalDigits="17" name="porcentajedescuento" primaryKey="false" notNull="false"/>
-    <Column sqlTypeId="8" indexed="unknown" autoIncrement="false" type="float8" size="17" decimalDigits="17" name="preciocondescuento" primaryKey="false" notNull="false"/>
-  </Table>
-  <Table schema="public" ignoreIndexes="false" name="stand" type="TABLE" refreshed="true">
+  <Table type="TABLE" schema="public" ignoreIndexes="false" name="stand" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="oid" primaryKey="true" notNull="true"/>
     <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="varchar" size="255" decimalDigits="0" name="representante" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="varchar" size="255" decimalDigits="0" name="nombre" primaryKey="false" notNull="false"/>
@@ -69,15 +64,15 @@
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="tipostand_oid" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="eventos_oid" primaryKey="false" notNull="false"/>
   </Table>
-  <Table schema="public" ignoreIndexes="false" name="tipostand" type="TABLE" refreshed="true">
+  <Table type="TABLE" schema="public" ignoreIndexes="false" name="tipostand" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="oid" primaryKey="true" notNull="true"/>
     <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="varchar" size="255" decimalDigits="0" name="nombrecategoria" primaryKey="false" notNull="false"/>
   </Table>
-  <Table schema="public" ignoreIndexes="false" name="tipostand_productos" type="TABLE" refreshed="true">
+  <Table type="TABLE" schema="public" ignoreIndexes="false" name="tipostand_productos" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="tipostand_oid" primaryKey="true" notNull="true"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="productos_oid" primaryKey="true" notNull="true"/>
   </Table>
-  <Table schema="public" ignoreIndexes="false" name="ubicacion" type="TABLE" refreshed="true">
+  <Table type="TABLE" schema="public" ignoreIndexes="false" name="ubicacion" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="oid" primaryKey="true" notNull="true"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="aforo" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="varchar" size="255" decimalDigits="0" name="direccion" primaryKey="false" notNull="false"/>
@@ -85,12 +80,12 @@
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="precio_alquiler" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="maxstands" primaryKey="false" notNull="false"/>
   </Table>
-  <Table schema="public" ignoreIndexes="false" name="ubicacion_evento_fecha" type="TABLE" refreshed="true">
+  <Table type="TABLE" schema="public" ignoreIndexes="false" name="ubicacion_evento_fecha" refreshed="true">
     <Column sqlTypeId="91" indexed="unknown" autoIncrement="false" type="date" size="13" decimalDigits="0" name="fecha" primaryKey="true" notNull="true"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="ubicacion_oid" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="eventos_oid" primaryKey="false" notNull="false"/>
   </Table>
-  <Table schema="public" ignoreIndexes="false" name="user" type="TABLE" refreshed="true">
+  <Table type="TABLE" schema="public" ignoreIndexes="false" name="user" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="oid" primaryKey="true" notNull="true"/>
     <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="varchar" size="255" decimalDigits="0" name="username" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="varchar" size="255" decimalDigits="0" name="password" primaryKey="false" notNull="false"/>
@@ -98,7 +93,7 @@
     <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="varchar" size="255" decimalDigits="0" name="fecha_alta" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="group_oid" primaryKey="false" notNull="false"/>
   </Table>
-  <Table schema="public" ignoreIndexes="false" name="user_group" type="TABLE" refreshed="true">
+  <Table type="TABLE" schema="public" ignoreIndexes="false" name="user_group" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="user_oid" primaryKey="true" notNull="true"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="int4" size="10" decimalDigits="0" name="group_oid" primaryKey="true" notNull="true"/>
   </Table>

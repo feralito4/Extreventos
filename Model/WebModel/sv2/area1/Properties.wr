@@ -281,7 +281,7 @@
         <LinkParameter id="sv2#area1#mathu4#oln56#par206" name="Result_PrecioTotal" source="result" target="sv2#area1#mfu13.ent18#att28"/>
       </OKLink>
     </MathUnit>
-    <DeleteUnit gr:x="595" gr:y="690" id="sv2#area1#dlu9" name="Delete Carrito" entity="ent15">
+    <DeleteUnit gr:x="575" gr:y="785" id="sv2#area1#dlu9" name="Delete Carrito" entity="ent15">
       <Selector id="sv2#area1#dlu9#su51" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#area1#dlu9#su51#kcond41" name="KeyCondition41" predicate="in" implied="false"/>
       </Selector>

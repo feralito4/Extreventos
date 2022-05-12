@@ -1,29 +1,68 @@
-[11 may 2022 13:00:57] DEBUG Executing SQL script
-[11 may 2022 13:00:57] INFO ================================================================================
-[11 may 2022 13:00:57] INFO onError= 'stop'
-[11 may 2022 13:00:57] INFO autoCommit= 'false'
-[11 may 2022 13:00:57] INFO username= 'postgres'
-[11 may 2022 13:00:57] INFO outputPath= 'C:\Users\gabri\Desktop\Webratio\Extreventos\.Temp~\UpdateSQL.xml'
-[11 may 2022 13:00:57] INFO outputLogPath= 'C:\Users\gabri\Desktop\Webratio\Extreventos\.Temp~\UpdateSQL.xml.log'
-[11 may 2022 13:00:57] INFO encoding= ''
-[11 may 2022 13:00:57] INFO driverClass= 'org.postgresql.Driver'
-[11 may 2022 13:00:57] INFO sqlScript= 'C:\Users\gabri\Desktop\Webratio\Extreventos\.Temp~\UpdateSQL.sql'
-[11 may 2022 13:00:57] INFO eventSocketPort= '56498'
-[11 may 2022 13:00:57] INFO statementSeparator= ';'
-[11 may 2022 13:00:57] INFO derby.system.home= 'C:\Users\gabri\Desktop\Webratio\.metadata\.plugins\com.webratio.commons.db\derby'
-[11 may 2022 13:00:57] INFO password= 'admin'
-[11 may 2022 13:00:57] INFO url= 'jdbc:postgresql://localhost:5432/ExtreventosDB'
-[11 may 2022 13:00:57] INFO ================================================================================
-[11 may 2022 13:00:57] INFO Connecting to the Database...
-[11 may 2022 13:00:57] INFO Database connection estabilished
-[11 may 2022 13:00:57] INFO transaction isolation: 2
-[11 may 2022 13:00:57] DEBUG ================================================================================
-[11 may 2022 13:00:57] DEBUG Executing SQL script file: C:\Users\gabri\Desktop\Webratio\Extreventos\.Temp~\UpdateSQL.sql
-[11 may 2022 13:00:57] DEBUG Executing statement:  alter table "public"."productosasignados"  add column  "stand_oid"  int4
-[11 may 2022 13:00:57] DEBUG Executing statement:  alter table "public"."productosasignados"   add constraint fk_productosasignados_stand foreign key ("stand_oid") references "public"."stand" ("oid")
-[11 may 2022 13:00:57] DEBUG Executing statement:    alter table "public"."productosasignados"  add column  "productos_oid"  int4
-[11 may 2022 13:00:57] DEBUG Executing statement:  alter table "public"."productosasignados"   add constraint fk_productosasignados_producto foreign key ("productos_oid") references "public"."productos" ("oid")
-[11 may 2022 13:00:57] DEBUG ================================================================================
-[11 may 2022 13:00:57] DEBUG SQL SCRIPT SUCCESSFULLY EXECUTED
-[11 may 2022 13:00:57] INFO Database connection closed
-[11 may 2022 13:00:57] DEBUG Total time: 375 milliseconds
+[12 may 2022 09:23:26] DEBUG Executing SQL script
+[12 may 2022 09:23:26] INFO ================================================================================
+[12 may 2022 09:23:26] INFO outputPath= 'C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\ExtreventosGit\.Temp~\UpdateSQL.xml'
+[12 may 2022 09:23:26] INFO onError= 'stop'
+[12 may 2022 09:23:26] INFO statementSeparator= ';'
+[12 may 2022 09:23:26] INFO derby.system.home= 'C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\.metadata\.plugins\com.webratio.commons.db\derby'
+[12 may 2022 09:23:26] INFO password= 'admin'
+[12 may 2022 09:23:26] INFO url= 'jdbc:postgresql://localhost:5432/ExtreventosDB'
+[12 may 2022 09:23:26] INFO username= 'postgres'
+[12 may 2022 09:23:26] INFO autoCommit= 'false'
+[12 may 2022 09:23:26] INFO outputLogPath= 'C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\ExtreventosGit\.Temp~\UpdateSQL.xml.log'
+[12 may 2022 09:23:26] INFO driverClass= 'org.postgresql.Driver'
+[12 may 2022 09:23:26] INFO encoding= ''
+[12 may 2022 09:23:26] INFO eventSocketPort= '50080'
+[12 may 2022 09:23:26] INFO sqlScript= 'C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\ExtreventosGit\.Temp~\UpdateSQL.sql'
+[12 may 2022 09:23:26] INFO ================================================================================
+[12 may 2022 09:23:26] INFO Connecting to the Database...
+[12 may 2022 09:23:27] INFO Database connection estabilished
+[12 may 2022 09:23:27] INFO transaction isolation: 2
+[12 may 2022 09:23:27] DEBUG ================================================================================
+[12 may 2022 09:23:27] DEBUG Executing SQL script file: C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\ExtreventosGit\.Temp~\UpdateSQL.sql
+[12 may 2022 09:23:27] DEBUG Executing statement:  create table "public"."group" ( "oid"  int4  not null, "groupname"  varchar(255), primary key ("oid") )
+[12 may 2022 09:23:27] DEBUG Executing statement:    create table "public"."module" ( "oid"  int4  not null, "moduleid"  varchar(255), "modulename"  varchar(255), primary key ("oid") )
+[12 may 2022 09:23:27] DEBUG Executing statement:    create table "public"."user" ( "oid"  int4  not null, "username"  varchar(255), "password"  varchar(255), "email"  varchar(255), "fecha_alta"  varchar(255), primary key ("oid") )
+[12 may 2022 09:23:27] DEBUG Executing statement:    create table "public"."tipostand" ( "oid"  int4  not null, "nombrecategoria"  varchar(255), primary key ("oid") )
+[12 may 2022 09:23:27] DEBUG Executing statement:    create table "public"."categoria" ( "oid"  int4  not null, "nombrecategoria"  varchar(255), primary key ("oid") )
+[12 may 2022 09:23:27] DEBUG Executing statement:    create table "public"."productos" ( "oid"  int4  not null, "nombreproducto"  varchar(255), "descripcionproducto"  text, "precioproducto"  float8, "unidadesproducto"  int4, primary key ("oid") )
+[12 may 2022 09:23:27] DEBUG Executing statement:    create table "public"."stand" ( "oid"  int4  not null, "representante"  varchar(255), "nombre"  varchar(255), "preciototal"  int4, "cantidadtotal"  int4, primary key ("oid") )
+[12 may 2022 09:23:27] DEBUG Executing statement:    create table "public"."ubicacion" ( "oid"  int4  not null, "aforo"  int4, "direccion"  varchar(255), "nombre"  varchar(255), "precio_alquiler"  int4, "maxstands"  int4, primary key ("oid") )
+[12 may 2022 09:23:27] DEBUG Executing statement:    create table "public"."ubicacion_evento_fecha" ( "fecha"  date  not null, primary key ("fecha") )
+[12 may 2022 09:23:27] DEBUG Executing statement:    create table "public"."almacen" ( "oid"  int4  not null, "nombre"  varchar(255), "direccion"  varchar(255), "capacidadmaxima"  int4, "descripcion"  text, primary key ("oid") )
+[12 may 2022 09:23:27] DEBUG Executing statement:    create table "public"."productosasignados" ( "oid"  int4  not null, "nombreproducto"  varchar(255), "descripcionproducto"  text, "precioproducto"  float8, "unidadesproducto"  int4, primary key ("oid") )
+[12 may 2022 09:23:27] DEBUG Executing statement:    create table "public"."eventos" ( "oid"  int4  not null, "nombre"  varchar(255), "fecha"  date, "descripcion"  text, "precioentrada"  float8, primary key ("oid") )
+[12 may 2022 09:23:27] DEBUG Executing statement:    alter table "public"."group"  add column  "module_oid"  int4
+[12 may 2022 09:23:27] DEBUG Executing statement:  alter table "public"."group"   add constraint fk_group_module foreign key ("module_oid") references "public"."module" ("oid")
+[12 may 2022 09:23:27] DEBUG Executing statement:    create table "public"."group_module" ( "group_oid"  int4 not null, "module_oid"  int4 not null, primary key ("group_oid", "module_oid") )
+[12 may 2022 09:23:27] DEBUG Executing statement:  alter table "public"."group_module"   add constraint fk_group_module_group foreign key ("group_oid") references "public"."group" ("oid")
+[12 may 2022 09:23:27] DEBUG Executing statement:  alter table "public"."group_module"   add constraint fk_group_module_module foreign key ("module_oid") references "public"."module" ("oid")
+[12 may 2022 09:23:27] DEBUG Executing statement:    alter table "public"."user"  add column  "group_oid"  int4
+[12 may 2022 09:23:27] DEBUG Executing statement:  alter table "public"."user"   add constraint fk_user_group foreign key ("group_oid") references "public"."group" ("oid")
+[12 may 2022 09:23:27] DEBUG Executing statement:    create table "public"."user_group" ( "user_oid"  int4 not null, "group_oid"  int4 not null, primary key ("user_oid", "group_oid") )
+[12 may 2022 09:23:27] DEBUG Executing statement:  alter table "public"."user_group"   add constraint fk_user_group_user foreign key ("user_oid") references "public"."user" ("oid")
+[12 may 2022 09:23:27] DEBUG Executing statement:  alter table "public"."user_group"   add constraint fk_user_group_group foreign key ("group_oid") references "public"."group" ("oid")
+[12 may 2022 09:23:27] DEBUG Executing statement:    alter table "public"."eventos"  add column  "user_oid"  int4
+[12 may 2022 09:23:27] DEBUG Executing statement:  alter table "public"."eventos"   add constraint fk_eventos_user foreign key ("user_oid") references "public"."user" ("oid")
+[12 may 2022 09:23:27] DEBUG Executing statement:    alter table "public"."productosasignados"  add column  "stand_oid"  int4
+[12 may 2022 09:23:27] DEBUG Executing statement:  alter table "public"."productosasignados"   add constraint fk_productosasignados_stand foreign key ("stand_oid") references "public"."stand" ("oid")
+[12 may 2022 09:23:27] DEBUG Executing statement:    create table "public"."tipostand_productos" ( "tipostand_oid"  int4 not null, "productos_oid"  int4 not null, primary key ("tipostand_oid", "productos_oid") )
+[12 may 2022 09:23:27] DEBUG Executing statement:  alter table "public"."tipostand_productos"   add constraint fk_tipostand_productos_tiposta foreign key ("tipostand_oid") references "public"."tipostand" ("oid")
+[12 may 2022 09:23:27] DEBUG Executing statement:  alter table "public"."tipostand_productos"   add constraint fk_tipostand_productos_product foreign key ("productos_oid") references "public"."productos" ("oid")
+[12 may 2022 09:23:27] DEBUG Executing statement:    alter table "public"."productosasignados"  add column  "productos_oid"  int4
+[12 may 2022 09:23:27] DEBUG Executing statement:  alter table "public"."productosasignados"   add constraint fk_productosasignados_producto foreign key ("productos_oid") references "public"."productos" ("oid")
+[12 may 2022 09:23:27] DEBUG Executing statement:    alter table "public"."ubicacion_evento_fecha"  add column  "ubicacion_oid"  int4
+[12 may 2022 09:23:27] DEBUG Executing statement:  alter table "public"."ubicacion_evento_fecha"   add constraint fk_ubicacion_evento_fecha_ubic foreign key ("ubicacion_oid") references "public"."ubicacion" ("oid")
+[12 may 2022 09:23:27] DEBUG Executing statement:    alter table "public"."categoria"  add column  "almacen_oid"  int4
+[12 may 2022 09:23:27] DEBUG Executing statement:  alter table "public"."categoria"   add constraint fk_categoria_almacen foreign key ("almacen_oid") references "public"."almacen" ("oid")
+[12 may 2022 09:23:27] DEBUG Executing statement:    alter table "public"."stand"  add column  "tipostand_oid"  int4
+[12 may 2022 09:23:27] DEBUG Executing statement:  alter table "public"."stand"   add constraint fk_stand_tipostand foreign key ("tipostand_oid") references "public"."tipostand" ("oid")
+[12 may 2022 09:23:27] DEBUG Executing statement:    alter table "public"."stand"  add column  "eventos_oid"  int4
+[12 may 2022 09:23:27] DEBUG Executing statement:  alter table "public"."stand"   add constraint fk_stand_eventos foreign key ("eventos_oid") references "public"."eventos" ("oid")
+[12 may 2022 09:23:27] DEBUG Executing statement:    alter table "public"."productos"  add column  "almacen_oid"  int4
+[12 may 2022 09:23:27] DEBUG Executing statement:  alter table "public"."productos"   add constraint fk_productos_almacen foreign key ("almacen_oid") references "public"."almacen" ("oid")
+[12 may 2022 09:23:27] DEBUG Executing statement:    alter table "public"."ubicacion_evento_fecha"  add column  "eventos_oid"  int4
+[12 may 2022 09:23:27] DEBUG Executing statement:  alter table "public"."ubicacion_evento_fecha"   add constraint fk_ubicacion_evento_fecha_even foreign key ("eventos_oid") references "public"."eventos" ("oid")
+[12 may 2022 09:23:27] DEBUG ================================================================================
+[12 may 2022 09:23:27] DEBUG SQL SCRIPT SUCCESSFULLY EXECUTED
+[12 may 2022 09:23:27] INFO Database connection closed
+[12 may 2022 09:23:27] DEBUG Total time: 634 milliseconds
